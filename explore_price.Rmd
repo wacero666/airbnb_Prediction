@@ -1,0 +1,166 @@
+---
+title: "Untitled"
+author: "Minyue Fan"
+date: "4/12/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r,echo=FALSE}
+library("dplyr")
+price <- read.csv("price.csv")
+```
+
+```{r preprocess continuous variable, echo = FALSE}
+numerical.prices <-  as.numeric(gsub("\\$", "", price$price))
+mean(numerical.prices,na.rm = TRUE)
+numerical.host.response.rate <- as.numeric(sub("%","",price$host_response_rate))/100
+
+```
+
+```{r histograms for continuous variables, echo =FALSE}
+# boxplot
+par(mfrow=c(1,3))
+# host response rate
+hist(numerical.host.response.rate, main = paste("Histogram of",colnames(price)[4]),xlab = colnames(price[4]))
+abline(v = mean(numerical.host.response.rate,na.rm = TRUE), col = "red", lwd = 1)
+abline(v = median(numerical.host.response.rate,na.rm = TRUE), col = "blue", lwd = 1)
+# prices 
+hist(numerical.prices, main = paste("Histogram of",colnames(price)[25]),xlab = colnames(price[25]))
+abline(v = mean(numerical.prices,na.rm = TRUE), col = "red", lwd = 1)
+abline(v = median(numerical.prices,na.rm = TRUE), col = "blue", lwd = 1)
+for (i in c(6,8,13,14,15,16,17,21,22)){
+  hist(price[,i], main = paste("Histogram of",colnames(price)[i]),xlab = colnames(price[i]))
+  abline(v = mean(price[,i]), col = "red", lwd = 1)
+  abline(v = median(price[,i]), col = "blue", lwd = 1)
+}
+```
+
+```{r EDA table numerical table,echo = FALSE }
+library(knitr)
+min <- apply(price[,c(6,8,13,14,15,16,17,21,22)],2,min)
+max<-apply(price[,c(6,8,13,14,15,16,17,21,22)],2,max) 
+median <-  apply(price[,c(6,8,13,14,15,16,17,21,22)],2,median)
+mean <- apply(price[,c(6,8,13,14,15,16,17,21,22)],2,mean)
+df <- cbind(min,max,median,mean)
+colnames(df) <- c("min","max","median","mean")
+prices.df <- c(min(numerical.prices,na.rm=TRUE),
+               max(numerical.prices,na.rm=TRUE),
+               median(numerical.prices,na.rm=TRUE),
+               mean(numerical.prices,na.rm=TRUE))
+response.rate.df <- c(min(numerical.host.response.rate,na.rm=TRUE),
+               max(numerical.host.response.rate,na.rm=TRUE),
+               median(numerical.host.response.rate,na.rm=TRUE),
+               mean(numerical.host.response.rate,na.rm=TRUE))
+df <- rbind(df,prices.df,response.rate.df)
+knitr::kable(df, digits = 2, caption = "Summary of Numerical Data")
+```
+
+```{r host is super host table,echo=FALSE}
+host.is.superhost.df <- price %>% group_by(host_is_superhost) %>% summarize(count=n()) 
+colnames(host.is.superhost.df) <- c("Response","Count")
+knitr::kable(host.is.superhost.df, digits = 2, caption = "Host is superhost?")
+```
+
+```{r host response time,echo=FALSE}
+# host response time 
+host.response.time.df<- price %>% group_by(host_response_time) %>% summarize(count=n()) 
+colnames(host.response.time.df) <- c("Response","Count")
+#colnames(host.response.time.df) <- c("Within an hour","Within a few hours", "Within a day","A few days or more")
+knitr::kable(host.response.time.df, digits = 2, caption = "Host response time")
+```
+
+```{r host identity,echo=FALSE}
+# host identity verified
+host.identity.verified.df<- price %>% group_by(host_identity_verified) %>% summarize(count=n())
+colnames(host.identity.verified.df) <- c("Host Idntity Verified","Count")
+#rownames(host.identity.verified.df) <- c("False","True")
+knitr::kable(host.identity.verified.df, digits = 2, caption = "Host Identity Verified")
+```
+
+```{r neighborhood,echo=FALSE}
+neighborhood.df <- price %>% group_by(neighbourhood_group_cleansed) %>% summarize(count=n())
+colnames(neighborhood.df) <- c("Neighbourhood","Count")
+knitr::kable(neighborhood.df, digits = 2, caption = "Host Identity Verified")
+```
+```{r Property Type,echo=FALSE}
+property.type.df <- price %>% group_by(property_type) %>% summarize(count=n())
+colnames(property.type.df) <- c("Neighbourhood","Count")
+knitr::kable(property.type.df, digits = 2, caption = "Property Type")
+```
+
+```{r room type,echo=FALSE}
+room.type.df <- price %>% group_by(room_type) %>% summarize(count=n())
+colnames(room.type.df) <- c("Neighbourhood","Count")
+knitr::kable(room.type.df, digits = 2, caption = "Room Type")
+```
+
+```{r bed type,echo=FALSE}
+bed.type.df <- price %>% group_by(bed_type) %>% summarize(count=n())
+colnames(bed.type.df) <- c("Bed Type","Count")
+knitr::kable(bed.type.df, digits = 2, caption = "Bed Type")
+```
+
+```{r instant bookable,echo=FALSE}
+instant.bookable.df <- price %>% group_by(instant_bookable) %>% summarize(count=n())
+colnames(instant.bookable.df) <- c("Instant Bookable","Count")
+knitr::kable(instant.bookable.df, digits = 2, caption = "Instant Bookable")
+```
+```{r cancel policy,echo=FALSE}
+cancel.policy.df <- price %>% group_by(cancellation_policy) %>% summarize(count=n())
+colnames(cancel.policy.df) <- c("Instant Bookable","Count")
+knitr::kable(cancel.policy.df, digits = 2, caption = "Instant Bookable")
+```
+
+```{r}
+colnames(price[,-c(6,8,13,14,15,16,17,21,22)])
+price$cleaning_fee
+```
+
+```{r PCA}
+price
+# recode host response time 
+host.response.time.df <- structure(list(V1 = unique(price$host_response_time),
+    V2 = c(3,2,1,0)), .Names = c("V1", 
+    "V2"), class = "data.frame", row.names = c("1","2","3","4"))
+price$host_response_time_recoded <- host.response.time.df$V2[match(as.character(price$host_response_time), as.character(host.response.time.df$V1))]
+price$host_response_time_recoded
+
+# recode host response rate 
+price$host_response_rate_recoded <- as.numeric(sub("%","",price$host_response_rate))/100
+price$host_response_rate_recoded
+
+# recode host identity verified 
+host.identity.verified.df <- structure(list(V1 = c("t","f"),
+    V2 = c(1,0)), .Names = c("V1", 
+    "V2"), class = "data.frame", row.names = c("1","2"))
+price$host_identity_verified_recoded <- host.identity.verified.df$V2[match(as.character(price$host_identity_verified), as.character(host.identity.verified.df$V1))]
+price$host_identity_verified_recoded
+
+# recode price
+price$price_recoded <-  as.numeric(gsub("\\$", "", price$price))
+price$price_recoded[is.na(price$price_recoded)] <- 0
+
+# recode instant bookable 
+instant.bookable.df <- structure(list(V1 = c("t","f"),
+    V2 = c(1,0)), .Names = c("V1", 
+    "V2"), class = "data.frame", row.names = c("1","2"))
+price$instant_bookable_recoded <- instant.bookable.df$V2[match(as.character(price$instant_bookable), as.character(instant.bookable.df$V1))]
+price$instant_bookable_recoded
+
+colnames(price)
+pca.obj <- prcomp(price[,c(12,13,14,15,16,17,21,22,26:30)], center = TRUE, scale = TRUE)
+score1 <- pca.obj$x[,'PC1']
+score2 <- pca.obj$x[,'PC2']
+plot(x = score1, y = score2)
+```
+
+```{r}
+colnames(price)
+max(price[,30])
+```
+
