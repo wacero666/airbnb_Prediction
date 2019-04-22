@@ -75,23 +75,6 @@ ggplot(data = price, aes(x = factor(property_type), y = price)) + geom_boxplot()
 ```
 
 
-
-
-```{r}
-library(gridExtra)
-
- ggplot(data = price, aes(x = factor(room_type), y = price)) + geom_boxplot() + labs(x = "room_type", y="price") + ylim(0, 500)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-ggplot(data = price, aes(x = factor(bed_type), y = price)) + geom_boxplot() + labs(x = "bed_type", y="price") + ylim(0, 500)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-ggplot(data = price, aes(x = factor(instant_bookable), y = price)) + geom_boxplot() + labs(x = "instant_bookable", y="price") + ylim(0, 500)+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-ggplot(data = price, aes(x = factor(cancellation_policy), y = price)) + geom_boxplot() + labs(x = "cancellation_policy", y="price") +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-
-```
-
 # Popular_Landmarks
 
 ```{r}
@@ -111,27 +94,66 @@ add_pop <- function(yourData){
   + ifelse(distm(Kerry_Park, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0))
   return(total_nearby_landmarks)
 }
-```
 
-```{r}
 yourData <-cbind(review$longitude, review$latitude)
 total_nearby_landmarks_review <- add_pop(yourData)
 review$total_nearby_landmarks <- total_nearby_landmarks_review[1,]
 yourData_price <-cbind(price$longitude, price$latitude)
 total_nearby_landmarks_price<- add_pop(yourData_price)
 price$total_nearby_landmarks <- total_nearby_landmarks_price[1,]
-
 ```
 
+# Split Train and Validation set before EDA(with response)
 ```{r}
-
-new_price <- price[,-c(9,12,13,19)]
-write.csv(new_price, "new_price.csv")
+set.seed(1)
+n_val <- floor(0.2*nrow(price))
+n_train <- nrow(price) - n_val
+idx <- sample(1:nrow(price), n_train, replace=FALSE)
+price_train <- price[idx,]
+price_val <- price[-idx,]
 ```
 
 
 ```{r}
-ggplot(data = new_price, aes(x = factor(total_nearby_landmarks), y = price)) + geom_boxplot() + labs(x = "total_nearby_landmarks", y="price") + ylim(0, 500)+
+library(gridExtra)
+
+ ggplot(data = price_train, aes(x = factor(room_type), y = price)) + geom_boxplot() + labs(x = "room_type", y="price") + ylim(0, 500)+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(data = price_train, aes(x = factor(bed_type), y = price)) + geom_boxplot() + labs(x = "bed_type", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(data = price_train, aes(x = factor(instant_bookable), y = price)) + geom_boxplot() + labs(x = "instant_bookable", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(data = price_train, aes(x = factor(cancellation_policy), y = price)) + geom_boxplot() + labs(x = "cancellation_policy", y="price") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+
+
+```{r}
+
+price_train <- price_train[,-c(9,12,13,19)]
+write.csv(price_train, "price_train.csv")
+price_val <- price_val[,-c(9,12,13,19)]
+write.csv(price_val, "price_val.csv")
+```
+
+
+```{r}
+ggplot(data = price_train, aes(x = factor(total_nearby_landmarks), y = price)) + geom_boxplot() + labs(x = "total_nearby_landmarks", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+
+
+```{r}
+colnames(price_train)
+```
+
+
+```{r}
+cv.glmnet(y=price_train$price, x=as.matrix(price_train[,c(4,6,8,16)]), type.measure="mse", nfolds=5, alpha = 0.2)
 ```
 
