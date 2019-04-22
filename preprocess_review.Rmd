@@ -27,6 +27,71 @@ dim(df)
 ```
 
 
+
+
+
+
+
+
+
+```{r}
+boxplot(price$price, ylab="price")
+```
+
+
+# Preprocess price
+```{r}
+price <- read.csv("price.csv")
+price <- price[price$price!=0,]
+price <- price[price$price!=max(price$price),]
+price <- price[price$id != 935671,]
+#remove four rows
+
+price <- mutate(price, 
+            #host_is_superhost = ifelse(`host_is_superhost` == "f", 0, 1),
+            #host_identity_verified = ifelse(`host_identity_verified` == "f",0, 1),
+            In_Downtown = ifelse(`neighbourhood_group_cleansed` =="Downtown", 1, 0),
+            In_Delridge = ifelse(`neighbourhood_group_cleansed`=="Delridge", 1, 0),
+            In_Lake_City = ifelse(`neighbourhood_group_cleansed`=="Lake City", 1,0))
+
+
+
+num_amenities <- numeric(0)
+for (i in 1:range(nrow(price))){
+   num_amenities[i]<-length(strsplit(as.character(price$amenities[i]), ",")[[1]])
+}
+price$num_amenities <- num_amenities
+
+
+```
+
+```{r}
+ggplot(data = price, aes(x = factor(property_type), y = price)) + geom_boxplot() + labs(x = "property_type", y="price") + ylim(0, 600)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+prop_type <- c("Apartment", "Condominium", "Guesthouse", "House", "Townhouse", "Serviced apartment", "Guest suite")
+levels(price$property_type)[!(levels(price$property_type) %in% prop_type)] <- rep("Other", times=20)
+ggplot(data = price, aes(x = factor(property_type), y = price)) + geom_boxplot() + labs(x = "property_type", y="price") + ylim(0, 600)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+
+
+```{r}
+library(gridExtra)
+
+ ggplot(data = price, aes(x = factor(room_type), y = price)) + geom_boxplot() + labs(x = "room_type", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(data = price, aes(x = factor(bed_type), y = price)) + geom_boxplot() + labs(x = "bed_type", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(data = price, aes(x = factor(instant_bookable), y = price)) + geom_boxplot() + labs(x = "instant_bookable", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(data = price, aes(x = factor(cancellation_policy), y = price)) + geom_boxplot() + labs(x = "cancellation_policy", y="price") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
 # Popular_Landmarks
 
 ```{r}
@@ -58,9 +123,15 @@ price$total_nearby_landmarks <- total_nearby_landmarks_price[1,]
 
 ```
 
+```{r}
+
+new_price <- price[,-c(9,12,13,19)]
+write.csv(new_price, "new_price.csv")
+```
 
 
-
-
-
+```{r}
+ggplot(data = new_price, aes(x = factor(total_nearby_landmarks), y = price)) + geom_boxplot() + labs(x = "total_nearby_landmarks", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
 
