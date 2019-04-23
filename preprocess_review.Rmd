@@ -66,6 +66,7 @@ price$num_amenities <- num_amenities
 ```
 
 ```{r}
+#change property type
 ggplot(data = price, aes(x = factor(property_type), y = price)) + geom_boxplot() + labs(x = "property_type", y="price") + ylim(0, 600)+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 prop_type <- c("Apartment", "Condominium", "Guesthouse", "House", "Townhouse", "Serviced apartment", "Guest suite")
@@ -101,6 +102,8 @@ review$total_nearby_landmarks <- total_nearby_landmarks_review[1,]
 yourData_price <-cbind(price$longitude, price$latitude)
 total_nearby_landmarks_price<- add_pop(yourData_price)
 price$total_nearby_landmarks <- total_nearby_landmarks_price[1,]
+#change couch in bed_type to real_bed
+levels(price$bed_type)[(levels(price$bed_type) == "Couch")] <- "Real Bed"
 ```
 
 # Split Train and Validation set before EDA(with response)
@@ -121,6 +124,9 @@ library(gridExtra)
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggplot(data = price_train, aes(x = factor(bed_type), y = price)) + geom_boxplot() + labs(x = "bed_type", y="price") + ylim(0, 500)+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggplot(data = price_train, aes(x = factor(bed_type), y = price)) + geom_boxplot() + labs(x = "bed_type", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggplot(data = price_train, aes(x = factor(instant_bookable), y = price)) + geom_boxplot() + labs(x = "instant_bookable", y="price") + ylim(0, 500)+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ggplot(data = price_train, aes(x = factor(cancellation_policy), y = price)) + geom_boxplot() + labs(x = "cancellation_policy", y="price") +
@@ -129,14 +135,17 @@ ggplot(data = price_train, aes(x = factor(cancellation_policy), y = price)) + ge
 
 ```
 
+```{r}
+colnames(price_val)
+```
 
 
 ```{r}
 
 price_train <- price_train[,-c(9,12,13,19)]
-write.csv(price_train, "price_train.csv")
+write.csv(price_train, "price_train.csv", row.names = FALSE)
 price_val <- price_val[,-c(9,12,13,19)]
-write.csv(price_val, "price_val.csv")
+write.csv(price_val, "price_val.csv", row.names = FALSE)
 ```
 
 
@@ -145,15 +154,56 @@ ggplot(data = price_train, aes(x = factor(total_nearby_landmarks), y = price)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
+```{r}
+# base line lm
+base_model <- lm(price ~ . , data= price_train[, -c(1,2)])
+mean((base_model$fit - price_train$price)^2)
+mean((predict(base_model,price_val[, -c(1,2)]) - price_val$price)^2)
+```
+
+
 
 
 
 ```{r}
-colnames(price_train)
+#train & val
+x_train <- model.matrix(~.,price_train[, -c(1,2, 21)])
+MSE_val <- numeric(0)
+MSE_train <- numeric(0)
+lambda_min <- numeric(0)
+x_val <- model.matrix(~.,price_val[, -c(1,2,21)])
+for (i in 1:11){
+  model1 <- cv.glmnet(y=price_train$price, x=x_train, alpha = seq(0,1,by = 0.1)[i],family="gaussian")
+  lambda_min[i] <- model1$lambda.min
+  MSE_train[i] = mean((predict(model1, s = model1$lambda.min, newx=x_train)-price_train$price)^2)
+  MSE_val[i] = mean((predict(model1, s = model1$lambda.min, newx=x_val) - price_val$price)^2) 
+}
+
+
+```
+
+```{r}
+
+plot(seq(0,1,by = 0.1), MSE_train, ylim=c(min(MSE_train), max(MSE_val)), type = "o")
+lines(seq(0,1,by = 0.1), MSE_val, type = "o")
 ```
 
 
 ```{r}
-cv.glmnet(y=price_train$price, x=as.matrix(price_train[,c(4,6,8,16)]), type.measure="mse", nfolds=5, alpha = 0.2)
+#test set
+price_test <- read.csv("price_test_clean.csv")
+model_select <- glmnet(y=price_train$price, x= x_train, alpha = 0, lambda = lambda_min[1], family="gaussian")
+
+x_test <- model.matrix(~.,price_test[, -c(1,2,21)])
+
+mean((predict(model_select, x_test) - price_test$price)^2)
 ```
+
+
+
+
+
+
+
+
 
