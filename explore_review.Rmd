@@ -1,0 +1,177 @@
+---
+title: "Untitled"
+author: "Minyue Fan"
+date: "4/12/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r,echo=FALSE}
+library("dplyr")
+review <- read.csv("review.csv")
+```
+
+```{r}
+library(geosphere)
+add_pop <- function(yourData){
+  Museum_of_Pop_Culture <- c(-122.3481, 47.6215) #long, lati
+  Pike_Place_Market <- c(-122.3422, 47.6097)
+  Olympic_Sculpture_Park <- c(-122.3553, 47.6166)
+  Seattle_Great_Wheel <- c(-122.3425, 47.6062)
+  Seattle_Art_Museum <- c(-122.3381, 47.6073)
+  Kerry_Park <-c(-122.3599, 47.6295)
+  meter_to_mile = 0.000621371
+  total_nearby_landmarks <- (ifelse(distm(Museum_of_Pop_Culture, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0) + ifelse(distm(Pike_Place_Market, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Olympic_Sculpture_Park, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Seattle_Great_Wheel, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Seattle_Art_Museum, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Kerry_Park, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0))
+  return(total_nearby_landmarks)
+}
+```
+
+```{r}
+yourData <-cbind(review$longitude, review$latitude)
+total_nearby_landmarks_review <- add_pop(yourData)
+review$total_nearby_landmarks <- total_nearby_landmarks_review[1,]
+```
+
+```{r preprocess continuous variable, echo = FALSE}
+colnames(review)
+numerical.reviews <-  as.numeric(gsub("\\$", "", review$review))
+mean(numerical.reviews,na.rm = TRUE)
+numerical.host.response.rate <- as.numeric(sub("%","",review$host_response_rate))/100
+
+```
+
+```{r histograms for continuous variables, echo =FALSE}
+# boxplot
+par(mfrow=c(1,3))
+# host response rate
+hist(numerical.host.response.rate, main = paste("Histogram of",colnames(review)[4]),xlab = colnames(review[4]))
+abline(v = mean(numerical.host.response.rate,na.rm = TRUE), col = "red", lwd = 1)
+abline(v = median(numerical.host.response.rate,na.rm = TRUE), col = "blue", lwd = 1)
+# reviews 
+hist(numerical.reviews, main = paste("Histogram of",colnames(review)[25]),xlab = colnames(review[25]))
+abline(v = mean(numerical.reviews,na.rm = TRUE), col = "red", lwd = 1)
+abline(v = median(numerical.reviews,na.rm = TRUE), col = "blue", lwd = 1)
+for (i in c(7,11,12,13,15,16,17,22,23,26)){
+  hist(review[,i], main = paste("Histogram of",colnames(review)[i]),xlab = colnames(review[i]))
+  abline(v = mean(review[,i]), col = "red", lwd = 1)
+  abline(v = median(review[,i]), col = "blue", lwd = 1)
+}
+colnames(review)
+```
+
+```{r EDA table numerical table,echo = FALSE }
+library(knitr)
+min <- apply(review[,c(6,8,13,14,15,16,17,21,22)],2,min)
+max<-apply(review[,c(6,8,13,14,15,16,17,21,22)],2,max) 
+median <-  apply(review[,c(6,8,13,14,15,16,17,21,22)],2,median)
+mean <- apply(review[,c(6,8,13,14,15,16,17,21,22)],2,mean)
+df <- cbind(min,max,median,mean)
+colnames(df) <- c("min","max","median","mean")
+reviews.df <- c(min(numerical.reviews,na.rm=TRUE),
+               max(numerical.reviews,na.rm=TRUE),
+               median(numerical.reviews,na.rm=TRUE),
+               mean(numerical.reviews,na.rm=TRUE))
+response.rate.df <- c(min(numerical.host.response.rate,na.rm=TRUE),
+               max(numerical.host.response.rate,na.rm=TRUE),
+               median(numerical.host.response.rate,na.rm=TRUE),
+               mean(numerical.host.response.rate,na.rm=TRUE))
+df <- rbind(df,reviews.df,response.rate.df)
+knitr::kable(df, digits = 2, caption = "Summary of Numerical Data")
+```
+
+```{r host is super host table,echo=FALSE}
+host.is.superhost.df <- review %>% group_by(host_is_superhost) %>% summarize(count=n()) 
+colnames(host.is.superhost.df) <- c("Response","Count")
+knitr::kable(host.is.superhost.df, digits = 2, caption = "Host is superhost?")
+```
+
+```{r host response time,echo=FALSE}
+# host response time 
+host.response.time.df<- review %>% group_by(host_response_time) %>% summarize(count=n()) 
+colnames(host.response.time.df) <- c("Response","Count")
+#colnames(host.response.time.df) <- c("Within an hour","Within a few hours", "Within a day","A few days or more")
+knitr::kable(host.response.time.df, digits = 2, caption = "Host response time")
+```
+
+```{r host identity,echo=FALSE}
+# host identity verified
+host.identity.verified.df<- review %>% group_by(host_identity_verified) %>% summarize(count=n())
+colnames(host.identity.verified.df) <- c("Host Idntity Verified","Count")
+#rownames(host.identity.verified.df) <- c("False","True")
+knitr::kable(host.identity.verified.df, digits = 2, caption = "Host Identity Verified")
+```
+
+```{r neighborhood,echo=FALSE}
+neighborhood.df <- review %>% group_by(neighbourhood_group_cleansed) %>% summarize(count=n())
+colnames(neighborhood.df) <- c("Neighbourhood","Count")
+knitr::kable(neighborhood.df, digits = 2, caption = "Host Identity Verified")
+```
+```{r Property Type,echo=FALSE}
+property.type.df <- review %>% group_by(property_type) %>% summarize(count=n())
+colnames(property.type.df) <- c("Neighbourhood","Count")
+knitr::kable(property.type.df, digits = 2, caption = "Property Type")
+```
+
+```{r room type,echo=FALSE}
+room.type.df <- review %>% group_by(room_type) %>% summarize(count=n())
+colnames(room.type.df) <- c("Neighbourhood","Count")
+knitr::kable(room.type.df, digits = 2, caption = "Room Type")
+```
+
+```{r bed type,echo=FALSE}
+bed.type.df <- review %>% group_by(bed_type) %>% summarize(count=n())
+colnames(bed.type.df) <- c("Bed Type","Count")
+knitr::kable(bed.type.df, digits = 2, caption = "Bed Type")
+```
+
+
+```{r PCA}
+review
+# recode host response time 
+host.response.time.df <- structure(list(V1 = unique(review$host_response_time),
+    V2 = c(3,2,1,0)), .Names = c("V1", 
+    "V2"), class = "data.frame", row.names = c("1","2","3","4"))
+review$host_response_time_recoded <- host.response.time.df$V2[match(as.character(review$host_response_time), as.character(host.response.time.df$V1))]
+review$host_response_time_recoded
+
+ # recode host response rate 
+review$host_response_rate_recoded <- as.numeric(sub("%","",review$host_response_rate))/100
+review$host_response_rate_recoded
+
+# recode host identity verified 
+host.identity.verified.df <- structure(list(V1 = c("t","f"),
+    V2 = c(1,0)), .Names = c("V1", 
+    "V2"), class = "data.frame", row.names = c("1","2"))
+review$host_identity_verified_recoded <- host.identity.verified.df$V2[match(as.character(review$host_identity_verified), as.character(host.identity.verified.df$V1))]
+review$host_identity_verified_recoded
+
+# recode price
+review$price_recoded <-  as.numeric(gsub("\\$", "", review$price))
+review$price_recoded[is.na(review$price_recoded)] <- 0
+
+# recode instant bookable 
+instant.bookable.df <- structure(list(V1 = c("t","f"),
+    V2 = c(1,0)), .Names = c("V1", 
+    "V2"), class = "data.frame", row.names = c("1","2"))
+review$instant_bookable_recoded <- instant.bookable.df$V2[match(as.character(review$instant_bookable), as.character(instant.bookable.df$V1))]
+review$instant_bookable_recoded
+
+colnames(review)
+review[,c(26:32)]
+pca.obj <- prcomp(review[,c(12,13,14,15,16,17,22,26:33)], center = TRUE, scale = TRUE)
+score1 <- pca.obj$x[,'PC1']
+score2 <- pca.obj$x[,'PC2']
+plot(x = score1, y = score2,col = review$review_scores_rating + 1)
+pca.sds <- pca.obj$sdev
+sum(pca.sds[1:2]^2)/sum(pca.sds^2)
+total.var <- sum(pca.sds^2)
+```
