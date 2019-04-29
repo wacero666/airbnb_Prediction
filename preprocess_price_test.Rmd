@@ -13,16 +13,11 @@ price <- read.csv("price_test.csv")
 colnames(price)
 ```
 
-```{r}
-colnames(price)
-df <- merge(price,review,by="id")
-```
+
 
 ```{r}
 # this is a n>p question.
 dim(price)
-dim(review)
-dim(df)
 ```
 
 
@@ -33,18 +28,12 @@ dim(df)
 
 
 
-```{r}
-boxplot(price$price, ylab="price")
-```
+
 
 
 # Preprocess price
 ```{r}
-price <- read.csv("price.csv")
-price <- price[price$price!=0,]
-price <- price[price$price!=max(price$price),]
-price <- price[price$id != 935671,]
-#remove four rows
+
 
 price <- mutate(price, 
             #host_is_superhost = ifelse(`host_is_superhost` == "f", 0, 1),
@@ -68,8 +57,8 @@ price$num_amenities <- num_amenities
 ```{r}
 library(dplyr)
 #change property type
-
-levels(price$property_type)[!(levels(price$property_type) %in% prop_type)] <- rep("Other", times=20)
+prop_type <- c("Apartment", "Condominium", "Guesthouse", "House", "Townhouse", "Serviced apartment", "Guest suite")
+levels(price$property_type)[!(levels(price$property_type) %in% prop_type)] <- rep("Other", times=15)
 
 ```
 
@@ -108,17 +97,19 @@ levels(price$bed_type)[(levels(price$bed_type) == "Couch")] <- "Real Bed"
 
 ```{r}
 
-price_test <- price[,-c(9,12,13,19)]
+price_test <- price[,-c(9,12,13,19,22)]
 write.csv(price_test, "price_test_cleaned.csv", row.names = FALSE)
 
 ```
 
 
 ```{r}
-test <- read.csv("price_test_clean.csv")
+test <- read.csv("price_test_cleaned.csv")
+dim(test)
 ```
 ```{r}
 train <- read.csv("price_train.csv")
+dim(train)
 ```
 
 
