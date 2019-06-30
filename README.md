@@ -1,6 +1,6 @@
 # airbnb_PricePrediction
 
-Welcome to our AirBnB prediction models using R!
+Welcome to our AirBnB prediction project using R!
 
 Travel related datasets have always brought me a lot of excitment to explore. In this project, given the related information of each listing on Airbnb, we trained our models predict price and desirability, which are regression and classification models respectively. 
 
