@@ -1,0 +1,52 @@
+---
+title: "review_final_model"
+author: "Wanhe Zhao"
+date: "4/30/2019"
+output: html_document
+---
+
+```{r}
+test <- read.csv("review_test_clean.csv")
+sparse_matrix_test <- sparse.model.matrix(review_scores_rating ~.-1, data = test[,-1])
+
+library(xgboost)
+bst1 <- xgb.load('xgb1.model')
+pred <- predict(bst1, sparse_matrix_test[,selected_var])
+review.guesses <-  ifelse(pred>0.5, 1, 0)
+length(review.guesses)
+```
+
+```{r}
+review.acc <- 0.1150716	 
+```
+
+
+```{r}
+#check 
+dim(read.csv("review_test.csv"))
+```
+
+
+
+
+
+```{r}
+save(list=c("review.guesses",
+ "review.acc"),file="./stat462final.RData")
+```
+
+```{r}
+load("stat462final.RData")
+```
+
+```{r}
+ls()
+```
+
+
+
+
+
+
+
+

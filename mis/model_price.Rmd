@@ -1,0 +1,113 @@
+---
+title: "Model_price"
+author: "Wanhe Zhao"
+date: "4/24/2019"
+output: html_document
+---
+
+```{r}
+val <- read.csv("price_val.csv")
+train <- read.csv("price_train.csv")
+```
+
+```{r}
+dim(val) 
+dim(train)
+```
+
+```{r}
+colnames(train)
+```
+
+```{r}
+#EDA to eliminate variables
+library(ggplot2)
+ggplot(data = train, aes(x = factor(bed_type), y = price)) + geom_boxplot() + labs(x = "bed_type", y="price") + ylim(0, 500)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+#Only real bed has higher price in average. We decide to include information for whether a listing as "IS_Real_Bed"
+```
+```{r}
+hist(train$host_listings_count) #majority of host
+```
+
+
+```{r}
+plot(train$price ~ train$host_is_superhost)
+```
+
+
+
+
+
+```{r}
+IS_Real_Bed <- ifelse(train$bed_type == "Real Bed", 1, 0)
+
+new_train <- data.frame(IS_Real_Bed = IS_Real_Bed)
+```
+
+```{r}
+new_train$host_response_rate = train$host_response_rate
+new_train$host_response_time = train$host_response_time
+new_train$host_identity_verified = train$host_identity_verified
+new_train$accommodates = train$accommodates
+new_train$room_type = train$room_type
+new_train$bedrooms = train$bedrooms
+new_train$beds = train$beds
+new_train$cleaning_fee = train$cleaning_fee
+new_train$minimum_nights = train$minimum_nights
+new_train$instant_bookable = train$instant_bookable
+new_train$In_Downtown = train$In_Downtown
+new_train$In_Delridge = train$In_Delridge
+new_train$In_Lake_City = train$In_Lake_City
+```
+
+```{r}
+IS_Real_Bed <- ifelse(val$bed_type == "Real Bed", 1, 0)
+new_val <- data.frame(IS_Real_Bed = IS_Real_Bed)
+new_val$host_response_rate = val$host_response_rate
+new_val$host_response_time = val$host_response_time
+new_val$host_identity_verified = val$host_identity_verified
+new_val$accommodates = val$accommodates
+new_val$room_type = val$room_type
+new_val$bedrooms = val$bedrooms
+new_val$beds = val$beds
+new_val$cleaning_fee = val$cleaning_fee
+new_val$minimum_nights = val$minimum_nights
+new_val$instant_bookable = val$instant_bookable
+new_val$In_Downtown = val$In_Downtown
+new_val$In_Delridge = val$In_Delridge
+new_val$In_Lake_City = val$In_Lake_City
+```
+
+```{r}
+x_train <- model.matrix(~.,new_train)
+MSE_val <- numeric(0)
+MSE_train <- numeric(0)
+lambda_min <- numeric(0)
+x_val <- model.matrix(~.,new_val)
+library(glmnet)
+for (i in 1:11){
+  model1 <- cv.glmnet(y=train$price, x=x_train, alpha = seq(0,1,by = 0.1)[i],family="gaussian")
+  lambda_min[i] <- model1$lambda.min
+  MSE_train[i] = mean((predict(model1, s = model1$lambda.min, newx=x_train)-train$price)^2)
+  MSE_val[i] = mean((predict(model1, s = model1$lambda.min, newx=x_val) - val$price)^2) 
+}
+```
+
+```{r}
+min(MSE_train)
+min(MSE_val)
+```
+
+
+```{r}
+plot(seq(0,1,by = 0.1), MSE_train, ylim=c(min(MSE_train), max(MSE_val)), type = "o")
+lines(seq(0,1,by = 0.1), MSE_val, type = "o")
+```
+
+
+
+
+
+
+

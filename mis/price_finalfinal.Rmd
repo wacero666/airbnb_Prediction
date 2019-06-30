@@ -1,0 +1,19 @@
+---
+title: "price_realfinal"
+author: "Minyue Fan"
+date: "4/29/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# read in libraries and files
+```{r}
+library(dplyr)
+library(randomForest)
+price <- read.csv("price.csv")
+test <- read.csv("price_test.csv")
+```
+

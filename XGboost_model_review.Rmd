@@ -1,0 +1,634 @@
+---
+title: "Model_review"
+author: "Wanhe Zhao"
+date: "4/29/2019"
+output: html_document
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+train <- read.csv("review_train.csv")
+val <- read.csv("review_val.csv")
+test <- read.csv("review_test_clean.csv")
+
+dim(train)
+dim(val)
+full_data <- rbind(train, val)
+dim(full_data)
+```
+
+```{r}
+round(mean(full_data$review_scores_rating), 3)*100
+```
+
+```{r message=FALSE, warning=FALSE}
+library(pROC)
+#https://www.rdocumentation.org/packages/pROC/versions/1.14.0
+```
+```{r}
+get_roc_curve = function(perf){
+  roc1 <- roc(perf$predict,
+            perf$actual, percent=TRUE,
+            # arguments for auc
+            partial.auc=c(100, 90), partial.auc.correct=TRUE,
+            partial.auc.focus="sens",
+            # arguments for ci
+            ci=TRUE, boot.n=100, ci.alpha=0.9, stratified=FALSE,
+            # arguments for plot
+            plot=TRUE, auc.polygon=TRUE, max.auc.polygon=TRUE, grid=TRUE,
+            print.auc=TRUE, show.thres=TRUE)
+
+    # Add to an existing plot. Beware of 'percent' specification!
+  roc2 <- roc(perf$predict, perf$actual,
+          plot=TRUE, add=TRUE, percent=roc1$percent)
+}
+
+```
+
+# xgboost 
+
+```{r}
+library(xgboost)
+
+```
+
+
+
+
+```{r}
+#try xg_boost
+sparse_matrix <- sparse.model.matrix(review_scores_rating ~.-1, data = full_data[,-1])
+sparse_matrix_test <- sparse.model.matrix(review_scores_rating ~.-1, data = test[,-1])
+
+```
+
+```{r}
+dtrain <- xgb.DMatrix(data = sparse_matrix, label = full_data$review_scores_rating)
+```
+
+```{r}
+##Hyperparameter search using train
+label <- as.factor(full_data$review_scores_rating)
+
+# set up the cross-validated hyper-parameter search
+
+##base line
+searchGridSubCol1 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth = 3, # 3-10. 
+  gamma = 0, # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.5, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+#Tune max_depth and min_child_weight
+searchGridSubCol2 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth = c(2,3,4,5),# 3-10. 
+  gamma = 0, # 0.1-0.2 
+  min_child = c(1,3,5), # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.5, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+#Tune Gamma
+searchGridSubCol3 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth =5,# 3-10. 
+  gamma = seq(0,0.5, by=0.1), # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.5, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+#Step 4: Tune subsample and colsample_bytree
+searchGridSubCol4 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth =5,# 3-10. 
+  gamma = 0, # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = seq(0.6, 1, by=0.1), #0.5-0.9.
+  subsample = seq(0.6, 1, by=0.1), 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+#Step 5: Tune subsample and colsample_bytree
+searchGridSubCol5 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth =5,# 3-10. 
+  gamma = 0, # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.6, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = c(1,2,3,4,5),
+  seed=27
+)
+
+ntrees <- 500
+
+system.time(
+rmseErrorsHyperparameters5 <- apply(searchGridSubCol5, 1, function(parameterList){
+  
+  #Extract Parameters to test
+  currentSubsampleRate <- parameterList[["subsample"]]
+  currentColsampleRate <- parameterList[["colsample_bytree"]]
+  currentDepth <- parameterList[["max_depth"]]
+  currentEta <- parameterList[["eta"]]
+  currentMinChild <- parameterList[["min_child"]]
+  currentPosW <- parameterList[["scale_pos_weight"]]
+  currentGamma <- parameterList[["gamma"]]
+  xgboostModelCV <- xgb.cv(data =  dtrain, nrounds = ntrees, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       save_period = 0,
+                       gamma = currentGamma,
+                       "max.depth" = currentDepth, "eta" = currentEta,  "scale_pos_weight" =  currentPosW,                  
+                     "subsample" = currentSubsampleRate, "colsample_bytree" = currentColsampleRate, 
+                     print_every_n = 10, "min_child_weight" = currentMinChild, booster = "gbtree")
+  
+  xvalidationScores <- as.data.frame(xgboostModelCV$evaluation_log)
+  rmse <- tail(xvalidationScores$test_error_mean, 1)
+  test_auc <- tail(xvalidationScores$test_auc_mean, 1)
+  trmse <- tail(xvalidationScores$train_error_mean,1)
+  train_auc <- tail(xvalidationScores$train_auc_mean, 1)
+  # best_t <- xvalidationScores$best_score
+  # best_i <-  xvalidationScores$best_iteration
+  output <- return(c(trmse,rmse, train_auc, test_auc,currentPosW))}))
+
+```
+
+
+
+
+```{r}
+output <- as.data.frame(t(rmseErrorsHyperparameters))
+varnames <- c("Train_Error", "Test_Error",  "SubSampRate", "ColSampRate", "Depth", "eta", "currentMinChild","currentPosW")
+names(output) <- varnames
+output
+```
+
+
+```{r}
+output2 <- as.data.frame(t(rmseErrorsHyperparameters2))
+varnames <- c("Train_Error", "Test_Error",  "SubSampRate", "ColSampRate", "Depth", "eta", "currentMinChild","currentPosW")
+names(output2) <- varnames
+output2
+#child is 1 depth 5 (overfitting) but best train result. 
+```
+
+```{r}
+output3 <- as.data.frame(t(rmseErrorsHyperparameters3))
+varnames <- c("Train_Error", "Test_Error",  "currentGamma")
+names(output3) <- varnames
+output3
+#child is 1 depth 5 (overfitting) but best train result. 
+#gamma = 0 
+```
+
+
+
+
+```{r}
+output4 <- as.data.frame(t(rmseErrorsHyperparameters4))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc","currentColsampleRate", "currentSubsampleRate")
+names(output4) <- varnames
+output4
+#child is 1 depth 5 (overfitting) but best train result. 
+#gamma = 0 
+#since they all show pretty similar we decide to use 0.9, 0.6 to avoid overfitting in future
+```
+
+```{r}
+output5 <- as.data.frame(t(rmseErrorsHyperparameters5))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc","weight")
+names(output5) <- varnames
+output5
+#child is 1 depth 5 (overfitting) but best train result. 
+#gamma = 0 
+#since they all show pretty similar we decide to use 0.9, 0.6 to avoid overfitting in future
+```
+
+```{r}
+plot_mis_rate = function(bst){
+  df = bst$evaluation_log
+  plot(df$iter, df$test_error_mean, col="red", type="l",  ylim= c(0.05,0.2), ylab="miscalssification rate", xlab="epoch")
+  points(df$iter[which.min(df$test_error_mean)], min(df$test_error_mean), col="green", pch=19)
+  lines(df$iter, df$train_error_mean, col="blue") 
+  legend("topright", legend = c("train", "val"), col=c("blue", "red"), lty=c(1,1))
+}
+
+```
+```{r}
+ntrees <- 500
+bst <- xgb.cv(data =  dtrain, nrounds = ntrees, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       gamma = 0, save_period=1,
+                       "max.depth" = 5, "eta" = 0.1,  "scale_pos_weight" =  1,                  
+                     "subsample" = 0.5, "colsample_bytree" = 0.5, stratified = TRUE,early_stopping_rounds = 10,
+                     print_every_n = 10, "min_child_weight" = 1, booster = "gbtree")
+plot_mis_rate(bst)
+
+
+
+
+```
+```{r}
+
+```
+
+
+
+```{r}
+bst<- xgboost(data =  dtrain, nrounds = ntrees, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       gamma = 0, save_period=1,
+                       "max.depth" = 5, "eta" = 0.1,  "scale_pos_weight" =  1,                  
+                     "subsample" = 0.5, "colsample_bytree" = 0.5, stratified = TRUE,early_stopping_rounds = 10,
+                     print_every_n = 10, "min_child_weight" = 1, booster = "gbtree")
+bst
+```
+
+```{r}
+xgb.save(bst, 'xgb.model')
+bst <- xgb.load('xgb.model')
+
+pred <- predict(bst, sparse_matrix_test)
+test_pred <-  ifelse(pred>0.5, 1, 0)
+mean(test_pred != test$review_scores_rating)
+```
+
+# select varibales since model not generalized enough
+
+```{r}
+#try xg_boost
+full_data_rd <- full_data[,-1]
+full_data_rd$rd <- as.factor(sample(c(1,2,3), 4041, replace=TRUE))
+sparse_matrix_rd <- sparse.model.matrix(review_scores_rating ~.-1, data = full_data_rd)
+#sparse_matrix_test <- sparse.model.matrix(review_scores_rating ~.-1, data = test[,-1])
+
+```
+
+```{r}
+dtrain <- xgb.DMatrix(data = sparse_matrix_rd, label = full_data$review_scores_rating)
+```
+
+
+```{r}
+ntrees <- 500
+bst <- xgboost(data =  dtrain, nrounds = ntrees, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       save_period = 0,
+                       gamma = 0,
+                       "max.depth" = 5, "eta" = 0.1,  "scale_pos_weight" =  1,                  
+                     "subsample" = 0.5, "colsample_bytree" = 0.5, stratified = TRUE,early_stopping_rounds = 10,
+                     print_every_n = 10, "min_child_weight" = 1, booster = "gbtree")
+
+mat <- xgb.importance (feature_names = colnames(dtrain),model = bst)
+
+# xgb.save(bst, 'xgb.model')
+# bst <- xgb.load('xgb.model')
+
+# pred <- predict(bst, sparse_matrix_test)
+# test_pred <-  ifelse(pred>0.5, 1, 0)
+# mean(test_pred != test$review_scores_rating)
+```
+
+
+```{r}
+png("var_impor.png", width = 900, height = 900)
+xgb.plot.importance (importance_matrix = mat[1:25]) 
+dev.off()
+```
+
+```{r}
+mat$Feature[-c(3:40)]
+```
+
+
+
+
+
+```{r}
+selected_var <- mat$Feature[-c(20:40)]
+selected_train <- sparse_matrix[,selected_var]
+```
+
+
+```{r}
+dtrain_select <- xgb.DMatrix(data = selected_train, label = full_data$review_scores_rating)
+bst1 <- xgb.cv(data =  dtrain_select, nrounds = 100, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       gamma = 0, save_period=1,
+                       "max.depth" = 5, "eta" = 0.1,  "scale_pos_weight" =  1,                  
+                     "subsample" = 0.5, "colsample_bytree" = 0.5, stratified = TRUE,early_stopping_rounds = 30,
+                     print_every_n = 1, "min_child_weight" = 1, booster = "gbtree")
+```
+```{r}
+png("accu_plot.png", width = 350, height = 350)
+
+plot_mis_rate(bst1)
+dev.off()
+
+```
+```{r}
+bst1 <- xgb.load('xgb1.model')
+```
+
+
+```{r}
+dtrain_select <- xgb.DMatrix(data = selected_train, label = full_data$review_scores_rating)
+bst1 <- xgboost(data =  dtrain_select, nrounds = 100, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       save_period = 0,
+                       gamma = 0,
+                       "max.depth" = 5, "eta" = 0.1,  "scale_pos_weight" =  1,                  
+                     "subsample" = 0.5, "colsample_bytree" = 0.5, stratified = TRUE,early_stopping_rounds = 10,
+                     print_every_n = 10, "min_child_weight" = 1, booster = "gbtree")
+#xgb.save(bst1, 'xgb1.model')
+#bst1 <- xgb.load('xgb1.model')
+
+```
+
+```{r}
+pred <-  ifelse(predict(bst1, sparse_matrix[,selected_var])>0.5, 1, 0)
+actual <- full_data$review_scores_rating
+xg_perf <- data.frame(predict =as.numeric(pred > 0.5), actual = actual)
+confusionMatrix(as.factor(xg_perf$predict), as.factor(xg_perf$actual))
+#png("final_roc.png", width = 100, height = 100)
+get_roc_curve(xg_perf)
+
+```
+
+
+```{r message=FALSE, warning=FALSE}
+library(pROC)
+#https://www.rdocumentation.org/packages/pROC/versions/1.14.0
+```
+
+```{r}
+get_roc_curve = function(perf){
+  roc1 <- roc(perf$predict,
+            perf$actual, percent=TRUE,
+            # arguments for auc
+            partial.auc=c(100, 90), partial.auc.correct=TRUE,
+            partial.auc.focus="sens",
+            # arguments for ci
+            ci=TRUE, boot.n=100, ci.alpha=0.9, stratified=FALSE,
+            # arguments for plot
+            plot=TRUE, auc.polygon=TRUE, max.auc.polygon=TRUE, grid=TRUE,
+            print.auc=TRUE, show.thres=TRUE)
+
+    # Add to an existing plot. Beware of 'percent' specification!
+  roc2 <- roc(perf$predict, perf$actual,
+          plot=TRUE, add=TRUE, percent=roc1$percent)
+}
+
+```
+```{r}
+get_roc_curve(perf)
+```
+```
+
+
+
+
+
+
+
+```{r}
+## This may be the best
+pred <- predict(bst1, sparse_matrix_test[,selected_var])
+test_pred <-  ifelse(pred>0.5, 1, 0)
+mean(test_pred != test$review_scores_rating)
+```
+
+```{r}
+##Hyperparameter search using train
+label <- as.factor(full_data$review_scores_rating)
+
+# set up the cross-validated hyper-parameter search
+
+##base line
+searchGridSubCol1 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth = 3, # 3-10. 
+  gamma = 0, # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.5, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+#Tune max_depth and min_child_weight
+searchGridSubCol2 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth = c(2,3,4,5),# 3-10. 
+  gamma = 0, # 0.1-0.2 
+  min_child = c(1,3,5), # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.5, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+#Tune Gamma loss reduction required to make a further partition on a
+#leaf node of the tree. the larger, the more conservative the algorithm will be.
+searchGridSubCol3 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth = 3,# 3-10. 
+  gamma = seq(0,1, by=0.1), # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.5, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+#stratified
+searchGridSubCol3_0 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth = 3,# 3-10. 
+  gamma = seq(0,1, by=0.1), # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.5, 
+  stratified = FALSE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+#Step 4: Tune subsample and colsample_bytree
+searchGridSubCol4 <- expand.grid(
+  eta = 0.1, #, 0.08, 0.1),
+  max_depth =3,# 3-10. 
+  gamma = 0.2, # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = seq(0.5, 1, by=0.1), #0.5-0.9.
+  subsample = seq(0.5, 1, by=0.1), 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight = 1,
+  seed=27
+)
+
+
+
+#Step 5: eta 
+searchGridSubCol5 <- expand.grid(
+  eta = seq(0.01,0.11, by=0.02), #, 0.08, 0.1),
+  max_depth =3,# 3-10. 
+  gamma = 0.2, # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.8, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight =1,
+  seed=27
+)
+
+ntrees <- 500
+
+system.time(
+rmseErrorsHyperparameters_select5 <- apply(searchGridSubCol5, 1, function(parameterList){
+  
+  #Extract Parameters to test
+  currentSubsampleRate <- parameterList[["subsample"]]
+  currentColsampleRate <- parameterList[["colsample_bytree"]]
+  currentDepth <- parameterList[["max_depth"]]
+  currentEta <- parameterList[["eta"]]
+  currentMinChild <- parameterList[["min_child"]]
+  currentPosW <- parameterList[["scale_pos_weight"]]
+  currentGamma <- parameterList[["gamma"]]
+  xgboostModelCV <- xgb.cv(data =  dtrain_select, nrounds = ntrees, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       save_period = 0,
+                       gamma = currentGamma,
+                       "max.depth" = currentDepth, "eta" = currentEta,  "scale_pos_weight" =  currentPosW,                  
+                     "subsample" = currentSubsampleRate, "colsample_bytree" = currentColsampleRate, 
+                     print_every_n = 10, "min_child_weight" = currentMinChild, booster = "gbtree")
+  
+  xvalidationScores <- as.data.frame(xgboostModelCV$evaluation_log)
+  rmse <- tail(xvalidationScores$test_error_mean, 1)
+  test_auc <- tail(xvalidationScores$test_auc_mean, 1)
+  trmse <- tail(xvalidationScores$train_error_mean,1)
+  train_auc <- tail(xvalidationScores$train_auc_mean, 1)
+  # best_t <- xvalidationScores$best_score
+  # best_i <-  xvalidationScores$best_iteration
+  output <- return(c(trmse,rmse, train_auc, test_auc,currentEta))}))
+
+```
+
+
+
+
+```{r}
+output_select1 <- as.data.frame(t(rmseErrorsHyperparameters_select1))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc")
+names(output_select1) <- varnames
+output_select1
+```
+
+```{r}
+output_select2 <- as.data.frame(t(rmseErrorsHyperparameters_select2))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc", "max_depth", "min_child")
+names(output_select2) <- varnames
+output_select2
+```
+
+
+```{r}
+output_select3 <- as.data.frame(t(rmseErrorsHyperparameters_select3))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc", "gamma")
+names(output_select3) <- varnames
+output_select3
+```
+
+```{r}
+output_select3_0 <- as.data.frame(t(rmseErrorsHyperparameters_select3_0))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc", "gamma")
+names(output_select3_0) <- varnames
+output_select3_0
+```
+
+```{r}
+output_select4 <- as.data.frame(t(rmseErrorsHyperparameters_select4))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc", "ColsampleRate", "SubsampleRate")
+names(output_select4) <- varnames
+output_select4
+```
+
+
+```{r}
+output_select5 <- as.data.frame(t(rmseErrorsHyperparameters_select5))
+varnames <- c("Train_Error", "Test_Error", "train_auc", "test_auc", "eta")
+names(output_select5) <- varnames
+output_select5
+```
+
+
+```{r}
+searchGridSubCol5 <- list(
+  eta = seq(0.01,0.11, by=0.02), #, 0.08, 0.1),
+  max_depth =3,# 3-10. 
+  gamma = 0.2, # 0.1-0.2 
+  min_child = 1, # smaller value. imbalanced set leaf nodes can have smaller size groups.
+  colsample_bytree = 0.8, #0.5-0.9.
+  subsample = 0.8, 
+  stratified = TRUE, early_stopping_rounds = 10,
+  scale_pos_weight =1,
+  seed=27
+)
+```
+
+```{r}
+dtrain_select <- xgb.DMatrix(data = selected_train, label = full_data$review_scores_rating)
+bst_select1 <- xgb.cv(data =  dtrain_select, nrounds = ntrees, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       save_period = 10,
+                       gamma = 0.2,
+                       "max.depth" = 3, "eta" = 0.03,  "scale_pos_weight" =  1,                  
+                     "subsample" = 0.8, "colsample_bytree" = 0.8, stratified = TRUE,early_stopping_rounds = 10,
+                     print_every_n = 10, "min_child_weight" = 1, booster = "gbtree")
+```
+
+```{r}
+bst_select1
+```
+```{r}
+bst_final <- xgboost(data =  dtrain_select, nrounds = 100, nfold = 5, showsd = TRUE, 
+                       metrics = list("error", "auc"), verbose = 0, objective = "binary:logistic",
+                       save_period = 10,
+                       gamma = 0.2,
+                       "max.depth" = 3, "eta" = 0.03,  "scale_pos_weight" =  1,                  
+                     "subsample" = 0.8, "colsample_bytree" = 0.8, stratified = TRUE,early_stopping_rounds = 10,
+                     print_every_n = 10, "min_child_weight" = 1, booster = "gbtree")
+```
+
+
+```{r}
+pred <- predict(bst_final, sparse_matrix_test[,selected_var])
+test_pred <-  ifelse(pred>0.5, 1, 0)
+mean(test_pred != test$review_scores_rating)
+```
+
+```
+
+
+
+
+

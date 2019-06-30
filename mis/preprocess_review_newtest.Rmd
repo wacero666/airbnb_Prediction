@@ -1,0 +1,103 @@
+---
+title: "preprocess_review"
+author: "Wanhe Zhao"
+date: "4/24/2019"
+output: html_document
+---
+
+
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+review <- read.csv("review_test.csv")
+dim(review)
+```
+
+
+
+
+
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+num_amenities <- numeric(0)
+for (i in 1:range(nrow(review))){
+   num_amenities[i]<-length(strsplit(as.character(review$amenities[i]), ",")[[1]])
+}
+review$num_amenities <- num_amenities
+```
+
+
+
+```{r}
+library(dplyr)
+library(reshape2)
+library(ggplot2)
+#change property type
+prop_type <- c("Apartment", "Condominium", "Guesthouse", "House", "Townhouse", "Guest suite")
+```
+```{r}
+levels(review$property_type)[!(levels(review$property_type) %in% prop_type)] <- rep("Other", times=12)
+df_heatmap <- melt(table(review$property_type, review$review_scores_rating))
+```
+
+```{r}
+library(geosphere)
+add_pop <- function(yourData){
+  Museum_of_Pop_Culture <- c(-122.3481, 47.6215) #long, lati
+  Pike_Place_Market <- c(-122.3422, 47.6097)
+  Olympic_Sculpture_Park <- c(-122.3553, 47.6166)
+  Seattle_Great_Wheel <- c(-122.3425, 47.6062)
+  Seattle_Art_Museum <- c(-122.3381, 47.6073)
+  Kerry_Park <-c(-122.3599, 47.6295)
+  meter_to_mile = 0.000621371
+  total_nearby_landmarks <- (ifelse(distm(Museum_of_Pop_Culture, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0) + ifelse(distm(Pike_Place_Market, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Olympic_Sculpture_Park, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Seattle_Great_Wheel, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Seattle_Art_Museum, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Kerry_Park, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0))
+  return(total_nearby_landmarks)
+}
+
+yourData <-cbind(review$longitude, review$latitude)
+total_nearby_landmarks_review <- add_pop(yourData)
+review$total_nearby_landmarks <- total_nearby_landmarks_review[1,]
+
+```
+
+```{r}
+levels(review$bed_type)[(levels(review$bed_type) == "Couch")] <- "Real Bed"
+```
+
+
+
+```{r}
+review <- review[,-23] 
+```
+
+# Split Train and Validation set before EDA(with response)
+
+
+
+```{r}
+review_test <- review[,-c(1,9,11,12,19)]
+write.csv(review_test, "review_test_clean.csv", row.names = FALSE)
+
+```
+
+```{r}
+#check
+dim(review_test)
+train <- read.csv("review_train.csv")
+dim(train)
+dim(sparse.model.matrix(~., train))
+dim(sparse.model.matrix(~., review_test))
+```
+
+
+
+
+
+
+

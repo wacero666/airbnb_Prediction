@@ -1,0 +1,378 @@
+---
+title: "EDA_review"
+author: "Wanhe Zhao"
+date: "4/26/2019"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r}
+library(dplyr)
+library(ggplot2)
+train <- read.csv("review_train.csv")
+val <- read.csv("review_val.csv")
+```
+
+
+
+
+
+```{r}
+base_model <- glm(review_scores_rating~.,family="binomial",data=train)
+summary(base_model)
+```
+
+```{r}
+mean(ifelse(base_model$fitted.values>0.5, 1, 0) == train$review_scores_rating)
+predic_val = ifelse(predict(base_model, val, type = "response")>0.5, 1, 0)
+mean(predic_val == val$review_scores_rating)
+```
+```{r}
+full_data = rbind(train, val)
+```
+
+```{r}
+library(glmnet)
+x_train <- model.matrix(~.,full_data[, -1])
+
+lasso_log <- cv.glmnet(x=x_train[,colnames(x_train) != "review_scores_rating"], y=x_train[, "review_scores_rating"], standardize = TRUE,intercept = TRUE, standardize.response = FALSE, family = "binomial", alpha=0,  type.measure = "class")
+```
+
+```{r}
+mean(predict(lasso_log, s = "lambda.min", type = "class", x_train[,-44]) == x_train[,44])
+```
+
+```{r}
+# confusion matrix here we have high false positive. 
+table(predict =predict(lasso_log, s = "lambda.min", type = "class", x_train[,colnames(x_train) != "review_scores_rating"]), actual = x_train[, "review_scores_rating"])
+
+```
+
+```{r}
+confusionMatrix(as.factor(predict(lasso_log, s = "lambda.min", type = "class", x_train[,colnames(x_train) != "review_scores_rating"])), as.factor(x_train[, "review_scores_rating"]))
+```
+```{r}
+#confusion matrix much lower sensitivity
+predict <- predict(lasso_log, s = "lambda.min", type = "class", x_train[,colnames(x_train) != "review_scores_rating"])
+perf <- data.frame(predict = predict, actual = x_train[, "review_scores_rating"])
+colnames(perf) <- c("predict", "actual")
+table(perf)
+mean(perf$predict!=perf$actual)
+# we want higher sensitivity
+```
+
+# test
+```{r}
+test <- read.csv("review_test_clean.csv")
+x_test <- model.matrix(~.,test[, -1])
+```
+
+
+
+
+
+
+```{r}
+#confusion matrix much lower sensitivity
+predict <- predict(lasso_log, s = "lambda.min", type = "class", x_test[,colnames(x_test) != "review_scores_rating"])
+perf <- data.frame(predict = predict, actual = x_test[, "review_scores_rating"])
+colnames(perf) <- c("predict", "actual")
+table(perf)
+mean(perf$predict!=perf$actual)
+# we want higher sensitivity
+```
+
+```{r}
+
+```
+
+
+
+
+
+```{r message=FALSE, warning=FALSE}
+library(pROC)
+#https://www.rdocumentation.org/packages/pROC/versions/1.14.0
+```
+```{r}
+get_roc_curve = function(perf){
+  roc1 <- roc(perf$predict,
+            perf$actual, percent=TRUE,
+            # arguments for auc
+            partial.auc=c(100, 90), partial.auc.correct=TRUE,
+            partial.auc.focus="sens",
+            # arguments for ci
+            ci=TRUE, boot.n=100, ci.alpha=0.9, stratified=FALSE,
+            # arguments for plot
+            plot=TRUE, auc.polygon=TRUE, max.auc.polygon=TRUE, grid=TRUE,
+            print.auc=TRUE, show.thres=TRUE)
+
+    # Add to an existing plot. Beware of 'percent' specification!
+  roc2 <- roc(perf$predict, perf$actual,
+          plot=TRUE, add=TRUE, percent=roc1$percent)
+}
+
+```
+```{r}
+get_roc_curve(perf)
+```
+
+# Random Forest
+
+```{r}
+library(randomForest)
+#sparse_matrix <- model.matrix(~., data = train[, -1])
+#sparse_matrix_val <- sparse.model.matrix(review_scores_rating ~ .-1, data = val[, -1])
+
+classifier <- randomForest(as.factor(review_scores_rating)~., data=train[,-1], ntree=100, importance=T)
+train_error <- mean(predict(classifier) != train$review_scores_rating)
+imp <- importance(classifier, type=1, scale = F)
+var_importance <- data.frame(variable=row.names(imp),
+                             importance=as.vector(imp))
+var_importance <- arrange(var_importance, importance)
+var_importance$variable <- factor(var_importance$variable, levels=var_importance$variable)
+
+p <- ggplot(var_importance, aes(x=variable, weight=importance))
+p <- p + geom_bar() + coord_flip() + ylab("Variable Importance")
+p <- p + scale_fill_discrete(name="Variable Name") + ggtitle("Variable Importance from Random Forest Fit")
+p + theme_bw() + 
+  theme(axis.text = element_text(color = "darkslategrey"),
+        text = element_text(color = "black", size = 10), legend.key.size = unit(5, "lines"))
+
+```
+From permutation importance, we find that the top few variables don't change that much, therefore we decide to select the top variables for our future model fitting.   
+
+```{r}
+variables <- c(levels(var_importance$variable)[-c(1:10)],"review_scores_rating")
+select_train <- train[,  variables]
+select_val <- val[,  variables]
+colnames(select_train)
+```
+
+```{r}
+# first 
+weight_1 <- mean(train$review_scores_rating)
+classifier_1 <- randomForest(as.factor(review_scores_rating)~.,  data = select_train, xtest =  [,!(colnames(select_val) %in% c("review_scores_rating"))], ytest = as.factor(select_val$review_scores_rating),ntree=490, importance=T)
+(classifier_1$test)$confusion
+```
+```{r}
+rf2 <- randomForest(as.factor(review_scores_rating)~.,  data = select_train, ntree=490, importance=T)
+```
+```{r}
+pr_rf <- predict(rf2, select_val)
+#train confusion
+rf2$confusion
+#test confusion
+table(predict = pr_rf, actual =  select_val$review_scores_rating)
+mean(pr_rf != select_val$review_scores_rating)
+```
+
+
+
+
+
+
+# xgboost 
+
+```{r}
+library(xgboost)
+
+```
+```{r}
+#base ratio
+mean(val$review_scores_rating)
+mean(train$review_scores_rating)
+```
+
+
+```{r}
+#try xg_boost
+sparse_matrix <- sparse.model.matrix(review_scores_rating ~.-1, data = train[,-1])
+sparse_matrix_val <- sparse.model.matrix(review_scores_rating ~.-1, data = val[,-1])
+sparse_matrix_test <- sparse.model.matrix(review_scores_rating ~.-1, data = test[,-1])
+#sparse_matrix <- sparse.model.matrix(review_scores_rating ~.-1, data = select_train)
+#sparse_matrix_val <- sparse.model.matrix(review_scores_rating ~.-1, data = select_val)
+```
+
+```{r}
+dtrain <- xgb.DMatrix(data = sparse_matrix, label = train$review_scores_rating)
+dval <- xgb.DMatrix(data = sparse_matrix_val, label = val$review_scores_rating)
+```
+
+```{r}
+plot_mis_rate = function(bst){
+  df = bst$evaluation_log
+  plot(df$iter, df$val_error, col="red", type="l",  ylim= c(0.05,0.18), ylab="miscalssification rate", xlab="epoch")
+  lines(df$iter, df$train_error, col="blue") 
+  abline(h=0.1, col="green")
+  legend("topright", legend = c("train", "val"), col=c("blue", "red"), lty=c(1,1))
+}
+
+```
+
+```{r}
+label = train$review_scores_rating
+scale_pos_weight <- 1
+param <- list("scale_pos_weight" = 1,
+              "max_depth"=2)
+watchlist <- list(val=dval, train=dtrain)
+
+bst <- xgb.train(data = dtrain, watchlist = watchlist,  stratified = TRUE,min_child_weight = 6, param,eta=0.4, nrounds = 121, max_delta_step = 2, subsample= 0.7, objective = "binary:logistic",eval_metric = "error", eval_metric= "auc", verbose = 0)
+plot_mis_rate(bst)
+```
+
+
+
+```{r}
+min(bst$evaluation_log$val_error)
+print(paste("at epoch:", which(bst$evaluation_log$val_error == min(bst$evaluation_log$val_error))))
+#pred <- predict(bst, sparse_matrix_val)
+#err <- mean(as.numeric(pred > 0.5) !=  val$review_scores_rating)
+#print(paste("test-error=", err)) 
+```
+
+
+```{r}
+label_val <- val$review_scores_rating
+xg_perf <- data.frame(predict =as.numeric(pred > 0.5), actual = label_val)
+confusionMatrix(as.factor(xg_perf$predict), as.factor(xg_perf$actual))
+get_roc_curve(xg_perf)
+```
+
+```{r}
+mat <- xgb.importance (feature_names = colnames(dtrain),model = bst)
+xgb.plot.importance (importance_matrix = mat[1:30]) 
+```
+
+```{r}
+#select vairables
+selected_var <- mat[1:30]$Feature
+selected_val <- sparse_matrix_val[,selected_var]
+selected_train <- sparse_matrix[,selected_var]
+
+dtrain <- xgb.DMatrix(data = selected_train, label = train$review_scores_rating)
+dval <- xgb.DMatrix(data = selected_val, label = val$review_scores_rating)
+```
+
+```{r}
+label = train$review_scores_rating
+scale_pos_weight <- sum(label==1)/sum(label==0)
+param <- list(
+              "max_depth"=2)
+watchlist <- list(val=dval, train=dtrain)
+
+bst <- xgb.train(data = dtrain, watchlist = watchlist,  stratified = TRUE, min_child_weight = 2, param,eta=0.2, nrounds = 300, max_delta_step = 2, early_stopping_rounds = 30,subsample= 0.7, objective = "binary:logistic",eval_metric = "error", eval_metric= "auc", verbose = 0)
+plot_mis_rate(bst)
+```
+```{r}
+min(bst$evaluation_log$val_error)
+print(paste("at epoch:", which(bst$evaluation_log$val_error == min(bst$evaluation_log$val_error))))
+#pred <- predict(bst, sparse_matrix_val)
+#err <- mean(as.numeric(pred > 0.5) !=  val$review_scores_rating)
+#print(paste("test-error=", err)) 
+```
+
+
+```{r}
+label_val <- val$review_scores_rating
+xg_perf <- data.frame(predict =as.numeric(pred > 0.5), actual = label_val)
+confusionMatrix(as.factor(xg_perf$predict), as.factor(xg_perf$actual))
+get_roc_curve(xg_perf)
+```
+
+
+
+
+
+
+# Naive Bayes
+
+```{r}
+# As this is imbalanced class, we decide to use generative classifer to overcome the fact that we need to consider imbalance class, predictors here are mostly uncorrelated
+library(e1071)
+nb <- naiveBayes(as.factor(review_scores_rating)~., data=train[,-1])
+mean(val$review_scores_rating != predict(nb, val[,!colnames(val) %in% c("id", "review_scores_rating")], type = "class"))
+```
+
+```{r}
+library(caret)
+confusionMatrix(predict(nb, val[,!colnames(val) %in% c("id", "review_scores_rating")], type = "class"),as.factor(val$review_scores_rating))
+```
+
+# LDA
+
+```{r}
+library(tidyverse)
+library(caret)
+# Estimate preprocessing parameters
+preproc.param <- train[,-1] %>% 
+  preProcess(method = c("center", "scale"))
+# Transform the data using the estimated parameters
+train.transformed <- preproc.param %>% predict(train[,-1])
+val.transformed <- preproc.param %>% predict(val[,-1])
+```
+
+```{r}
+library(MASS)
+model <- lda(review_scores_rating~., data = train.transformed)
+# Make predictions
+predictions <- model %>% predict(val.transformed)
+# Model accuracy
+
+mean(predictions$class!=val.transformed$review_scores_rating)
+```
+```{r}
+
+perf_lda = data.frame(predict=predictions$class, actual=val.transformed$review_scores_rating)
+confusionMatrix(as.factor(predictions$class),as.factor(val.transformed$review_scores_rating))
+get_roc_curve(perf)
+```
+
+
+
+# linear svm
+```{r}
+library(e1071)
+
+sparse_matrix <- as.data.frame(model.matrix(~.-1, data = train[, -1]))
+
+svm_1 <- tune.svm(as.factor(review_scores_rating)~., data=sparse_matrix, kernel="linear")
+summary(svm_1)
+```
+
+```{r}
+library(lattice)
+library(caret)
+
+sparse_matrix_val <- as.data.frame(model.matrix(~ .-1, data = val[, -1]))
+svm_pred1 <- predict(svm_1$best.model, sparse_matrix_val[, colnames(sparse_matrix_val)!= "review_scores_rating"])
+mean(svm_pred1 != sparse_matrix_val$review_scores_rating)
+```
+
+# non-linear svm
+
+```{r}
+library(e1071)
+weight_1 <- mean(train$review_scores_rating)
+sparse_matrix <- as.data.frame(model.matrix(~.-1, data = train[, -1]))
+
+svm_2 <- tune.svm(as.factor(review_scores_rating)~., data=sparse_matrix, kernel="polynomial", degree=2, class.weight=c("0"=1-weight_1, "1"=weight_1))
+summary(svm_2)
+
+```
+
+```{r}
+library(e1071)
+sparse_matrix <- as.data.frame(model.matrix(~.-1, data = train[, -1]))
+
+svm_3 <- tune.svm(as.factor(review_scores_rating)~., data=sparse_matrix, kernel="sigmoid")
+summary(svm_3)
+svm_pred2 <- predict(svm_3$best.model, sparse_matrix_val[, colnames(sparse_matrix_val)!= "review_scores_rating"])
+mean(svm_pred2 != sparse_matrix_val$review_scores_rating)
+```
+
+
+
+
+

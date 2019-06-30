@@ -1,0 +1,1040 @@
+"X","id","host_is_superhost","host_response_rate","host_response_time","host_listings_count","host_identity_verified","accommodates","property_type","room_type","guests_included","bathrooms","bedrooms","beds","bed_type","cleaning_fee","minimum_nights","instant_bookable","cancellation_policy","price","In_Downtown","In_Delridge","In_Lake_City","num_amenities","total_nearby_landmarks"
+5488,22152435,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"t","f","f",27,3
+8107,30745210,"f",1,"within an hour",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",25,1,"t","flexible",70,"f","f","f",36,0
+2425,12456183,"t",0.86,"within a day",1,"f",4,"Guest suite","Entire home/apt",1,1,1,2,"Real Bed",40,2,"t","moderate",75,"f","f","t",27,0
+7349,27900565,"f",1,"within a few hours",1,"f",3,"House","Private room",2,1,1,2,"Real Bed",25,2,"t","moderate",90,"f","f","f",25,0
+8166,31043835,"t",1,"within an hour",11,"f",6,"Apartment","Entire home/apt",1,2,2,3,"Real Bed",100,1,"t","strict_14_with_grace_period",199,"t","f","f",18,5
+2110,10768347,"f",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",0,1,"f","flexible",55,"f","f","f",22,0
+4098,18497873,"f",1,"within a few hours",2,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,2,"f","moderate",150,"f","f","f",13,0
+5682,22355702,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1,0,1,"Real Bed",25,2,"t","moderate",125,"f","f","f",26,0
+2893,13814892,"f",1,"within a few hours",3,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",35,2,"f","moderate",74,"f","f","f",16,0
+1969,9805136,"f",1,"within an hour",7,"f",6,"Townhouse","Entire home/apt",6,1,2,3,"Real Bed",77,1,"f","strict_14_with_grace_period",1000,"f","f","f",51,0
+7748,29280801,"t",1,"within an hour",10,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"f","strict_14_with_grace_period",80,"f","f","f",15,0
+136,430609,"t",1,"within an hour",7,"t",8,"House","Entire home/apt",1,2.5,3,4,"Real Bed",99,2,"f","moderate",225,"f","f","f",30,0
+603,3121829,"t",1,"within a few hours",1,"f",4,"Townhouse","Entire home/apt",1,2.5,2,2,"Real Bed",100,2,"f","strict_14_with_grace_period",100,"f","f","f",23,0
+635,3312406,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",4,1,0,0,"Real Bed",65,3,"t","moderate",119,"f","f","f",30,0
+4445,19657648,"t",1,"within a few hours",1,"t",2,"Guesthouse","Entire home/apt",2,1,1,1,"Real Bed",25,1,"f","moderate",91,"f","f","f",25,0
+2690,13334770,"t",1,"within an hour",3,"t",4,"House","Entire home/apt",1,1,1,2,"Real Bed",65,1,"f","moderate",109,"f","f","f",21,0
+7867,29776305,"f",1,"within an hour",123,"f",1,"House","Shared room",1,1,1,1,"Real Bed",15,1,"t","strict_14_with_grace_period",25,"f","f","f",9,0
+5931,23042701,"t",1,"within an hour",3,"t",2,"House","Private room",1,1,1,1,"Real Bed",20,1,"f","strict_14_with_grace_period",50,"f","f","f",38,0
+1584,7901331,"t",1,"within an hour",3,"t",5,"House","Entire home/apt",1,1,2,3,"Real Bed",75,10,"f","moderate",189,"f","f","f",54,0
+6803,25896487,"t",1,"within an hour",2,"f",8,"Townhouse","Entire home/apt",6,3.5,3,3,"Real Bed",160,2,"f","strict_14_with_grace_period",180,"f","f","f",39,0
+6863,26087976,"f",1,"within an hour",6,"t",7,"Other","Entire home/apt",1,2,3,5,"Real Bed",100,4,"f","flexible",50,"f","f","f",21,0
+754,3870937,"t",0.8,"within a few hours",1,"t",4,"House","Entire home/apt",4,1,1,2,"Real Bed",60,2,"f","strict_14_with_grace_period",125,"f","f","t",34,0
+6,9531,"f",1,"within an hour",2,"t",4,"House","Entire home/apt",2,1,2,5,"Real Bed",95,2,"f","strict_14_with_grace_period",165,"f","f","f",29,0
+1821,9034515,"t",1,"within an hour",1,"t",2,"Guesthouse","Entire home/apt",1,1,0,1,"Real Bed",50,2,"f","strict_14_with_grace_period",100,"f","f","f",45,0
+5134,21366399,"f",1,"within an hour",7,"f",7,"House","Entire home/apt",6,1,3,4,"Real Bed",125,2,"t","moderate",79,"f","f","f",35,0
+8421,32050468,"f",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",45,1,"t","moderate",128,"f","f","f",39,0
+2188,11194237,"f",1,"within an hour",123,"f",2,"House","Private room",1,2,1,1,"Real Bed",25,1,"t","strict_14_with_grace_period",70,"f","f","f",18,3
+689,3561237,"f",1,"within an hour",3,"t",16,"House","Entire home/apt",5,4,4,9,"Real Bed",225,1,"f","strict_14_with_grace_period",304,"f","f","f",67,0
+785,3992155,"f",1,"within an hour",1,"f",2,"Condominium","Entire home/apt",1,1,0,1,"Pull-out Sofa",80,2,"f","strict_14_with_grace_period",125,"t","f","f",33,5
+4741,20405820,"f",1,"within an hour",3,"f",2,"Guest suite","Entire home/apt",2,1,0,1,"Real Bed",40,1,"t","moderate",160,"f","f","f",30,0
+6871,26110804,"t",1,"within an hour",1,"f",2,"Guesthouse","Entire home/apt",2,1,0,1,"Real Bed",45,4,"t","moderate",150,"f","f","f",28,0
+1497,7619727,"f",1,"within a day",1,"t",6,"House","Entire home/apt",5,1,3,4,"Real Bed",25,2,"f","moderate",200,"f","f","f",29,0
+7324,27806095,"t",1,"within an hour",1,"f",6,"House","Entire home/apt",3,1,3,3,"Real Bed",50,1,"t","flexible",99,"f","f","f",23,0
+6917,26258898,"f",1,"within an hour",1,"f",6,"House","Entire home/apt",6,2,4,4,"Real Bed",220,4,"f","strict_14_with_grace_period",320,"f","f","f",52,0
+830,4236723,"t",1,"within an hour",8,"t",6,"House","Entire home/apt",4,1.5,2,3,"Real Bed",35,1,"t","strict_14_with_grace_period",171,"f","f","f",30,0
+5920,23009897,"f",1,"within an hour",50,"f",4,"House","Entire home/apt",4,2,2,3,"Real Bed",238,2,"t","super_strict_30",119,"f","f","f",17,0
+2282,11674535,"t",0.9,"within an hour",3,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",60,2,"t","strict_14_with_grace_period",135,"f","f","f",45,0
+6482,24761353,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",450,"f","f","f",35,2
+6765,25781596,"f",1,"within an hour",1,"f",4,"House","Entire home/apt",1,1,2,2,"Real Bed",50,2,"t","moderate",116,"f","f","f",26,0
+2823,13674411,"f",1,"within a few hours",57,"t",1,"House","Shared room",1,3.5,1,1,"Real Bed",75,4,"f","strict_14_with_grace_period",45,"f","f","f",23,0
+1528,7713043,"t",1,"within an hour",1,"t",2,"Other","Entire home/apt",2,0,0,2,"Real Bed",20,1,"f","strict_14_with_grace_period",75,"f","f","f",24,0
+7149,27252971,"t",1,"within an hour",36,"t",6,"Serviced apartment","Entire home/apt",1,1.5,2,4,"Real Bed",100,1,"t","strict_14_with_grace_period",350,"t","f","f",21,4
+3492,16220570,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",189,"t","f","f",27,3
+7785,29396603,"f",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",35,2,"t","flexible",125,"f","f","f",30,1
+7321,27802702,"f",1,"within an hour",1,"f",2,"Condominium","Entire home/apt",1,2,2,2,"Real Bed",50,1,"t","flexible",130,"f","f","f",13,0
+6261,24119568,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",75,7,"f","strict_14_with_grace_period",90,"t","f","f",16,3
+5005,21024281,"f",1,"within an hour",100,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,2,"t","strict_14_with_grace_period",195,"t","f","f",32,2
+2077,10459203,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",35,1,"f","flexible",125,"f","f","f",29,0
+2715,13436253,"t",0.9,"within a few hours",4,"t",2,"House","Private room",2,4,1,2,"Real Bed",50,2,"t","flexible",52,"f","f","f",70,0
+2411,12379796,"t",1,"within an hour",4,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",65,2,"t","moderate",130,"f","f","f",34,0
+3383,15800133,"f",1,"within an hour",2,"f",2,"House","Private room",1,1,1,1,"Real Bed",0,1,"f","moderate",68,"f","f","f",14,0
+6113,23704752,"t",1,"within an hour",32,"f",6,"Apartment","Entire home/apt",4,2,2,3,"Real Bed",90,1,"t","strict_14_with_grace_period",200,"f","f","f",29,0
+6274,24132630,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",75,5,"t","strict_14_with_grace_period",155,"t","f","f",16,3
+1051,5548982,"f",1,"within an hour",21,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",29,1,"f","moderate",89,"f","f","f",33,0
+6241,24059020,"t",1,"within an hour",3,"t",4,"Other","Entire home/apt",2,1,0,2,"Real Bed",45,2,"f","flexible",85,"f","f","f",23,0
+3556,16519148,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",4,1,0,2,"Real Bed",50,2,"t","strict_14_with_grace_period",150,"f","f","f",24,0
+2255,11533621,"t",1,"within an hour",1,"t",5,"Guest suite","Entire home/apt",4,1,2,2,"Real Bed",55,2,"f","strict_14_with_grace_period",130,"f","f","f",46,0
+7098,27029203,"t",1,"within an hour",1,"t",4,"Guest suite","Private room",3,1,2,3,"Real Bed",75,2,"t","flexible",99,"f","f","f",22,0
+7413,28164033,"f",1,"within a few hours",1,"t",4,"House","Entire home/apt",1,1,3,4,"Real Bed",0,2,"f","flexible",108,"f","f","f",15,0
+2543,12965791,"t",1,"within an hour",3,"t",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",125,2,"f","strict_14_with_grace_period",199,"t","f","f",36,5
+6719,25534616,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",200,"t","f","f",18,5
+1069,5671843,"f",1,"within an hour",3,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",30,3,"t","moderate",68,"f","f","f",36,0
+1458,7462250,"t",1,"within an hour",2,"t",3,"House","Entire home/apt",2,1,0,2,"Real Bed",40,1,"t","moderate",99,"f","f","f",41,0
+1749,8613762,"f",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",15,3,"f","strict_14_with_grace_period",95,"t","f","f",27,3
+5610,22213237,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"t","f","f",25,3
+1261,6689259,"f",1,"within an hour",1,"t",6,"Apartment","Entire home/apt",4,1,2,3,"Real Bed",50,1,"f","moderate",130,"f","f","f",36,0
+7735,29245897,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",149,"t","f","f",18,4
+4551,19891890,"f",1,"within an hour",2,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",40,2,"t","moderate",70,"f","f","f",31,1
+6334,24337396,"f",1,"within an hour",4,"t",4,"Condominium","Entire home/apt",1,1,2,2,"Real Bed",85,2,"t","moderate",199,"t","f","f",25,3
+3454,16069222,"f",1,"within a few hours",1,"t",2,"House","Private room",1,1,1,1,"Real Bed",0,2,"t","strict_14_with_grace_period",32,"f","t","f",21,0
+1152,6202214,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",60,3,"f","strict_14_with_grace_period",134,"f","f","f",36,0
+4758,20458443,"t",1,"within an hour",1,"f",2,"Townhouse","Entire home/apt",1,1,1,1,"Real Bed",0,1,"t","moderate",70,"f","f","f",36,0
+3626,16778611,"t",1,"within an hour",2,"f",2,"House","Private room",1,1,1,1,"Real Bed",0,2,"t","flexible",48,"f","f","f",29,0
+7154,27262200,"f",1,"within an hour",15,"t",1,"House","Shared room",1,3.5,1,1,"Real Bed",0,1,"t","strict_14_with_grace_period",25,"f","f","f",18,0
+1150,6187841,"f",1,"within a few hours",3,"t",4,"Apartment","Entire home/apt",1,2,2,2,"Real Bed",100,7,"f","moderate",299,"t","f","f",59,5
+5997,23313584,"t",1,"within an hour",4,"f",2,"House","Private room",1,3,1,1,"Real Bed",20,1,"t","flexible",32,"f","f","f",17,0
+5494,22153592,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",169,"t","f","f",17,3
+6150,23828615,"t",1,"within a few hours",2,"f",8,"House","Entire home/apt",4,1.5,4,4,"Real Bed",120,2,"f","strict_14_with_grace_period",300,"f","f","f",22,0
+1696,8327124,"f",1,"within an hour",18,"f",10,"House","Entire home/apt",1,4,5,6,"Real Bed",275,3,"t","strict_14_with_grace_period",350,"f","f","f",26,0
+8065,30539632,"f",0.99,"within an hour",1596,"t",6,"Condominium","Entire home/apt",1,2,2,3,"Real Bed",49,1,"t","strict_14_with_grace_period",259,"t","f","f",41,4
+3869,17827783,"t",1,"within an hour",9,"t",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,1,"f","moderate",150,"t","f","f",19,3
+1941,9546633,"f",1,"within an hour",40,"f",2,"Other","Private room",1,1,0,1,"Real Bed",0,1,"t","moderate",59,"f","f","f",23,0
+4214,18875154,"f",1,"within an hour",3,"t",2,"House","Private room",2,2,1,1,"Real Bed",30,2,"f","strict_14_with_grace_period",48,"f","f","f",43,0
+1698,8352692,"f",1,"within a few hours",1,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",65,1,"t","strict_14_with_grace_period",100,"f","f","f",36,0
+7923,30010568,"f",0.5,"within a day",1,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",0,8,"t","flexible",80,"f","f","t",16,0
+1089,5804875,"t",1,"within an hour",1,"t",5,"House","Entire home/apt",1,1,2,2,"Real Bed",0,1,"t","flexible",95,"f","f","f",46,0
+668,3463245,"t",0.86,"within an hour",2,"t",2,"Apartment","Private room",1,1,1,1,"Real Bed",50,2,"t","moderate",88,"f","f","f",2,0
+3343,15626018,"t",0.9,"within an hour",1,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",25,2,"f","moderate",75,"f","f","f",34,0
+243,902609,"t",1,"within an hour",1,"t",3,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",125,2,"t","moderate",49,"f","t","f",42,0
+5510,22177229,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",75,5,"t","strict_14_with_grace_period",144,"t","f","f",18,6
+5915,22999891,"t",1,"within an hour",10,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",50,1,"t","moderate",150,"f","f","f",30,0
+1674,8253456,"f",0.91,"within a few hours",2,"t",4,"Apartment","Entire home/apt",2,1,0,2,"Real Bed",65,1,"f","strict_14_with_grace_period",140,"t","f","f",23,5
+6217,23983021,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",139,"t","f","f",24,5
+4982,21008151,"f",1,"within an hour",100,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,2,"t","strict_14_with_grace_period",195,"t","f","f",32,1
+4938,20917942,"f",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",1,1,1,2,"Real Bed",85,2,"t","flexible",89,"f","f","f",23,0
+5142,21371483,"t",1,"within an hour",1,"f",8,"Townhouse","Entire home/apt",6,2,3,4,"Real Bed",237,2,"t","moderate",177,"f","f","f",38,0
+5616,22213318,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,21,"t","strict",300,"f","f","f",24,3
+2330,11977745,"t",0.9,"within a few hours",1,"t",2,"Apartment","Private room",2,1,1,1,"Real Bed",12,2,"f","moderate",59,"t","f","f",37,3
+8082,30593898,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",109,"t","f","f",21,5
+467,2112625,"t",1,"within an hour",1,"t",2,"Townhouse","Private room",1,1.5,1,1,"Pull-out Sofa",35,2,"f","moderate",58,"f","f","f",30,0
+79,219532,"f",1,"within an hour",11,"f",6,"House","Entire home/apt",4,1.5,3,4,"Real Bed",80,3,"t","strict_14_with_grace_period",275,"f","f","f",37,0
+4003,18275778,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,2,"t","strict",330,"t","f","f",28,3
+4748,20428070,"f",1,"within a few hours",2,"t",6,"House","Entire home/apt",6,2,3,3,"Real Bed",150,2,"f","strict_14_with_grace_period",295,"f","f","f",33,0
+5296,21698367,"f",1,"within a few hours",1,"t",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",100,4,"f","strict_14_with_grace_period",130,"t","f","f",26,5
+3723,17212116,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",75,3,"t","strict_14_with_grace_period",149,"t","f","f",12,1
+4491,19785987,"f",0.99,"within an hour",81,"f",6,"Apartment","Entire home/apt",6,2,2,4,"Real Bed",145,1,"t","super_strict_30",251,"t","f","f",20,3
+2476,12730043,"f",1,"within an hour",1,"f",2,"House","Entire home/apt",1,1,1,1,"Real Bed",80,3,"t","strict_14_with_grace_period",160,"f","f","t",23,0
+7354,27911279,"f",1,"within an hour",1,"f",1,"Other","Entire home/apt",1,1,0,1,"Real Bed",0,1,"f","flexible",200,"f","f","f",17,0
+8226,31364134,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,30,"t","flexible",129,"f","f","f",41,2
+5300,21700012,"t",1,"within an hour",1,"t",6,"House","Entire home/apt",2,2,2,3,"Real Bed",0,2,"f","moderate",219,"f","f","f",32,0
+3568,16565805,"f",0.92,"within an hour",4,"t",4,"Apartment","Entire home/apt",3,1,1,2,"Real Bed",65,2,"t","strict_14_with_grace_period",99,"t","f","f",49,5
+6385,24545853,"t",1,"within an hour",1,"f",6,"House","Entire home/apt",2,2.5,2,3,"Real Bed",225,2,"f","strict_14_with_grace_period",195,"f","f","f",35,0
+3277,15362150,"f",1,"within an hour",13,"t",4,"House","Entire home/apt",2,1,0,3,"Real Bed",60,1,"t","flexible",58,"f","t","f",22,0
+3355,15660996,"t",1,"within an hour",1,"t",4,"House","Entire home/apt",2,1,2,0,"Real Bed",100,2,"t","moderate",74,"f","f","f",25,0
+3283,15407909,"t",0.95,"within an hour",3,"t",12,"House","Entire home/apt",10,3.5,5,7,"Real Bed",245,2,"t","moderate",650,"f","f","f",44,0
+289,1141226,"t",0.75,"within a day",8,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",75,30,"f","strict_14_with_grace_period",174,"t","f","f",42,2
+1331,6938103,"t",1,"within an hour",2,"t",2,"House","Private room",1,1,1,1,"Real Bed",0,2,"t","moderate",79,"f","f","f",36,0
+3674,17031553,"f",1,"within an hour",1,"f",8,"House","Entire home/apt",1,1.5,3,5,"Real Bed",150,3,"f","moderate",249,"f","f","f",23,0
+6128,23748763,"t",1,"within an hour",5,"f",4,"Apartment","Entire home/apt",2,1,2,2,"Real Bed",55,1,"t","moderate",99,"f","f","f",41,0
+3289,15424242,"t",1,"within an hour",1,"t",2,"House","Private room",1,1,1,1,"Real Bed",39,2,"t","moderate",94,"f","f","f",26,0
+1537,7748349,"f",1,"within an hour",3,"t",2,"House","Private room",1,1,1,2,"Real Bed",0,2,"t","flexible",65,"f","f","f",22,0
+4661,20189383,"t",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",1,1,0,2,"Real Bed",45,1,"t","flexible",125,"f","f","f",33,0
+6824,25968036,"t",1,"within an hour",2,"t",8,"House","Entire home/apt",7,2.5,4,4,"Real Bed",120,2,"t","moderate",345,"f","f","f",34,0
+6836,25998193,"t",1,"within an hour",1,"f",2,"Townhouse","Private room",1,1,1,1,"Real Bed",15,1,"t","moderate",60,"f","f","f",31,0
+1656,8156894,"f",1,"within a few hours",57,"t",1,"House","Shared room",1,3.5,1,1,"Real Bed",75,3,"f","strict_14_with_grace_period",38,"f","f","f",33,0
+6231,24018328,"t",1,"within an hour",3,"f",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",20,2,"t","moderate",135,"t","f","f",19,5
+5466,22151199,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"t","f","f",27,3
+8095,30690417,"f",1,"within an hour",21,"t",5,"Townhouse","Entire home/apt",1,2.5,2,3,"Real Bed",99,2,"f","moderate",99,"f","f","f",26,1
+6221,23983714,"f",1,"within an hour",123,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",20,1,"t","strict_14_with_grace_period",40,"f","f","f",11,0
+2349,12084472,"f",1,"within an hour",5,"f",4,"Apartment","Entire home/apt",2,2,2,2,"Real Bed",150,29,"f","strict_14_with_grace_period",90,"f","t","f",24,0
+3966,18139432,"f",1,"within an hour",3,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",30,3,"f","moderate",80,"f","f","f",24,0
+5030,21093691,"f",1,"within an hour",1,"t",3,"Guest suite","Entire home/apt",2,1,0,1,"Real Bed",40,1,"t","moderate",65,"f","f","f",26,0
+5115,21313308,"t",1,"within an hour",2,"t",2,"House","Private room",1,1,1,1,"Real Bed",40,1,"f","moderate",120,"f","f","f",49,0
+59,143704,"t",1,"within an hour",1,"t",3,"House","Entire home/apt",2,1,1,2,"Real Bed",75,3,"t","moderate",68,"f","f","f",32,0
+1730,8507062,"t",1,"within an hour",3,"t",2,"House","Private room",1,2,1,1,"Real Bed",15,3,"t","moderate",63,"f","f","f",33,0
+5550,22208755,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,1,2,2,"Real Bed",129,2,"t","strict",350,"t","f","f",21,5
+3688,17094436,"t",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",60,2,"f","moderate",110,"f","f","t",48,0
+2562,13021356,"t",1,"within an hour",1,"t",2,"House","Private room",2,1,1,1,"Real Bed",25,1,"f","flexible",84,"f","f","f",19,0
+7373,27983747,"f",0.95,"within an hour",84,"f",5,"Apartment","Entire home/apt",1,1,1,3,"Real Bed",79,1,"t","strict_14_with_grace_period",199,"f","f","f",21,1
+6012,23400755,"t",0.96,"within an hour",3,"f",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",60,1,"t","moderate",150,"f","f","f",21,2
+5699,22412333,"t",1,"within an hour",2,"f",2,"Townhouse","Private room",2,1,1,1,"Real Bed",25,1,"f","moderate",99,"f","f","f",22,0
+3725,17228779,"f",0.86,"within an hour",3,"f",1,"House","Private room",1,0,1,1,"Real Bed",60,7,"f","flexible",30,"f","f","f",45,0
+675,3522409,"f",1,"within an hour",8,"t",4,"Other","Entire home/apt",4,1,1,1,"Real Bed",65,1,"t","strict_14_with_grace_period",95,"f","f","f",18,0
+2213,11308653,"f",1,"within an hour",3,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",10,1,"t","moderate",55,"f","f","f",28,0
+4465,19738395,"t",1,"within an hour",2,"f",4,"Townhouse","Entire home/apt",2,1,2,2,"Real Bed",100,1,"f","flexible",148,"f","f","f",39,0
+7391,28049926,"f",1,"within an hour",123,"f",1,"House","Shared room",1,1,1,1,"Real Bed",15,1,"t","strict_14_with_grace_period",30,"f","f","f",9,0
+365,1539463,"t",1,"within an hour",1,"t",2,"House","Private room",1,1,1,1,"Real Bed",15,35,"f","moderate",75,"f","f","f",24,0
+3991,18250300,"t",1,"within an hour",1,"t",3,"Apartment","Entire home/apt",3,1,1,2,"Real Bed",40,2,"f","moderate",125,"f","f","t",34,0
+5880,22869730,"f",1,"within an hour",100,"f",5,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",60,2,"t","strict_14_with_grace_period",250,"t","f","f",29,3
+3413,15898292,"f",0.99,"within an hour",1276,"f",6,"Apartment","Entire home/apt",1,2,2,2,"Real Bed",99,2,"t","strict_14_with_grace_period",999,"t","f","f",35,3
+5480,22151550,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,2,"t","strict",300,"t","f","f",25,6
+5517,22190735,"f",1,"within an hour",3,"f",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",45,2,"t","moderate",100,"f","f","f",29,0
+7954,30109908,"f",1,"within an hour",5,"f",2,"House","Private room",1,1,1,1,"Real Bed",15,2,"t","flexible",43,"f","f","f",20,0
+7056,26842274,"f",0.85,"within an hour",321,"f",12,"House","Entire home/apt",12,3,4,5,"Real Bed",270,3,"t","strict_14_with_grace_period",850,"f","f","f",23,0
+4921,20886381,"f",1,"within a day",2,"t",5,"Townhouse","Entire home/apt",5,2.5,2,2,"Real Bed",255,2,"f","moderate",235,"f","f","f",28,0
+5923,23022839,"f",1,"within an hour",2,"f",10,"House","Entire home/apt",6,2,3,3,"Real Bed",50,2,"t","moderate",152,"f","t","f",21,0
+317,1260259,"t",1,"within a few hours",1,"t",3,"Other","Entire home/apt",1,1,1,1,"Real Bed",0,3,"f","flexible",155,"f","f","f",23,0
+3360,15700294,"t",1,"within an hour",3,"t",2,"Condominium","Entire home/apt",1,1,0,1,"Real Bed",70,21,"f","moderate",65,"t","f","f",33,5
+1079,5736761,"t",1,"within an hour",2,"t",10,"House","Entire home/apt",6,2,3,6,"Real Bed",150,3,"t","strict_14_with_grace_period",450,"f","f","f",44,0
+6913,26254610,"f",1,"within a few hours",1,"f",2,"Townhouse","Private room",1,1.5,1,1,"Real Bed",10,1,"f","flexible",61,"f","f","f",20,0
+6426,24694712,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",150,"f","f","f",41,2
+412,1772119,"t",1,"within a few hours",5,"t",2,"House","Private room",1,2,1,1,"Real Bed",30,2,"f","strict_14_with_grace_period",58,"f","f","f",33,0
+8100,30712242,"f",1,"within a few hours",1,"f",1,"House","Private room",1,1,1,1,"Real Bed",0,65,"t","flexible",25,"f","f","f",14,0
+6562,25033197,"t",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",4,1,1,2,"Real Bed",50,2,"t","moderate",150,"f","f","f",23,0
+274,1090307,"t",1,"within an hour",2,"t",2,"House","Private room",2,1,1,1,"Real Bed",25,2,"f","flexible",109,"f","f","f",16,0
+5770,22609909,"t",1,"within an hour",1,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",30,2,"t","flexible",79,"f","f","f",30,0
+411,1764100,"f",0.92,"within an hour",51,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,1,"f","moderate",99,"f","f","f",32,0
+6795,25869587,"t",1,"within an hour",1,"f",3,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,2,"t","flexible",92,"f","f","f",14,0
+5026,21081142,"t",1,"within a few hours",1,"f",4,"House","Entire home/apt",1,2,3,2,"Real Bed",200,7,"f","moderate",83,"f","f","f",43,0
+5693,22385671,"f",1,"within a few hours",3,"t",7,"House","Entire home/apt",3,1,2,4,"Real Bed",50,2,"f","flexible",100,"f","f","f",21,0
+5263,21624979,"f",1,"within an hour",1292,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",99,1,"t","strict_14_with_grace_period",1002,"t","f","f",20,5
+1767,8717068,"t",1,"within an hour",1,"t",2,"Other","Entire home/apt",1,1,0,1,"Futon",10,2,"f","moderate",65,"f","f","t",35,0
+5286,21683972,"t",1,"within an hour",2,"t",6,"House","Entire home/apt",4,3,3,4,"Real Bed",75,4,"t","strict_14_with_grace_period",200,"f","f","f",25,0
+3254,15288743,"f",1,"within an hour",2,"f",4,"Guest suite","Entire home/apt",2,1.5,2,2,"Real Bed",50,2,"t","flexible",120,"f","f","f",43,0
+1325,6913706,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",229,"f","f","f",25,5
+6742,25683001,"t",1,"within an hour",2,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",20,1,"f","moderate",80,"f","f","f",25,0
+4820,20622281,"f",1,"within an hour",5,"t",1,"House","Private room",1,1,1,1,"Real Bed",25,1,"t","moderate",35,"f","f","f",28,0
+2688,13332139,"f",1,"within an hour",18,"f",6,"Apartment","Entire home/apt",1,2,3,4,"Real Bed",190,3,"t","strict_14_with_grace_period",300,"f","f","f",39,0
+6700,25485508,"f",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",50,2,"t","strict_14_with_grace_period",101,"f","f","f",10,0
+6805,25898095,"t",1,"within an hour",1,"f",6,"Townhouse","Entire home/apt",4,2.5,2,2,"Real Bed",100,1,"f","moderate",191,"f","f","f",36,0
+1896,9367465,"t",1,"within an hour",2,"t",4,"House","Entire home/apt",2,1,1,3,"Real Bed",50,2,"t","moderate",120,"f","f","f",20,0
+4464,19738365,"f",0.86,"within an hour",3,"f",1,"House","Private room",1,3,1,1,"Real Bed",60,10,"f","strict_14_with_grace_period",20,"f","f","f",46,0
+1851,9157232,"f",1,"within an hour",3,"t",1,"House","Private room",1,2,1,1,"Real Bed",15,5,"f","moderate",49,"f","f","f",13,0
+914,4669377,"t",0.94,"within a few hours",6,"t",5,"Condominium","Entire home/apt",1,1,1,2,"Real Bed",95,2,"f","strict_14_with_grace_period",175,"t","f","f",20,5
+3728,17243214,"f",1,"within an hour",3,"t",6,"Townhouse","Entire home/apt",1,1.5,2,2,"Real Bed",80,1,"t","strict_14_with_grace_period",160,"f","f","f",35,0
+8118,30801156,"f",1,"within an hour",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",15,2,"t","flexible",60,"f","t","f",37,0
+4678,20236793,"t",1,"within an hour",2,"t",2,"House","Entire home/apt",2,1,1,1,"Real Bed",25,2,"t","strict_14_with_grace_period",150,"f","f","f",27,0
+8364,31880839,"f",1,"within a few hours",2,"f",4,"House","Entire home/apt",2,2,2,2,"Real Bed",125,5,"f","moderate",125,"f","f","f",45,0
+6708,25510353,"t",0.95,"within an hour",3,"f",5,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",75,2,"t","moderate",159,"f","f","f",39,0
+6167,23881540,"f",1,"within an hour",1,"f",8,"Townhouse","Entire home/apt",1,2.5,3,5,"Real Bed",150,2,"f","strict_14_with_grace_period",350,"f","f","f",30,0
+7816,29552272,"f",1,"within an hour",50,"f",2,"Other","Entire home/apt",2,1,1,1,"Real Bed",164,2,"t","super_strict_30",114,"f","f","f",17,0
+2384,12233882,"f",1,"within an hour",15,"t",2,"House","Private room",1,1,1,1,"Real Bed",0,1,"t","moderate",85,"f","f","f",19,0
+2895,13823956,"t",1,"within an hour",1,"t",2,"House","Entire home/apt",2,1,1,1,"Real Bed",40,1,"t","strict_14_with_grace_period",133,"f","f","f",28,0
+166,566435,"t",0.9,"within a few hours",4,"t",2,"House","Private room",2,4,1,1,"Real Bed",40,2,"t","flexible",80,"f","f","f",35,0
+7238,27490605,"f",1,"within a few hours",1,"t",3,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",30,2,"f","flexible",115,"t","f","f",11,3
+1739,8538420,"t",1,"within a few hours",3,"f",4,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",125,7,"t","flexible",175,"f","f","f",22,0
+6087,23673630,"t",0.93,"within an hour",1,"f",7,"House","Entire home/apt",1,2.5,3,4,"Real Bed",135,1,"t","strict_14_with_grace_period",250,"f","f","f",21,0
+346,1484595,"f",0.92,"within an hour",51,"t",3,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",60,2,"t","moderate",85,"f","f","f",20,0
+552,2731253,"t",1,"within an hour",2,"t",2,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",0,3,"f","moderate",139,"f","f","f",17,0
+2785,13606672,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",75,2,"t","moderate",175,"f","f","f",21,0
+2319,11913478,"f",1,"within an hour",5,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",50,1,"t","strict_14_with_grace_period",115,"f","f","f",24,0
+4957,20961349,"t",0.93,"within an hour",5,"f",5,"Apartment","Entire home/apt",1,2,2,3,"Real Bed",125,2,"t","moderate",325,"f","f","f",47,1
+7727,29240961,"t",1,"within an hour",2,"f",4,"Apartment","Entire home/apt",3,1,1,3,"Real Bed",15,2,"t","moderate",147,"t","f","f",49,5
+4069,18444403,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,21,"t","strict",159,"f","f","f",24,3
+7886,29858843,"f",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",25,1,"t","flexible",75,"f","f","f",33,0
+7146,27252831,"f",1,"within an hour",50,"f",8,"House","Entire home/apt",8,3.5,3,4,"Real Bed",254,2,"t","super_strict_30",197,"f","f","f",19,0
+7538,28541588,"f",0.92,"within an hour",3,"t",6,"House","Private room",6,1,3,3,"Real Bed",30,1,"t","flexible",135,"f","f","f",24,0
+4733,20390310,"f",1,"within an hour",156,"f",4,"Apartment","Entire home/apt",4,1,1,2,"Real Bed",188,2,"t","super_strict_30",81,"f","f","f",19,0
+1197,6400000,"f",1,"within a few hours",3,"t",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",72,1,"f","moderate",160,"f","f","f",39,1
+3299,15456841,"t",1,"within an hour",1,"t",6,"Townhouse","Entire home/apt",2,1.5,2,2,"Real Bed",90,2,"f","moderate",150,"f","f","f",58,0
+7997,30299327,"f",1,"within an hour",12,"f",3,"House","Private room",3,1,1,2,"Real Bed",9,1,"t","flexible",29,"f","f","f",18,0
+4157,18690558,"f",1,"within an hour",5,"t",2,"House","Private room",1,1.5,1,1,"Real Bed",40,1,"t","strict_14_with_grace_period",60,"f","f","f",22,0
+5045,21155590,"f",0.9,"within an hour",2,"f",2,"House","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","moderate",57,"f","f","f",24,0
+5795,22715967,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",85,3,"f","moderate",165,"t","f","f",42,5
+5469,22151240,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"f","f","f",25,5
+355,1520533,"f",1,"within a few hours",57,"t",1,"House","Shared room",1,0.5,1,1,"Real Bed",75,4,"f","strict_14_with_grace_period",45,"f","f","f",21,0
+4301,19161332,"t",1,"within an hour",1,"f",5,"Other","Entire home/apt",2,1,1,3,"Real Bed",0,1,"t","moderate",92,"f","f","f",24,0
+7003,26640591,"t",1,"within an hour",3,"f",2,"House","Private room",1,1,1,2,"Real Bed",0,1,"t","flexible",48,"f","f","f",16,0
+405,1739843,"f",1,"within an hour",2,"t",5,"House","Entire home/apt",3,2,2,2,"Real Bed",150,2,"f","moderate",195,"f","f","f",29,0
+695,3604931,"f",1,"within an hour",2,"t",9,"House","Entire home/apt",1,4,5,5,"Real Bed",200,2,"f","strict_14_with_grace_period",550,"f","f","f",27,0
+4271,19100455,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",10,2,"f","moderate",65,"f","f","f",28,0
+6343,24369225,"t",1,"within an hour",1,"f",4,"Condominium","Entire home/apt",4,1,1,2,"Real Bed",50,3,"f","moderate",190,"f","f","f",53,0
+1346,7007118,"t",1,"within an hour",1,"t",3,"Apartment","Entire home/apt",4,1,1,2,"Real Bed",30,2,"f","moderate",75,"f","f","f",17,0
+6468,24754961,"f",0.85,"within an hour",321,"f",2,"House","Entire home/apt",2,1,1,1,"Real Bed",111,2,"t","strict_14_with_grace_period",145,"f","f","f",8,0
+2359,12153406,"f",0.99,"within an hour",14,"f",2,"Serviced apartment","Entire home/apt",1,1,0,1,"Real Bed",65,1,"t","strict_14_with_grace_period",70,"f","f","f",31,0
+5912,22997927,"f",1,"within an hour",1,"f",4,"Guest suite","Private room",1,1,0,2,"Real Bed",25,1,"t","flexible",100,"f","t","f",21,0
+7105,27081690,"f",0.98,"within an hour",61,"f",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",125,1,"f","strict_14_with_grace_period",195,"f","f","f",36,0
+6354,24405293,"t",1,"within an hour",4,"t",4,"Apartment","Entire home/apt",4,1,1,2,"Real Bed",125,7,"t","strict_14_with_grace_period",125,"f","f","f",15,0
+3983,18213923,"t",1,"within a few hours",3,"t",2,"House","Private room",1,1,1,1,"Real Bed",45,4,"t","strict_14_with_grace_period",55,"f","f","f",23,0
+7868,29776840,"f",1,"within an hour",1,"f",6,"Guest suite","Entire home/apt",4,1,2,2,"Real Bed",30,2,"t","moderate",150,"f","f","f",40,0
+7557,28589781,"t",1,"within a few hours",1,"f",2,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",25,2,"f","moderate",89,"f","f","f",19,0
+6580,25083777,"t",1,"within an hour",2,"t",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",75,2,"t","moderate",185,"f","f","f",39,1
+8093,30678262,"f",1,"within an hour",1,"f",4,"House","Entire home/apt",1,1.5,2,2,"Real Bed",50,2,"f","flexible",80,"f","f","f",26,0
+7353,27909886,"f",1,"within an hour",1,"t",6,"Guest suite","Entire home/apt",1,1,1,3,"Real Bed",55,1,"t","moderate",48,"f","t","f",17,0
+1060,5620306,"t",1,"within an hour",3,"t",2,"Apartment","Private room",1,1,1,1,"Real Bed",100,2,"f","strict_14_with_grace_period",70,"f","f","f",29,3
+5940,23062740,"f",1,"within an hour",4,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",60,1,"f","strict_14_with_grace_period",199,"t","f","f",29,5
+2599,13101706,"t",1,"within an hour",1,"t",3,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",89,2,"f","moderate",119,"f","f","f",21,0
+1987,9885225,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",229,"f","f","f",25,5
+6895,26194842,"f",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",80,1,"f","strict_14_with_grace_period",199,"f","f","f",15,0
+3932,18042542,"f",1,"within an hour",1,"f",3,"Condominium","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","strict_14_with_grace_period",75,"f","f","f",24,0
+230,808134,"t",1,"within an hour",42,"t",6,"Condominium","Entire home/apt",1,2,2,3,"Real Bed",130,2,"f","strict_14_with_grace_period",137,"t","f","f",46,5
+5368,21851064,"f",1,"within an hour",1,"f",6,"Condominium","Entire home/apt",1,1.5,2,3,"Real Bed",40,2,"t","strict_14_with_grace_period",160,"f","f","f",39,1
+6462,24734649,"f",1,"within an hour",123,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",40,1,"t","strict_14_with_grace_period",130,"t","f","f",23,5
+2500,12829873,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",50,2,"f","moderate",180,"f","f","f",25,1
+6011,23395992,"t",1,"within an hour",2,"f",2,"House","Private room",2,1.5,1,1,"Real Bed",20,1,"t","strict_14_with_grace_period",50,"f","f","f",39,0
+7184,27309563,"f",1,"within an hour",15,"t",1,"House","Shared room",1,3.5,1,1,"Real Bed",0,2,"t","strict_14_with_grace_period",25,"f","f","f",18,0
+5860,22818043,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",100,"f","f","f",39,2
+722,3732103,"f",1,"within a few hours",57,"t",1,"House","Shared room",1,3.5,1,1,"Real Bed",75,4,"f","strict_14_with_grace_period",38,"f","f","f",25,0
+6541,24950039,"t",1,"within an hour",3,"t",2,"Guest suite","Entire home/apt",3,1,1,1,"Real Bed",60,1,"t","flexible",150,"f","f","f",36,0
+4885,20787203,"f",1,"within an hour",2,"t",2,"Townhouse","Private room",2,1,1,1,"Real Bed",0,2,"t","moderate",45,"f","f","f",28,0
+1635,8095168,"f",0,"a few days or more",2,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Futon",20,2,"f","moderate",110,"f","f","f",22,1
+6975,26504154,"t",1,"within a few hours",1,"t",6,"House","Entire home/apt",2,1,3,4,"Real Bed",50,2,"f","flexible",200,"f","t","f",35,0
+4013,18291990,"f",1,"within an hour",1292,"f",6,"Apartment","Entire home/apt",6,2,2,3,"Real Bed",99,1,"t","strict_14_with_grace_period",1002,"t","f","f",19,5
+3747,17345311,"t",1,"within an hour",3,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",69,2,"t","strict_14_with_grace_period",125,"t","f","f",34,5
+5267,21635368,"t",1,"within an hour",2,"f",7,"House","Entire home/apt",6,2,2,4,"Real Bed",65,1,"f","moderate",200,"f","f","f",49,0
+3653,16942022,"t",1,"within an hour",2,"f",10,"House","Entire home/apt",6,3,4,7,"Real Bed",175,2,"t","strict_14_with_grace_period",325,"f","f","f",64,0
+8008,30322627,"f",1,"within an hour",1,"t",3,"House","Entire home/apt",1,1,1,2,"Real Bed",30,2,"t","flexible",60,"f","f","f",18,0
+5035,21110270,"t",1,"within an hour",1,"f",8,"House","Entire home/apt",2,1.5,4,4,"Real Bed",150,1,"f","moderate",300,"f","f","f",28,0
+2837,13711017,"t",1,"within an hour",2,"t",2,"House","Private room",1,1,1,1,"Real Bed",30,2,"f","strict_14_with_grace_period",75,"f","f","f",36,0
+3934,18049792,"t",1,"within an hour",1,"f",1,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",30,1,"t","flexible",109,"f","f","f",26,0
+5209,21490495,"t",1,"within a few hours",11,"f",8,"Serviced apartment","Entire home/apt",4,2,3,5,"Real Bed",115,2,"f","strict_14_with_grace_period",499,"t","f","f",59,4
+7804,29512429,"f",1,"within an hour",123,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",25,1,"t","strict_14_with_grace_period",100,"f","f","f",12,0
+1873,9262389,"t",1,"within an hour",2,"t",3,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",35,2,"f","flexible",88,"f","f","f",23,0
+4181,18777600,"t",1,"within an hour",1,"f",2,"Townhouse","Entire home/apt",1,1,0,1,"Real Bed",50,1,"t","moderate",105,"f","f","f",34,0
+6299,24185789,"t",1,"within a day",2,"t",1,"Apartment","Shared room",1,1,1,1,"Real Bed",0,1,"f","flexible",35,"f","f","f",13,0
+8254,31446937,"f",1,"within an hour",123,"f",2,"Apartment","Private room",1,2,1,1,"Real Bed",25,1,"t","strict_14_with_grace_period",60,"f","f","f",8,3
+6849,26058456,"f",1,"within a few hours",2,"t",2,"Townhouse","Private room",1,1.5,1,1,"Real Bed",0,2,"f","flexible",39,"f","f","f",14,0
+7556,28589135,"f",1,"within an hour",1,"t",3,"Other","Entire home/apt",1,1,1,1,"Real Bed",0,1,"f","moderate",109,"f","f","f",42,0
+7753,29312304,"t",0.9,"within a day",1,"f",2,"Apartment","Private room",1,1,1,1,"Real Bed",0,1,"f","flexible",60,"f","f","f",26,3
+8345,31804410,"t",1,"within an hour",37,"f",4,"Guest suite","Entire home/apt",1,1,2,2,"Real Bed",50,1,"f","moderate",65,"f","f","f",19,0
+961,4951430,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,2,"t","moderate",125,"f","f","f",26,3
+2076,10457451,"f",1,"within an hour",40,"f",2,"Other","Private room",1,1,1,1,"Real Bed",0,1,"t","moderate",59,"f","f","f",23,0
+5491,22153582,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",275,"t","f","f",17,4
+6290,24164144,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",75,3,"t","strict_14_with_grace_period",150,"t","f","f",11,5
+197,689309,"f",1,"within a few hours",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",0,2,"f","strict_14_with_grace_period",125,"f","f","f",12,0
+2938,13943092,"f",1,"within an hour",3,"t",4,"House","Entire home/apt",1,1,2,2,"Real Bed",25,2,"f","flexible",500,"f","f","f",13,0
+4250,19000214,"t",1,"within a day",1,"t",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",40,2,"t","moderate",120,"f","f","f",31,0
+6866,26104561,"f",0.97,"within an hour",9,"f",4,"Apartment","Entire home/apt",4,1,1,2,"Real Bed",45,1,"f","flexible",90,"f","f","f",22,0
+4362,19386403,"f",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",85,2,"t","strict_14_with_grace_period",150,"f","f","f",37,0
+8234,31384386,"t",1,"within an hour",37,"f",6,"Guest suite","Entire home/apt",1,1,2,3,"Real Bed",50,1,"f","moderate",80,"f","f","f",29,0
+795,4047058,"t",1,"within an hour",5,"t",3,"House","Private room",1,2,1,1,"Real Bed",25,1,"t","moderate",65,"f","f","f",36,0
+4294,19141758,"t",1,"within an hour",7,"t",6,"Apartment","Entire home/apt",2,2,3,3,"Real Bed",215,3,"f","moderate",125,"f","f","f",23,0
+6068,23625982,"t",1,"within an hour",1,"f",3,"House","Entire home/apt",2,1,1,2,"Real Bed",65,2,"t","strict_14_with_grace_period",125,"f","f","f",38,0
+4630,20134229,"t",1,"within an hour",2,"t",6,"House","Entire home/apt",1,2,3,3,"Real Bed",120,2,"t","strict_14_with_grace_period",350,"f","f","f",48,0
+3736,17302157,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",229,"t","f","f",17,5
+1125,6078397,"t",1,"within an hour",1,"f",3,"Other","Entire home/apt",2,1,1,1,"Real Bed",40,1,"t","strict_14_with_grace_period",140,"f","f","f",26,0
+1589,7921065,"t",1,"within an hour",1,"t",3,"Other","Entire home/apt",2,1,1,1,"Real Bed",125,2,"t","strict_14_with_grace_period",141,"f","f","f",24,0
+4176,18772085,"f",0.8,"within a day",3,"t",2,"Townhouse","Private room",2,1.5,1,1,"Real Bed",34,2,"f","moderate",80,"f","f","f",36,0
+8261,31476418,"f",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",1,1,1,2,"Real Bed",0,1,"t","flexible",80,"f","f","f",10,0
+2532,12932444,"t",1,"within an hour",2,"f",2,"House","Private room",2,1.5,1,1,"Real Bed",15,2,"t","moderate",57,"f","f","f",42,0
+4563,19910767,"f",1,"within an hour",4,"f",4,"Other","Entire home/apt",4,1.5,2,3,"Real Bed",75,1,"t","moderate",169,"f","f","f",15,0
+5969,23187433,"f",0.85,"within an hour",321,"f",5,"Apartment","Entire home/apt",1,1,2,6,"Real Bed",58,2,"t","strict_14_with_grace_period",214,"f","f","f",22,0
+2494,12811781,"f",1,"within a few hours",3,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",35,2,"f","moderate",59,"f","f","f",23,0
+5779,22651123,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,2,"t","moderate",85,"f","f","f",52,0
+1714,8418650,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",3,1,2,3,"Real Bed",60,3,"f","moderate",110,"f","f","f",26,0
+28,26795,"f",1,"within an hour",1,"f",5,"Other","Entire home/apt",2,1,2,3,"Real Bed",0,3,"f","strict_14_with_grace_period",165,"f","f","f",19,0
+5044,21153013,"t",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",15,2,"t","moderate",33,"f","f","f",22,0
+139,443942,"f",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",40,1,"t","strict_14_with_grace_period",125,"t","f","f",29,5
+265,1022135,"f",0,"a few days or more",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",50,2,"f","moderate",55,"f","f","f",29,0
+6926,26292303,"t",1,"within a few hours",2,"f",4,"Condominium","Entire home/apt",3,1.5,2,3,"Real Bed",140,2,"t","strict_14_with_grace_period",170,"f","f","f",25,0
+7698,29194465,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",160,"f","f","f",17,0
+3332,15567025,"f",1,"within an hour",5,"t",4,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",0,2,"f","moderate",158,"t","f","f",37,3
+3348,15635851,"t",1,"within a few hours",1,"f",6,"Townhouse","Entire home/apt",1,2,2,3,"Real Bed",90,2,"f","moderate",200,"f","f","f",47,0
+3908,17965006,"t",1,"within an hour",1,"t",8,"Apartment","Entire home/apt",2,1,2,5,"Real Bed",40,1,"t","strict_14_with_grace_period",55,"f","f","f",30,0
+7113,27110436,"f",1,"within an hour",2,"t",1,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",30,1,"t","flexible",50,"f","f","f",31,0
+4434,19629725,"t",1,"within a few hours",1,"f",2,"Condominium","Entire home/apt",1,1,1,1,"Real Bed",100,7,"f","moderate",78,"f","f","f",42,0
+543,2693700,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",50,2,"t","moderate",95,"f","f","f",42,0
+63,170273,"t",1,"within a few hours",1,"t",7,"House","Entire home/apt",6,2.5,3,5,"Real Bed",175,2,"f","moderate",750,"f","f","f",64,3
+6486,24771596,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",450,"f","f","f",36,3
+6099,23700263,"t",1,"within an hour",32,"f",11,"Townhouse","Entire home/apt",6,2.5,3,6,"Real Bed",150,1,"t","strict_14_with_grace_period",350,"f","f","f",28,0
+7771,29378210,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",120,"t","f","f",19,3
+6773,25789346,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",119,"t","f","f",21,5
+985,5084451,"t",1,"within an hour",3,"f",2,"Condominium","Private room",1,1,1,1,"Real Bed",25,2,"t","strict_14_with_grace_period",55,"f","f","f",39,0
+3083,14502893,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",40,2,"t","moderate",65,"f","f","f",21,0
+2066,10385048,"t",1,"within an hour",10,"t",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",65,2,"t","moderate",225,"t","f","f",38,5
+340,1439237,"t",0.86,"within an hour",2,"t",2,"House","Private room",2,1,1,2,"Real Bed",0,2,"f","flexible",76,"f","f","f",2,0
+752,3868138,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",229,"t","f","f",27,3
+3757,17435798,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","moderate",99,"t","f","f",35,5
+6190,23928824,"t",1,"within an hour",2,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",50,1,"t","moderate",150,"f","f","f",25,0
+189,661708,"t",1,"within a few hours",2,"t",6,"House","Entire home/apt",4,2.5,2,4,"Real Bed",125,3,"f","strict_14_with_grace_period",229,"f","f","f",7,0
+2457,12605930,"t",1,"within an hour",1,"t",3,"Guesthouse","Entire home/apt",2,1,1,2,"Real Bed",40,1,"t","strict_14_with_grace_period",95,"f","f","f",57,0
+7624,28868804,"f",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",35,1,"t","strict_14_with_grace_period",99,"f","f","f",18,0
+7583,28699203,"f",1,"within an hour",1,"f",6,"Guest suite","Entire home/apt",6,2,2,3,"Real Bed",100,2,"t","flexible",110,"f","f","f",33,0
+1903,9386699,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",2,1,2,2,"Real Bed",0,2,"f","flexible",120,"f","f","f",24,0
+8413,32049348,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",109,"t","f","f",21,5
+6036,23483229,"f",1,"within an hour",35,"f",6,"Apartment","Entire home/apt",3,1,3,3,"Real Bed",85,2,"t","strict_14_with_grace_period",200,"f","f","f",33,0
+5304,21710355,"f",1,"within an hour",4,"f",4,"Guest suite","Entire home/apt",1,1,2,2,"Real Bed",0,2,"t","moderate",100,"f","f","f",31,0
+2150,11022927,"f",0.75,"within a few hours",1,"t",2,"Other","Entire home/apt",1,1,1,1,"Real Bed",65,30,"t","moderate",110,"f","f","f",35,0
+8371,31907972,"f",1,"within an hour",12,"f",6,"House","Entire home/apt",6,1,2,3,"Real Bed",19,1,"t","flexible",10,"f","f","f",27,0
+5960,23131522,"t",1,"within an hour",1,"f",8,"House","Entire home/apt",8,2,3,5,"Real Bed",59,2,"t","strict_14_with_grace_period",160,"f","f","f",39,0
+991,5137315,"f",1,"within an hour",9,"t",2,"House","Private room",1,1.5,1,1,"Real Bed",0,2,"t","moderate",58,"f","f","f",20,0
+4930,20902861,"t",1,"within an hour",1,"f",4,"House","Entire home/apt",2,1,2,3,"Real Bed",125,2,"f","strict_14_with_grace_period",79,"f","f","f",40,0
+7939,30064070,"t",1,"within an hour",44,"t",12,"House","Entire home/apt",8,4,4,5,"Real Bed",200,5,"t","strict_14_with_grace_period",1000,"f","f","f",41,0
+7988,30269769,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","moderate",99,"f","f","f",42,4
+553,2736961,"f",1,"within an hour",1,"t",3,"Guesthouse","Entire home/apt",1,1,0,1,"Real Bed",35,1,"f","moderate",95,"f","f","f",30,0
+2285,11679052,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",90,4,"f","moderate",97,"f","f","f",67,0
+4305,19164146,"f",1,"within an hour",2,"f",8,"House","Entire home/apt",6,3,4,6,"Real Bed",150,2,"t","strict_14_with_grace_period",299,"f","f","f",40,0
+3830,17702027,"t",1,"within an hour",2,"t",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",40,1,"f","strict_14_with_grace_period",90,"f","f","f",39,0
+2443,12563525,"f",1,"within an hour",1,"t",8,"House","Entire home/apt",6,3,4,4,"Real Bed",75,3,"f","strict_14_with_grace_period",250,"f","f","f",33,0
+7798,29487110,"f",1,"within an hour",1,"f",8,"House","Entire home/apt",6,2,4,5,"Real Bed",150,3,"f","moderate",195,"f","t","f",37,0
+6387,24556131,"f",1,"within an hour",2,"f",6,"Townhouse","Entire home/apt",1,1.5,2,4,"Real Bed",90,1,"t","moderate",124,"f","f","f",28,0
+7063,26850929,"f",1,"within an hour",2,"f",9,"Townhouse","Entire home/apt",6,1,2,2,"Real Bed",75,1,"t","strict_14_with_grace_period",90,"f","f","f",36,0
+935,4777832,"t",1,"within an hour",1,"f",6,"Other","Entire home/apt",2,1,0,3,"Real Bed",60,2,"f","strict_14_with_grace_period",150,"f","f","f",43,0
+5108,21305258,"t",1,"within a few hours",1,"f",1,"Apartment","Private room",1,1,1,1,"Real Bed",0,2,"t","flexible",50,"f","f","f",18,0
+681,3543247,"t",1,"within an hour",2,"t",6,"Apartment","Entire home/apt",2,1,2,3,"Real Bed",60,1,"t","moderate",190,"f","f","f",52,0
+7424,28217182,"f",0.99,"within a few hours",231,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",0,1,"t","moderate",139,"f","f","f",43,0
+7122,27162280,"t",1,"within an hour",1,"f",4,"Other","Entire home/apt",2,1,1,3,"Real Bed",50,2,"t","moderate",105,"f","f","f",31,0
+6465,24749819,"t",1,"within a few hours",2,"f",2,"Apartment","Entire home/apt",1,1,0,2,"Real Bed",75,2,"t","moderate",120,"t","f","f",53,5
+1720,8431453,"t",0,"a few days or more",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",15,3,"f","flexible",64,"f","f","f",19,0
+367,1556170,"t",1,"within an hour",7,"t",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",85,3,"f","strict_14_with_grace_period",79,"f","f","f",20,0
+4477,19769738,"f",1,"within an hour",3,"t",1,"House","Private room",1,1,1,1,"Real Bed",0,1,"t","flexible",60,"f","f","f",12,0
+5022,21077859,"t",1,"within an hour",9,"t",6,"Other","Entire home/apt",1,1,1,3,"Real Bed",60,1,"t","strict_14_with_grace_period",195,"f","f","f",28,0
+801,4100009,"t",1,"within an hour",4,"t",3,"House","Entire home/apt",2,1,1,2,"Real Bed",60,2,"t","moderate",105,"f","f","f",30,0
+1925,9494623,"f",1,"within an hour",40,"f",2,"Other","Private room",1,1,1,1,"Real Bed",0,1,"t","moderate",59,"f","f","f",25,0
+5708,22438516,"f",0.96,"within an hour",13,"f",8,"House","Entire home/apt",1,1.5,4,4,"Real Bed",200,3,"f","strict_14_with_grace_period",395,"f","f","f",25,0
+869,4461706,"t",1,"within an hour",2,"t",2,"Other","Entire home/apt",1,1,1,1,"Real Bed",40,2,"t","moderate",89,"f","f","f",21,0
+5401,21951075,"t",1,"within an hour",1,"f",2,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",45,2,"f","moderate",99,"f","f","t",44,0
+1412,7275464,"t",1,"within a few hours",1,"t",2,"Other","Entire home/apt",1,1,0,1,"Real Bed",50,2,"f","flexible",140,"f","f","f",14,0
+7662,29040124,"f",1,"within an hour",1,"f",2,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",40,2,"t","moderate",75,"f","t","f",15,0
+7603,28789419,"f",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",20,1,"f","moderate",75,"f","f","f",21,0
+8070,30546141,"f",1,"within an hour",3,"f",2,"House","Private room",1,1,1,1,"Real Bed",20,1,"t","flexible",45,"f","f","f",27,0
+7423,28214746,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",50,1,"t","moderate",120,"f","f","f",35,1
+3528,16377071,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","flexible",99,"t","f","f",34,5
+7562,28609889,"t",1,"within an hour",4,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",40,1,"t","moderate",110,"f","f","f",23,0
+1612,7988300,"f",1,"within an hour",7,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",25,1,"f","flexible",500,"f","f","f",32,0
+1010,5299060,"f",1,"within a few hours",1,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",50,3,"f","moderate",70,"f","t","f",22,0
+1193,6389657,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",30,3,"t","flexible",147,"f","f","f",24,1
+6609,25203922,"f",1,"within an hour",3,"f",4,"Guesthouse","Entire home/apt",1,1,2,2,"Real Bed",60,2,"t","strict_14_with_grace_period",100,"f","f","f",21,0
+1214,6462182,"f",1,"within an hour",2,"f",2,"Apartment","Private room",1,1,1,1,"Real Bed",35,1,"t","moderate",125,"t","f","f",30,5
+3097,14610580,"f",1,"within an hour",1,"t",4,"Condominium","Entire home/apt",2,1,0,2,"Real Bed",50,1,"t","moderate",135,"t","f","f",20,5
+612,3206305,"t",1,"within an hour",1,"t",3,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",40,2,"f","moderate",90,"f","t","f",34,0
+8440,32116273,"f",1,"within an hour",1,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",20,1,"t","strict_14_with_grace_period",88,"f","f","f",17,3
+3950,18095047,"t",1,"within an hour",2,"t",1,"House","Private room",1,1,1,1,"Real Bed",40,7,"f","moderate",50,"f","f","f",37,0
+5711,22446734,"f",0.99,"within an hour",1276,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",99,2,"t","strict_14_with_grace_period",999,"t","f","f",34,4
+214,752483,"t",1,"within an hour",1,"t",4,"Townhouse","Entire home/apt",4,2,2,2,"Real Bed",125,1,"f","moderate",225,"f","f","f",40,0
+817,4170863,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",40,3,"t","moderate",105,"f","f","f",44,0
+5337,21764220,"f",1,"within an hour",8,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",35,1,"t","moderate",74,"f","f","f",19,0
+3321,15550339,"t",1,"within an hour",1,"t",7,"Townhouse","Entire home/apt",4,1,2,4,"Real Bed",60,2,"t","strict_14_with_grace_period",218,"f","f","f",67,0
+4089,18476706,"f",1,"within a few hours",2,"f",5,"Townhouse","Entire home/apt",1,4,5,5,"Real Bed",150,1,"f","strict_14_with_grace_period",188,"f","f","f",22,0
+8120,30819084,"t",1,"within an hour",37,"f",7,"Guest suite","Entire home/apt",1,1,3,4,"Real Bed",55,1,"t","moderate",80,"f","t","f",17,0
+713,3703121,"f",1,"within a few hours",1,"t",4,"Guest suite","Entire home/apt",2,1,2,2,"Real Bed",50,7,"f","moderate",125,"f","f","t",21,0
+6883,26138712,"t",1,"within an hour",2,"t",3,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",30,3,"f","strict_14_with_grace_period",120,"f","f","f",43,0
+98,271509,"t",1,"within an hour",42,"t",6,"Condominium","Entire home/apt",1,1,2,3,"Real Bed",130,2,"f","strict_14_with_grace_period",144,"t","f","f",45,5
+6137,23771340,"f",1,"within an hour",123,"f",5,"Apartment","Entire home/apt",1,1,1,3,"Real Bed",40,1,"t","strict_14_with_grace_period",110,"t","f","f",22,3
+2846,13751731,"t",1,"within an hour",1,"t",8,"House","Entire home/apt",1,2,3,4,"Real Bed",100,1,"f","moderate",340,"f","f","f",43,0
+5138,21369355,"f",1,"within a few hours",2,"t",1,"Apartment","Private room",1,1,1,1,"Real Bed",50,5,"f","moderate",70,"f","f","f",44,2
+4339,19316995,"t",1,"within an hour",42,"t",6,"Other","Entire home/apt",1,2,2,2,"Real Bed",130,2,"t","strict_14_with_grace_period",155,"t","f","f",44,3
+707,3678718,"f",1,"within an hour",1,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",60,1,"f","moderate",60,"f","f","f",29,0
+2240,11434355,"f",1,"within a few hours",1,"t",6,"House","Entire home/apt",4,2,3,3,"Real Bed",100,330,"f","strict_14_with_grace_period",198,"f","f","f",27,0
+6788,25820794,"t",1,"within an hour",3,"f",4,"Condominium","Entire home/apt",1,1,0,3,"Real Bed",50,3,"t","strict_14_with_grace_period",199,"t","f","f",21,5
+2863,13779044,"t",1,"within an hour",3,"t",4,"Guesthouse","Entire home/apt",1,1,1,2,"Real Bed",75,2,"t","moderate",120,"f","t","f",30,0
+1431,7350456,"f",1,"within an hour",2,"t",2,"House","Entire home/apt",2,1,1,1,"Real Bed",0,2,"t","moderate",63,"f","f","f",21,0
+2753,13532046,"t",0.9,"within a few hours",3,"f",6,"House","Entire home/apt",1,2,3,3,"Real Bed",150,2,"f","moderate",154,"f","f","f",33,2
+1850,9154462,"t",1,"within a few hours",2,"t",4,"House","Entire home/apt",1,1.5,2,2,"Real Bed",100,2,"f","strict_14_with_grace_period",200,"f","f","f",31,0
+3896,17907723,"t",1,"within a few hours",1,"t",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",16,1,"f","moderate",74,"f","f","f",21,0
+8084,30593987,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",119,"t","f","f",21,5
+5824,22774271,"f",1,"within an hour",19,"t",8,"House","Entire home/apt",6,1,3,5,"Real Bed",175,1,"t","super_strict_60",527,"f","f","f",38,0
+3518,16325947,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",75,3,"f","strict_14_with_grace_period",156,"t","f","f",18,3
+7977,30183931,"t",1,"within an hour",2,"f",2,"House","Entire home/apt",2,1.5,1,1,"Real Bed",15,2,"t","moderate",57,"f","f","f",44,0
+3181,14918819,"t",1,"within an hour",2,"f",4,"Other","Entire home/apt",2,1,2,2,"Real Bed",60,5,"t","moderate",125,"f","f","f",29,0
+6995,26604453,"f",1,"within a few hours",1,"t",2,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",30,1,"t","moderate",78,"f","f","t",29,0
+3937,18058644,"t",1,"within an hour",2,"t",8,"House","Entire home/apt",1,2,4,4,"Real Bed",70,2,"t","flexible",175,"f","f","f",27,0
+5105,21297099,"f",0.5,"within a day",2,"f",4,"House","Entire home/apt",1,1,2,3,"Real Bed",15,1,"t","flexible",105,"f","f","f",57,0
+4192,18810713,"f",1,"within a few hours",1,"f",4,"House","Entire home/apt",3,2.5,3,3,"Real Bed",120,30,"f","strict_14_with_grace_period",195,"f","f","f",40,0
+8455,32239373,"f",1,"within an hour",2,"f",2,"Apartment","Entire home/apt",2,2,1,1,"Real Bed",0,1,"t","strict_14_with_grace_period",108,"t","f","f",5,5
+4515,19786059,"f",0.99,"within an hour",81,"f",8,"Townhouse","Entire home/apt",8,2.5,3,5,"Real Bed",195,1,"t","super_strict_30",208,"f","f","f",24,0
+352,1511620,"f",1,"within a few hours",57,"t",1,"House","Shared room",1,0.5,1,1,"Real Bed",75,4,"f","strict_14_with_grace_period",45,"f","f","f",21,0
+5003,21023631,"t",0.9,"within an hour",2,"f",3,"Guest suite","Entire home/apt",3,1,1,1,"Real Bed",40,1,"t","flexible",150,"f","f","f",13,0
+5400,21948679,"f",1,"within an hour",1,"f",2,"Serviced apartment","Private room",1,1,1,1,"Real Bed",25,2,"t","moderate",70,"t","f","f",35,3
+2973,14078541,"f",1,"within a few hours",1,"t",4,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",25,2,"f","flexible",150,"f","f","f",17,2
+1865,9233533,"f",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",75,1,"f","moderate",105,"f","f","t",23,0
+1066,5653726,"f",0.92,"within an hour",51,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",70,1,"f","moderate",99,"f","f","f",31,0
+7905,29929821,"f",1,"within an hour",9,"f",1,"Townhouse","Private room",1,1,1,1,"Real Bed",0,30,"t","strict_14_with_grace_period",30,"f","f","f",19,0
+495,2387605,"t",1,"within an hour",3,"t",4,"House","Private room",2,1,1,2,"Real Bed",40,2,"f","strict_14_with_grace_period",89,"f","f","f",29,0
+3070,14449563,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",4,1,1,2,"Real Bed",50,2,"f","moderate",85,"f","f","f",47,0
+4559,19904304,"t",1,"within a few hours",1,"t",4,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",100,3,"f","moderate",133,"f","f","f",29,0
+3353,15660373,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","flexible",99,"f","f","f",36,5
+4121,18560401,"t",1,"within an hour",4,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",35,10,"t","strict_14_with_grace_period",74,"f","f","f",20,0
+493,2367298,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",1,1,1,0,"Real Bed",50,2,"t","moderate",138,"f","f","f",23,0
+6383,24540346,"f",0.8,"within an hour",3,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",75,3,"t","strict_14_with_grace_period",150,"f","f","f",28,0
+7140,27219966,"t",1,"within an hour",13,"f",2,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",100,1,"t","flexible",121,"f","f","f",49,0
+7402,28106491,"t",1,"within an hour",5,"f",4,"House","Private room",2,2,1,2,"Real Bed",50,1,"t","moderate",75,"f","f","f",46,0
+5463,22150881,"f",0.96,"within an hour",3,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",35,1,"t","moderate",90,"t","f","f",38,5
+5118,21323426,"f",1,"within an hour",1,"f",1,"Guest suite","Private room",1,1,1,1,"Real Bed",0,1,"t","flexible",70,"f","f","f",14,0
+1210,6438518,"t",1,"within an hour",3,"t",4,"Guest suite","Entire home/apt",2,1,2,2,"Real Bed",65,1,"f","strict_14_with_grace_period",125,"f","f","f",41,0
+8397,32016519,"f",1,"within an hour",1,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",50,1,"t","moderate",150,"f","f","f",16,0
+8242,31392208,"f",1,"within an hour",1,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,1,"t","moderate",125,"t","f","f",23,5
+5524,22206326,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"f","strict",229,"t","f","f",17,5
+4927,20897681,"f",1,"within an hour",2,"t",4,"Apartment","Entire home/apt",4,1,1,1,"Real Bed",80,5,"f","strict_14_with_grace_period",125,"f","f","f",25,0
+4908,20843851,"f",0.98,"within an hour",61,"f",4,"Condominium","Entire home/apt",2,1,1,2,"Real Bed",165,1,"f","strict_14_with_grace_period",146,"t","f","f",21,5
+4654,20169621,"t",1,"within an hour",3,"f",4,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",100,2,"t","moderate",133,"f","f","f",34,0
+6188,23924818,"f",1,"within an hour",5,"t",4,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",0,2,"f","moderate",128,"f","f","f",30,3
+1002,5232122,"t",1,"within an hour",1,"t",5,"Apartment","Entire home/apt",4,2,2,3,"Real Bed",80,3,"f","moderate",117,"f","f","t",50,0
+2874,13790537,"f",1,"within an hour",2,"f",2,"Apartment","Shared room",1,1,1,1,"Real Bed",0,2,"f","flexible",75,"f","f","f",11,0
+5125,21332189,"f",0.98,"within an hour",20,"f",4,"House","Entire home/apt",1,1,2,3,"Real Bed",120,2,"t","strict_14_with_grace_period",232,"f","f","f",30,0
+4567,19914644,"t",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",30,2,"t","moderate",95,"f","f","f",35,0
+6125,23742518,"t",1,"within an hour",1,"f",3,"Apartment","Entire home/apt",3,1,1,2,"Real Bed",50,2,"f","flexible",96,"f","f","f",35,0
+3368,15721682,"f",1,"within an hour",2,"f",8,"House","Entire home/apt",6,2.5,3,3,"Real Bed",110,2,"t","strict_14_with_grace_period",200,"f","f","f",16,0
+40,66540,"t",1,"within a few hours",3,"t",1,"House","Private room",1,1,1,1,"Futon",35,3,"f","moderate",50,"f","f","f",9,0
+7610,28812324,"f",1,"within a few hours",0,"f",3,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",100,3,"t","moderate",105,"f","f","f",27,0
+5834,22794336,"t",1,"within an hour",1,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",45,2,"t","moderate",100,"t","f","f",40,3
+421,1797207,"t",1,"within an hour",42,"t",6,"Condominium","Entire home/apt",1,2,2,4,"Real Bed",130,2,"f","strict_14_with_grace_period",122,"t","f","f",30,5
+2531,12931310,"t",1,"within an hour",2,"t",2,"House","Private room",1,1,1,1,"Real Bed",15,1,"f","moderate",95,"f","f","f",26,0
+6877,26132206,"f",1,"within an hour",15,"f",4,"Other","Entire home/apt",1,1,1,2,"Real Bed",55,1,"t","moderate",120,"f","f","f",41,0
+751,3861673,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",25,1,"f","moderate",70,"f","f","f",24,0
+5812,22751612,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",100,"f","f","f",43,2
+5297,21698374,"f",1,"within an hour",100,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,2,"t","strict_14_with_grace_period",195,"t","f","f",32,2
+342,1455269,"t",1,"within a day",1,"f",6,"Apartment","Entire home/apt",4,1,3,4,"Real Bed",55,2,"f","strict_14_with_grace_period",115,"f","f","f",39,0
+1391,7219541,"t",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",10,2,"f","moderate",41,"f","f","t",21,0
+906,4639040,"t",1,"within an hour",2,"t",1,"Other","Private room",1,1,1,1,"Real Bed",60,6,"t","strict_14_with_grace_period",30,"f","f","f",47,0
+3542,16453524,"t",1,"within an hour",1,"t",2,"Other","Entire home/apt",2,1,1,1,"Real Bed",58,1,"f","strict_14_with_grace_period",129,"f","f","f",22,2
+8450,32192574,"f",1,"within an hour",12,"f",3,"House","Private room",3,1,1,2,"Real Bed",15,1,"t","flexible",10,"f","f","f",26,0
+6786,25816497,"f",1,"within an hour",6,"t",2,"Other","Private room",2,1,1,1,"Real Bed",85,1,"f","strict_14_with_grace_period",50,"f","f","f",25,0
+7851,29732961,"f",1,"within an hour",78,"t",6,"Apartment","Entire home/apt",4,1,1,3,"Real Bed",100,5,"t","strict_14_with_grace_period",1000,"f","f","f",25,0
+7518,28463816,"t",1,"within an hour",1,"t",6,"House","Entire home/apt",2,2,3,3,"Real Bed",140,2,"f","moderate",119,"f","f","f",45,0
+32,38545,"t",1,"within an hour",7,"t",8,"House","Entire home/apt",7,2.5,3,3,"Real Bed",99,10,"f","moderate",225,"f","f","f",41,0
+5689,22373686,"f",0.99,"within an hour",81,"f",4,"Condominium","Entire home/apt",4,1,1,2,"Real Bed",160,1,"t","super_strict_30",164,"t","f","f",30,4
+6286,24152776,"f",1,"within an hour",3,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",40,2,"t","moderate",87,"t","f","f",31,3
+6380,24519640,"f",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",60,2,"t","strict_14_with_grace_period",130,"f","f","f",21,0
+2877,13796648,"f",1,"within a few hours",57,"t",2,"House","Shared room",1,3.5,1,2,"Real Bed",150,7,"f","strict_14_with_grace_period",86,"f","f","f",30,0
+8088,30655290,"f",1,"within an hour",1,"t",3,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",0,2,"t","flexible",125,"f","f","f",31,0
+3618,16736918,"t",1,"within a few hours",3,"t",5,"Condominium","Entire home/apt",1,2,3,3,"Real Bed",150,25,"f","strict_14_with_grace_period",185,"f","f","f",30,0
+5043,21148583,"t",1,"within a day",2,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,25,"f","moderate",186,"f","f","f",41,0
+2060,10344159,"t",1,"within an hour",1,"f",6,"House","Entire home/apt",4,2.5,3,3,"Real Bed",99,2,"f","strict_14_with_grace_period",225,"f","f","f",27,0
+2972,14073646,"t",1,"within an hour",1,"t",3,"House","Entire home/apt",2,1,1,1,"Real Bed",35,2,"f","moderate",89,"f","f","f",19,0
+7031,26763459,"f",0.99,"within an hour",209,"f",8,"House","Entire home/apt",1,2,3,3,"Real Bed",159,1,"t","strict_14_with_grace_period",375,"f","f","f",24,1
+5405,21952292,"t",1,"within an hour",2,"f",4,"Townhouse","Private room",2,1.5,2,3,"Real Bed",90,3,"f","moderate",50,"f","f","f",22,0
+2057,10341497,"f",1,"within an hour",2,"f",2,"Other","Entire home/apt",2,1,1,1,"Real Bed",59,3,"f","moderate",118,"f","f","f",27,0
+198,690912,"f",0.75,"within a day",1,"f",4,"House","Entire home/apt",3,2,2,2,"Real Bed",0,2,"f","strict_14_with_grace_period",115,"f","f","f",13,0
+4212,18873273,"t",0.9,"within an hour",2,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",35,2,"f","moderate",65,"f","f","f",15,0
+3346,15634259,"f",0,"a few days or more",1,"f",2,"House","Private room",1,2,1,2,"Real Bed",0,90,"f","flexible",45,"f","f","f",16,0
+3769,17477203,"t",1,"within a day",1,"t",2,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",40,1,"t","moderate",89,"f","f","f",34,0
+894,4593608,"f",0.5,"within a day",1,"f",8,"House","Entire home/apt",1,2,4,4,"Real Bed",150,7,"f","strict_14_with_grace_period",215,"f","f","f",39,0
+7059,26845976,"t",1,"within an hour",1,"f",6,"House","Entire home/apt",4,2,2,3,"Real Bed",90,2,"t","moderate",200,"f","f","f",37,0
+2682,13317047,"f",1,"within an hour",6,"t",2,"House","Private room",2,2.5,1,1,"Real Bed",10,1,"t","moderate",45,"f","f","f",9,0
+7617,28839429,"f",1,"within a few hours",2,"t",4,"Apartment","Entire home/apt",2,1,2,3,"Real Bed",75,3,"t","flexible",125,"f","f","f",20,0
+1122,6066570,"f",1,"within a few hours",1,"t",10,"House","Entire home/apt",8,3.5,6,7,"Real Bed",150,5,"f","strict_14_with_grace_period",750,"f","f","f",20,0
+3574,16601505,"t",0.97,"within an hour",3,"t",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,1,"t","moderate",160,"t","f","f",27,3
+3935,18055960,"f",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",30,2,"f","strict_14_with_grace_period",75,"f","f","f",38,0
+8363,31880357,"f",1,"within an hour",1,"f",2,"Townhouse","Private room",1,1,1,1,"Real Bed",15,2,"t","flexible",32,"f","f","f",27,0
+3267,15339026,"t",1,"within an hour",4,"t",12,"House","Entire home/apt",10,1,4,8,"Real Bed",195,4,"f","strict_14_with_grace_period",325,"f","f","f",46,0
+4463,19735309,"t",1,"within an hour",1,"f",3,"Townhouse","Private room",2,1,1,1,"Real Bed",15,1,"f","moderate",50,"f","f","f",37,0
+6585,25092622,"f",1,"within an hour",50,"f",6,"Condominium","Entire home/apt",6,2,2,3,"Real Bed",243,2,"t","super_strict_30",157,"f","f","f",21,1
+5677,22342526,"f",1,"within an hour",1292,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",100,1,"t","strict_14_with_grace_period",1002,"t","f","f",20,5
+4182,18777766,"f",1,"within an hour",5,"t",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",0,2,"f","moderate",128,"f","f","f",31,2
+2130,10900388,"t",1,"within an hour",4,"t",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",68,2,"t","strict_14_with_grace_period",137,"t","f","f",26,5
+6143,23786099,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",65,2,"f","moderate",175,"f","f","f",36,0
+4120,18547580,"t",1,"within an hour",3,"f",4,"Condominium","Entire home/apt",2,1,1,2,"Real Bed",55,3,"t","moderate",176,"t","f","f",37,3
+3544,16465858,"f",1,"within an hour",100,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,2,"t","strict_14_with_grace_period",200,"t","f","f",29,3
+2792,13623551,"f",1,"within a few hours",1,"t",1,"Apartment","Shared room",1,1,1,1,"Airbed",5,1,"f","moderate",65,"t","f","f",17,6
+2370,12191280,"t",1,"within an hour",1,"t",2,"Guesthouse","Entire home/apt",2,1,0,1,"Real Bed",45,2,"f","moderate",110,"f","f","f",29,0
+281,1110749,"f",0.97,"within an hour",14,"t",6,"House","Entire home/apt",6,1.5,3,3,"Real Bed",100,1,"f","strict_14_with_grace_period",325,"f","f","f",35,1
+2503,12835141,"t",1,"within an hour",3,"f",1,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",35,3,"t","moderate",85,"f","f","f",19,0
+131,394408,"f",1,"within a day",1,"t",4,"House","Entire home/apt",1,2,2,2,"Real Bed",60,1,"f","moderate",150,"f","f","f",19,0
+2819,13661423,"f",1,"within an hour",1,"t",2,"Guest suite","Private room",2,1,1,1,"Real Bed",35,2,"f","moderate",75,"f","f","f",39,1
+8339,31763541,"t",1,"within an hour",6,"t",4,"Apartment","Entire home/apt",4,1,2,3,"Real Bed",35,2,"f","flexible",59,"f","f","f",40,0
+1263,6694276,"t",1,"within an hour",1,"t",4,"Guesthouse","Entire home/apt",4,1,2,3,"Real Bed",60,2,"f","moderate",232,"f","f","f",28,0
+3072,14455104,"f",1,"within an hour",3,"t",12,"House","Entire home/apt",7,2,4,4,"Real Bed",60,1,"t","moderate",170,"f","f","f",26,0
+464,2069917,"t",1,"within an hour",7,"t",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",85,3,"f","strict_14_with_grace_period",75,"f","f","f",23,0
+7257,27554308,"f",1,"within an hour",3,"f",2,"House","Private room",1,1,1,1,"Real Bed",25,2,"t","flexible",62,"f","f","f",20,0
+6936,26339064,"t",1,"within a few hours",1,"f",2,"Townhouse","Private room",1,1,1,1,"Real Bed",30,1,"t","flexible",60,"f","f","f",36,0
+4606,20032059,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","flexible",99,"t","f","f",35,3
+6314,24245145,"f",1,"within an hour",3,"t",2,"House","Entire home/apt",2,1,0,1,"Real Bed",30,2,"f","moderate",70,"f","f","f",43,0
+4584,19988455,"t",1,"within an hour",9,"t",16,"Guest suite","Entire home/apt",1,1,3,14,"Real Bed",0,2,"f","strict_14_with_grace_period",93,"f","f","f",59,0
+457,2020505,"t",1,"within a few hours",1,"f",2,"House","Entire home/apt",1,1,1,1,"Real Bed",20,3,"f","moderate",165,"f","f","f",19,1
+1688,8307502,"t",1,"within a few hours",3,"f",8,"House","Entire home/apt",6,2.5,3,3,"Real Bed",225,1,"t","strict_14_with_grace_period",350,"f","f","f",30,0
+3963,18138913,"t",1,"within an hour",7,"f",2,"House","Private room",2,1,1,1,"Real Bed",45,1,"t","strict_14_with_grace_period",35,"f","f","f",40,0
+5607,22213214,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",275,"t","f","f",28,4
+5066,21190824,"t",1,"within an hour",1,"f",2,"Condominium","Entire home/apt",2,1,1,1,"Real Bed",50,2,"t","strict_14_with_grace_period",90,"f","f","f",46,0
+8365,31883685,"f",1,"within an hour",1,"f",6,"House","Entire home/apt",1,2.5,3,4,"Real Bed",0,2,"t","flexible",180,"f","f","f",16,0
+1341,6990882,"f",1,"within an hour",3,"t",10,"House","Entire home/apt",8,3.5,3,3,"Real Bed",110,1,"t","strict_14_with_grace_period",240,"f","f","f",38,0
+2323,11944943,"t",1,"within an hour",4,"t",2,"Guesthouse","Entire home/apt",2,1,1,1,"Real Bed",0,1,"f","strict_14_with_grace_period",100,"f","f","f",15,0
+2452,12573882,"t",1,"within a few hours",1,"t",5,"Guest suite","Entire home/apt",2,1,2,3,"Real Bed",60,1,"t","moderate",119,"f","f","f",42,0
+4759,20458562,"t",1,"within an hour",5,"f",2,"House","Private room",2,1.5,1,1,"Real Bed",35,1,"f","strict_14_with_grace_period",80,"f","f","f",20,0
+1289,6779893,"f",1,"within a few hours",1,"t",2,"Condominium","Entire home/apt",1,1,1,1,"Real Bed",0,1,"f","flexible",250,"f","f","f",20,1
+4668,20212882,"t",1,"within an hour",6,"t",8,"Townhouse","Entire home/apt",4,2.5,3,3,"Real Bed",150,1,"t","flexible",89,"f","f","f",60,0
+1670,8212989,"f",0.97,"within a few hours",5,"t",8,"Other","Shared room",1,8,1,8,"Real Bed",6,1,"f","flexible",39,"t","f","f",20,4
+6796,25870982,"t",1,"within an hour",9,"t",6,"Other","Entire home/apt",2,1,1,3,"Real Bed",60,1,"t","strict_14_with_grace_period",98,"t","f","f",28,1
+7422,28208320,"f",1,"within an hour",1,"f",3,"Condominium","Private room",2,1,1,1,"Real Bed",30,1,"t","strict_14_with_grace_period",95,"t","f","f",39,3
+6606,25187043,"t",1,"within a day",1,"f",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",30,2,"t","moderate",75,"f","f","f",26,0
+1629,8054902,"t",1,"within an hour",1,"t",6,"Apartment","Entire home/apt",2,1,2,3,"Real Bed",89,1,"t","strict_14_with_grace_period",105,"f","f","f",50,0
+6114,23704832,"t",1,"within an hour",32,"f",6,"Apartment","Entire home/apt",4,2,2,3,"Real Bed",90,1,"t","strict_14_with_grace_period",200,"f","f","f",29,0
+5143,21372033,"f",1,"within a day",1,"f",6,"Apartment","Entire home/apt",3,1,3,3,"Real Bed",100,28,"f","moderate",95,"f","f","f",44,0
+6139,23772986,"f",1,"within an hour",123,"f",4,"Apartment","Entire home/apt",1,1,0,2,"Real Bed",40,1,"t","strict_14_with_grace_period",110,"t","f","f",15,3
+6571,25054974,"f",1,"within an hour",1,"t",4,"Condominium","Entire home/apt",2,1,2,2,"Real Bed",30,2,"f","moderate",100,"f","f","f",19,0
+3538,16426835,"f",1,"within an hour",1,"t",3,"House","Entire home/apt",2,1,1,1,"Airbed",50,1,"f","moderate",100,"f","f","f",35,0
+589,3022308,"f",0.92,"within an hour",51,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",80,2,"f","moderate",90,"f","f","f",11,0
+5371,21879544,"f",0.97,"within an hour",2,"f",5,"Apartment","Entire home/apt",1,2,2,3,"Real Bed",60,2,"t","flexible",225,"f","f","f",20,0
+7074,26922390,"t",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",25,2,"t","moderate",99,"f","f","f",21,0
+8209,31287568,"f",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",0,3,"t","moderate",99,"f","f","f",33,0
+6333,24334462,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,3,2,"Real Bed",159,2,"t","strict",420,"t","f","f",27,3
+2931,13926060,"t",1,"within an hour",3,"t",6,"Other","Entire home/apt",4,1,2,2,"Real Bed",55,2,"t","moderate",189,"f","f","f",41,0
+302,1179538,"f",1,"within an hour",4,"t",4,"Townhouse","Entire home/apt",4,2.5,2,3,"Real Bed",100,1,"f","strict_14_with_grace_period",200,"f","f","f",17,0
+6256,24100074,"t",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",50,2,"t","flexible",60,"f","f","f",11,0
+5144,21378047,"f",1,"within an hour",5,"f",4,"Apartment","Entire home/apt",2,1,0,2,"Real Bed",45,1,"t","strict_14_with_grace_period",75,"t","f","f",28,3
+6560,25029389,"f",1,"within an hour",2,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",69,1,"t","strict_14_with_grace_period",142,"t","f","f",27,5
+7737,29246048,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",149,"t","f","f",18,4
+8028,30407187,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,0,1,"Real Bed",75,2,"t","moderate",99,"f","f","f",42,4
+8178,31094355,"f",1,"within an hour",5,"f",6,"Apartment","Private room",1,1,3,3,"Real Bed",0,5,"t","moderate",80,"f","f","f",28,0
+1043,5470943,"t",1,"within an hour",3,"t",4,"Apartment","Entire home/apt",4,1,2,2,"Real Bed",80,2,"t","flexible",133,"f","f","f",45,0
+5637,22265790,"f",1,"within an hour",1292,"f",4,"Apartment","Entire home/apt",4,1,1,2,"Real Bed",99,1,"t","strict_14_with_grace_period",1002,"t","f","f",20,5
+4023,18292304,"f",1,"within an hour",1292,"f",3,"Apartment","Entire home/apt",3,1,1,2,"Real Bed",99,1,"t","strict_14_with_grace_period",1002,"t","f","f",18,4
+6456,24718836,"f",1,"within an hour",1,"f",11,"House","Entire home/apt",5,3,5,6,"Real Bed",250,3,"t","strict_14_with_grace_period",295,"f","f","f",25,0
+8047,30440181,"f",1,"within an hour",1,"f",3,"Apartment","Entire home/apt",3,1,0,2,"Real Bed",0,1,"f","strict_14_with_grace_period",60,"f","f","f",41,0
+5545,22208706,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"t","f","f",21,5
+5124,21326416,"t",1,"within an hour",1,"t",3,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",0,2,"t","moderate",76,"f","f","f",27,0
+7028,26748949,"f",1,"within an hour",50,"f",5,"Apartment","Entire home/apt",5,1,2,2,"Real Bed",243,2,"t","super_strict_30",96,"f","t","f",19,0
+2032,10136155,"f",1,"within an hour",1,"t",6,"House","Entire home/apt",4,2,5,5,"Real Bed",0,2,"t","moderate",360,"f","f","f",47,0
+5492,22153586,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",169,"t","f","f",17,3
+7736,29245970,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",149,"t","f","f",18,4
+2978,14108275,"f",1,"within an hour",1,"t",4,"House","Entire home/apt",2,1,2,2,"Real Bed",40,2,"f","moderate",94,"f","f","f",42,0
+4675,20233409,"t",1,"within a few hours",3,"f",3,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",40,3,"f","moderate",138,"f","f","f",18,0
+5731,22493797,"f",0.85,"within an hour",321,"f",4,"Apartment","Entire home/apt",4,1,0,1,"Real Bed",56,2,"t","strict_14_with_grace_period",155,"f","f","f",10,0
+8277,31571665,"f",1,"within a few hours",1,"t",4,"Guest suite","Entire home/apt",1,1,1,2,"Real Bed",70,1,"f","flexible",100,"f","f","f",17,0
+4925,20896567,"t",1,"within an hour",10,"f",3,"Apartment","Entire home/apt",2,1,0,2,"Real Bed",50,1,"t","moderate",150,"f","f","f",28,2
+7814,29538427,"f",1,"within an hour",7,"f",2,"House","Private room",1,1,1,1,"Real Bed",40,1,"t","flexible",40,"f","f","f",15,0
+4018,18292273,"f",1,"within an hour",1292,"f",6,"Apartment","Entire home/apt",6,2,2,3,"Real Bed",99,1,"t","strict_14_with_grace_period",1002,"t","f","f",20,5
+143,461234,"t",1,"within a few hours",1,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",0,3,"f","flexible",99,"f","f","f",29,0
+5777,22639064,"t",1,"within an hour",1,"t",6,"Townhouse","Entire home/apt",6,2.5,2,5,"Real Bed",100,2,"f","moderate",290,"f","f","f",41,0
+2935,13935333,"f",1,"within an hour",13,"t",2,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",25,1,"t","flexible",44,"f","t","f",20,0
+5966,23149698,"t",1,"within a few hours",3,"f",2,"Condominium","Entire home/apt",2,1,1,1,"Real Bed",75,3,"f","moderate",109,"t","f","f",32,4
+6937,26344027,"f",0.99,"within an hour",209,"f",4,"Townhouse","Entire home/apt",1,2.5,2,2,"Real Bed",131,2,"t","strict_14_with_grace_period",214,"f","f","f",21,0
+5194,21475173,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","flexible",99,"f","f","f",39,4
+5247,21581819,"t",1,"within an hour",1,"t",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",50,1,"f","strict_14_with_grace_period",90,"t","f","f",17,5
+3549,16492155,"f",0.99,"within an hour",152,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","strict_14_with_grace_period",159,"t","f","f",21,5
+4357,19368147,"t",1,"within an hour",1,"f",4,"House","Entire home/apt",1,1,2,2,"Real Bed",0,2,"t","flexible",80,"f","f","f",32,0
+825,4211081,"t",1,"within an hour",4,"t",8,"House","Entire home/apt",3,3,3,7,"Real Bed",80,2,"t","strict_14_with_grace_period",290,"f","f","f",29,0
+6728,25583974,"t",1,"within an hour",32,"f",9,"Townhouse","Entire home/apt",6,3.5,3,5,"Real Bed",150,1,"t","strict_14_with_grace_period",300,"f","f","f",29,0
+8375,31926784,"f",1,"within an hour",1,"f",8,"House","Entire home/apt",1,3,4,5,"Real Bed",150,2,"t","flexible",202,"f","f","f",32,0
+279,1100686,"t",1,"within an hour",3,"t",3,"House","Private room",2,1,1,2,"Real Bed",35,2,"t","moderate",65,"f","f","f",32,0
+1486,7563243,"t",1,"within an hour",1,"t",4,"Other","Entire home/apt",2,1,0,1,"Real Bed",25,1,"t","moderate",100,"f","f","f",60,0
+2234,11399365,"f",1,"within an hour",5,"t",2,"House","Private room",1,2,1,1,"Real Bed",20,3,"f","strict_14_with_grace_period",39,"f","f","t",30,0
+1024,5364414,"t",1,"within an hour",1,"t",6,"House","Entire home/apt",6,2.5,3,3,"Real Bed",175,3,"f","strict_14_with_grace_period",250,"f","f","f",45,0
+4985,21010058,"t",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",2,1,0,2,"Real Bed",65,2,"f","flexible",150,"f","f","f",38,0
+4702,20285016,"f",1,"within an hour",7,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,1,"f","moderate",129,"f","f","f",34,3
+3676,17045571,"f",0.97,"within an hour",14,"t",16,"House","Entire home/apt",16,4,4,8,"Real Bed",100,1,"t","strict_14_with_grace_period",500,"f","f","f",26,0
+2055,10332360,"t",1,"within an hour",3,"t",4,"House","Entire home/apt",3,1,1,2,"Real Bed",65,1,"f","moderate",109,"f","f","f",23,0
+898,4599119,"f",1,"within a day",1,"t",4,"Other","Entire home/apt",1,1.5,2,2,"Real Bed",115,4,"f","strict_14_with_grace_period",280,"f","f","f",49,0
+7765,29361063,"t",0.83,"within a day",3,"t",2,"Other","Entire home/apt",1,1,1,1,"Real Bed",100,30,"f","strict_14_with_grace_period",85,"f","f","f",35,0
+7811,29523570,"f",1,"within an hour",1,"f",6,"Townhouse","Entire home/apt",1,1.5,2,3,"Real Bed",50,1,"t","strict_14_with_grace_period",135,"f","f","f",28,0
+6131,23751431,"t",1,"within an hour",2,"f",7,"House","Entire home/apt",1,3.5,3,3,"Real Bed",225,4,"t","moderate",450,"f","f","f",70,0
+1619,8029177,"t",1,"within a few hours",2,"f",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",88,1,"t","flexible",100,"f","f","f",34,0
+4048,18390265,"f",1,"within an hour",3,"t",5,"Apartment","Entire home/apt",2,1,2,4,"Real Bed",70,2,"f","strict_14_with_grace_period",106,"t","f","f",42,3
+4495,19786000,"f",0.99,"within an hour",81,"f",7,"Condominium","Entire home/apt",7,2.5,2,4,"Real Bed",165,1,"t","super_strict_30",262,"t","f","f",18,5
+8183,31138126,"f",0.98,"within an hour",8,"f",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",60,2,"t","flexible",100,"f","f","f",20,0
+3363,15705295,"f",1,"within an hour",7,"t",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",80,3,"f","strict_14_with_grace_period",300,"f","f","f",27,0
+7288,27678040,"t",1,"within an hour",1,"f",2,"Townhouse","Private room",2,1,0,1,"Real Bed",20,2,"t","moderate",90,"f","f","f",39,0
+7072,26894254,"t",1,"within an hour",2,"t",1,"House","Private room",1,1,1,1,"Real Bed",12,1,"t","strict_14_with_grace_period",44,"f","t","f",20,0
+2001,9939740,"f",0.99,"within an hour",14,"f",2,"Serviced apartment","Entire home/apt",2,1,0,1,"Real Bed",65,28,"f","strict_14_with_grace_period",99,"f","f","f",51,3
+4258,19052688,"f",1,"within a day",1,"f",2,"Other","Entire home/apt",1,1,0,1,"Real Bed",40,2,"t","moderate",80,"f","f","f",25,0
+7934,30042772,"f",1,"within a day",2,"f",1,"House","Private room",1,1,1,1,"Real Bed",150,14,"t","flexible",55,"f","f","f",14,0
+507,2471659,"t",1,"within an hour",1,"f",2,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",25,2,"t","moderate",85,"f","f","f",28,0
+5385,21912608,"t",1,"within an hour",2,"f",4,"House","Entire home/apt",4,1,2,2,"Real Bed",80,2,"t","strict_14_with_grace_period",89,"f","t","f",41,0
+6118,23705305,"t",1,"within an hour",32,"f",10,"Townhouse","Entire home/apt",6,3,3,7,"Real Bed",150,1,"t","strict_14_with_grace_period",310,"f","f","f",28,0
+4894,20806894,"f",1,"within an hour",1,"f",2,"Condominium","Private room",1,1,1,1,"Real Bed",0,2,"t","flexible",50,"f","f","f",29,0
+3166,14884138,"t",1,"within an hour",1,"f",6,"Apartment","Entire home/apt",4,1,1,1,"Real Bed",50,1,"t","flexible",70,"f","f","f",28,0
+4122,18561607,"t",1,"within an hour",1,"t",2,"Townhouse","Private room",2,1,1,1,"Real Bed",22,2,"f","moderate",80,"f","f","f",21,0
+8275,31565134,"f",1,"within an hour",1,"f",6,"Townhouse","Entire home/apt",1,2.5,3,3,"Real Bed",250,2,"t","strict_14_with_grace_period",229,"f","f","f",18,3
+5477,22151484,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"t","f","f",17,5
+261,1002835,"f",0.9,"within an hour",3,"f",5,"Condominium","Entire home/apt",4,1,2,3,"Real Bed",160,7,"t","strict_14_with_grace_period",117,"f","f","f",27,0
+7563,28609954,"f",1,"within a few hours",2,"f",4,"Other","Entire home/apt",2,1,2,2,"Real Bed",75,2,"f","moderate",75,"f","f","f",27,0
+5485,22152373,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,2,"t","strict",350,"t","f","f",27,3
+388,1628210,"f",1,"within an hour",2,"t",4,"House","Entire home/apt",3,1,2,2,"Real Bed",125,2,"f","moderate",150,"f","f","f",31,0
+1277,6728419,"t",1,"within a few hours",1,"f",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",25,1,"f","flexible",95,"f","f","f",19,0
+8255,31448226,"f",1,"within an hour",123,"f",2,"Apartment","Private room",1,2,1,1,"Real Bed",25,1,"t","strict_14_with_grace_period",80,"f","f","f",8,3
+1226,6539451,"f",1,"within an hour",1,"f",12,"House","Entire home/apt",1,3,5,6,"Real Bed",150,3,"t","moderate",350,"f","f","f",37,0
+8214,31316356,"f",0.96,"within an hour",1,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",20,2,"t","strict_14_with_grace_period",49,"f","f","f",18,3
+3196,14993491,"t",1,"within an hour",3,"t",6,"House","Entire home/apt",4,1.5,2,3,"Real Bed",299,2,"t","strict_14_with_grace_period",399,"f","f","f",40,3
+2951,14010358,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",60,3,"t","moderate",125,"f","f","f",42,0
+3433,15984482,"f",1,"within an hour",2,"f",4,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"f","strict_14_with_grace_period",139,"f","f","f",54,0
+348,1494828,"t",1,"within an hour",6,"t",4,"Apartment","Entire home/apt",3,1,2,2,"Real Bed",115,3,"t","strict_14_with_grace_period",138,"f","f","f",39,0
+5899,22947792,"f",1,"within an hour",50,"f",2,"Condominium","Entire home/apt",2,1,0,1,"Real Bed",198,2,"t","super_strict_30",168,"f","f","f",17,0
+7021,26721019,"t",1,"within an hour",1,"f",2,"Townhouse","Private room",1,1,1,1,"Real Bed",30,1,"f","flexible",60,"f","f","f",30,0
+7547,28565563,"f",1,"within a few hours",1,"f",2,"Guesthouse","Entire home/apt",1,1,1,2,"Real Bed",40,1,"f","flexible",65,"f","f","f",16,0
+3258,15299300,"t",1,"within an hour",3,"t",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",75,2,"f","flexible",79,"f","f","f",34,0
+2729,13465025,"f",1,"within an hour",40,"f",2,"Other","Private room",1,1,1,1,"Real Bed",0,1,"t","moderate",59,"f","f","f",26,0
+3219,15111162,"f",1,"within a day",1,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",50,3,"t","flexible",100,"f","f","f",24,0
+8408,32049186,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",119,"t","f","f",21,5
+5582,22210620,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",250,"t","f","f",27,3
+4482,19785971,"f",0.99,"within an hour",81,"f",6,"Condominium","Entire home/apt",6,1,2,4,"Real Bed",135,1,"t","super_strict_30",155,"t","f","f",26,5
+7341,27875010,"f",1,"within an hour",9,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",10,1,"t","flexible",50,"f","t","f",37,0
+6642,25296669,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",40,2,"f","moderate",109,"f","f","f",27,1
+4950,20943682,"t",1,"within an hour",1,"f",4,"House","Entire home/apt",1,1,1,2,"Real Bed",65,1,"t","moderate",104,"f","f","f",35,0
+1225,6537432,"f",1,"within an hour",1,"t",8,"House","Entire home/apt",1,3.5,4,4,"Real Bed",150,3,"f","strict_14_with_grace_period",515,"f","f","f",19,0
+6897,26197282,"f",0.85,"within an hour",321,"f",6,"Townhouse","Entire home/apt",1,3,3,6,"Real Bed",165,2,"t","strict_14_with_grace_period",730,"f","f","f",24,0
+204,707599,"t",1,"within an hour",1,"t",8,"House","Entire home/apt",2,2.5,3,3,"Real Bed",150,2,"f","moderate",255,"f","f","f",52,0
+2910,13865648,"f",1,"within an hour",3,"t",8,"House","Entire home/apt",1,3,3,4,"Real Bed",250,1,"t","strict_14_with_grace_period",499,"f","f","f",38,0
+5468,22151226,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"t","f","f",27,3
+3380,15776053,"t",1,"within an hour",1,"f",3,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,1,"t","strict_14_with_grace_period",100,"f","f","f",38,1
+4936,20913810,"f",1,"within an hour",123,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",25,1,"t","strict_14_with_grace_period",90,"f","f","f",15,0
+8317,31670128,"t",1,"within an hour",37,"f",6,"Guest suite","Entire home/apt",1,1,2,3,"Real Bed",60,1,"f","moderate",70,"f","f","f",21,0
+8156,30998202,"t",1,"within an hour",786,"t",4,"Apartment","Entire home/apt",1,2,2,2,"Real Bed",230,30,"f","strict",158,"f","f","f",17,1
+5460,22146017,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,2,"t","strict",279,"t","f","f",24,5
+1825,9067268,"f",1,"within an hour",3,"t",2,"House","Private room",2,2,1,2,"Real Bed",25,5,"f","moderate",55,"f","f","f",14,0
+3207,15053620,"t",1,"within an hour",1,"t",3,"House","Entire home/apt",2,1,1,2,"Real Bed",40,1,"t","moderate",100,"f","f","f",17,0
+5039,21139428,"f",1,"within an hour",2,"f",7,"House","Entire home/apt",4,2,2,4,"Real Bed",150,1,"f","moderate",450,"f","f","f",35,0
+8179,31101550,"f",1,"within an hour",1,"f",6,"House","Private room",3,2,3,4,"Real Bed",100,1,"f","moderate",100,"f","f","f",19,0
+8278,31572259,"t",1,"within a few hours",3,"f",2,"House","Private room",1,1,0,1,"Real Bed",72,2,"t","flexible",129,"f","f","f",13,0
+4509,19786040,"f",0.99,"within an hour",81,"f",4,"Condominium","Entire home/apt",4,1.5,1,2,"Real Bed",125,1,"t","super_strict_30",112,"t","f","f",24,5
+7902,29926687,"f",1,"within an hour",50,"f",8,"House","Entire home/apt",8,2.5,3,4,"Real Bed",323,2,"t","super_strict_30",142,"f","f","f",21,0
+3268,15339212,"t",1,"within an hour",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",30,1,"f","strict_14_with_grace_period",99,"f","f","f",43,0
+1390,7208439,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",69,2,"f","moderate",89,"f","f","f",42,0
+7889,29877836,"f",1,"within a few hours",1,"f",6,"House","Entire home/apt",1,3,3,3,"Real Bed",150,3,"f","strict_14_with_grace_period",250,"f","f","f",29,0
+8223,31361881,"f",1,"within an hour",1,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",20,2,"t","strict_14_with_grace_period",49,"f","f","f",18,3
+4,9419,"t",1,"within a few hours",7,"t",2,"Apartment","Private room",1,3,1,1,"Real Bed",10,2,"f","moderate",65,"f","f","f",34,0
+1078,5719631,"f",0.92,"within an hour",51,"t",3,"Apartment","Entire home/apt",1,1,1,3,"Real Bed",60,2,"f","moderate",90,"f","f","f",22,0
+7425,28217932,"f",0.99,"within a few hours",231,"f",4,"Serviced apartment","Entire home/apt",1,2,2,2,"Real Bed",0,1,"t","moderate",275,"f","f","f",43,0
+6586,25098816,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",1,1,1,3,"Real Bed",50,2,"f","flexible",98,"f","f","f",39,0
+2361,12157169,"f",0.99,"within an hour",14,"f",2,"Serviced apartment","Entire home/apt",1,1,0,1,"Real Bed",75,1,"t","strict_14_with_grace_period",75,"f","f","f",35,0
+2826,13687977,"f",1,"within an hour",3,"t",2,"House","Private room",2,1,1,2,"Real Bed",6,1,"t","strict_14_with_grace_period",64,"f","f","f",39,0
+4812,20601895,"t",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",1,1,1,2,"Real Bed",15,1,"t","flexible",120,"f","f","f",31,0
+4081,18460936,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",229,"t","f","f",28,4
+6766,25782292,"f",1,"within an hour",123,"f",4,"Apartment","Entire home/apt",1,1,0,2,"Real Bed",40,1,"t","strict_14_with_grace_period",50,"f","f","f",12,0
+6448,24700638,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,1,"t","flexible",150,"f","f","f",40,3
+5065,21189232,"t",1,"within a few hours",1,"t",4,"Guest suite","Entire home/apt",1,2,2,2,"Real Bed",65,2,"f","moderate",199,"f","f","f",49,0
+1854,9170870,"t",1,"within an hour",2,"t",4,"House","Entire home/apt",2,1,1,2,"Real Bed",125,2,"f","moderate",106,"f","f","f",39,0
+2755,13533362,"f",0.92,"within an hour",51,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",65,1,"f","moderate",100,"f","f","f",34,0
+4111,18522787,"f",1,"within a few hours",7,"t",4,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,3,"t","strict_14_with_grace_period",149,"f","f","f",19,0
+384,1603408,"f",0.92,"within an hour",51,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",60,1,"t","moderate",89,"f","f","f",20,0
+3499,16244270,"t",1,"within an hour",4,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",125,4,"t","strict_14_with_grace_period",120,"f","f","f",22,0
+8167,31044786,"f",0.6,"within an hour",1,"f",2,"Other","Private room",2,1.5,1,1,"Real Bed",0,1,"f","flexible",70,"f","f","f",13,0
+6135,23768489,"t",1,"within an hour",6,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,1,"t","moderate",105,"f","f","f",26,0
+6870,26110397,"f",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,1,"t","flexible",141,"t","f","f",20,3
+6218,23983211,"f",1,"within an hour",123,"f",2,"House","Private room",1,2,1,1,"Real Bed",20,1,"t","strict_14_with_grace_period",40,"f","f","f",11,0
+52,119103,"t",1,"within an hour",2,"t",3,"Guesthouse","Entire home/apt",2,1,1,2,"Real Bed",0,3,"f","moderate",79,"f","f","f",13,0
+5583,22210627,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",250,"t","f","f",27,3
+7597,28781499,"f",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",55,1,"t","flexible",145,"f","f","t",15,0
+3480,16219864,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",189,"t","f","f",27,3
+5561,22209044,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,2,"t","strict",350,"t","f","f",21,5
+1351,7021906,"t",1,"within an hour",9,"f",14,"House","Entire home/apt",10,3.5,5,9,"Real Bed",200,2,"t","moderate",363,"f","f","f",42,0
+4097,18492245,"f",1,"within an hour",2,"f",3,"Apartment","Entire home/apt",3,1,0,2,"Real Bed",45,2,"t","moderate",110,"f","f","f",22,0
+3546,16477955,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",30,1,"t","moderate",120,"f","f","f",26,0
+6146,23807521,"f",1,"within an hour",2,"t",6,"Other","Entire home/apt",2,1,2,4,"Real Bed",50,2,"t","flexible",149,"f","f","f",24,0
+6109,23703054,"t",1,"within an hour",32,"f",10,"Townhouse","Entire home/apt",6,2.5,3,5,"Real Bed",150,1,"t","strict_14_with_grace_period",280,"f","f","f",29,0
+7205,27345565,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",222,"t","f","f",18,3
+2580,13059333,"f",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",140,2,"t","moderate",140,"f","f","f",30,0
+6056,23567364,"t",1,"within an hour",4,"f",2,"House","Private room",1,2,1,1,"Real Bed",22,2,"t","flexible",30,"f","f","f",30,0
+3739,17315004,"t",1,"within an hour",2,"t",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,2,"t","moderate",125,"f","f","f",17,0
+5369,21861677,"t",1,"within an hour",1,"t",4,"Other","Entire home/apt",2,1,2,3,"Real Bed",130,2,"f","moderate",125,"f","f","f",44,0
+2657,13247942,"t",1,"within a few hours",1,"f",6,"House","Entire home/apt",2,1,3,3,"Real Bed",80,1,"t","moderate",208,"f","f","f",37,0
+5535,22208430,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",199,"t","f","f",24,5
+6610,25204844,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",25,1,"f","flexible",120,"f","f","f",36,0
+6202,23962743,"t",1,"within an hour",3,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",50,1,"t","moderate",95,"f","f","f",26,0
+34,43373,"f",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",15,2,"t","moderate",55,"f","f","f",13,0
+5271,21645867,"f",1,"within an hour",123,"f",2,"House","Private room",1,1,1,1,"Real Bed",25,1,"t","strict_14_with_grace_period",40,"f","f","f",13,0
+8239,31388375,"f",1,"within a few hours",1,"t",6,"House","Entire home/apt",4,2,3,3,"Real Bed",125,2,"f","moderate",130,"f","f","f",16,0
+7246,27509933,"t",1,"within an hour",2,"f",14,"House","Entire home/apt",12,3.5,6,8,"Real Bed",325,5,"t","strict_14_with_grace_period",500,"f","f","f",42,1
+571,2933877,"t",1,"within an hour",9,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",135,30,"t","moderate",115,"t","f","f",24,3
+2105,10728468,"t",1,"within a few hours",1,"t",4,"Apartment","Entire home/apt",2,1,1,3,"Real Bed",65,2,"t","strict_14_with_grace_period",140,"f","f","f",14,0
+1317,6882211,"f",1,"within a few hours",3,"t",3,"House","Entire home/apt",2,1,1,1,"Real Bed",75,1,"f","strict_14_with_grace_period",130,"f","f","f",22,1
+2748,13513477,"f",1,"within a day",1,"t",6,"Other","Entire home/apt",6,1,2,3,"Real Bed",100,5,"t","strict_14_with_grace_period",149,"f","f","f",42,0
+6466,24750639,"f",1,"within an hour",3,"f",5,"House","Entire home/apt",3,1,2,3,"Real Bed",120,2,"f","strict_14_with_grace_period",175,"f","f","f",42,0
+1181,6360895,"t",1,"within an hour",1,"t",6,"Guest suite","Entire home/apt",4,1,3,4,"Real Bed",50,2,"t","moderate",115,"f","f","f",40,0
+3425,15929975,"t",1,"within a few hours",1,"t",4,"Guest suite","Entire home/apt",4,1,2,3,"Real Bed",95,2,"t","moderate",180,"f","f","f",56,0
+4280,19115007,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",75,1,"f","moderate",118,"f","f","f",47,0
+6834,25986964,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2.5,2,2,"Real Bed",129,2,"t","strict",700,"t","f","f",28,4
+1798,8904766,"f",1,"within a day",4,"t",2,"House","Private room",1,1,1,1,"Real Bed",7,2,"f","moderate",38,"f","f","f",13,0
+7346,27898895,"f",0.95,"within an hour",84,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",49,1,"t","strict_14_with_grace_period",99,"f","f","f",19,0
+6360,24433183,"t",1,"within an hour",1,"f",2,"House","Entire home/apt",2,1,1,1,"Real Bed",25,2,"t","moderate",115,"f","f","f",15,0
+6206,23978287,"f",1,"within an hour",123,"f",2,"House","Private room",1,2,1,1,"Real Bed",20,1,"t","strict_14_with_grace_period",40,"f","f","f",13,0
+3294,15436083,"t",1,"within an hour",4,"t",4,"Townhouse","Private room",2,1,1,2,"Real Bed",61,2,"t","moderate",68,"f","f","f",39,1
+3147,14809244,"t",1,"within an hour",4,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",35,10,"f","strict_14_with_grace_period",107,"f","f","f",23,0
+3488,16220273,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",189,"t","f","f",27,3
+5270,21644920,"f",1,"within an hour",1,"t",3,"House","Entire home/apt",1,1,1,1,"Real Bed",20,2,"t","flexible",40,"f","f","t",24,0
+7691,29156425,"f",1,"within an hour",1,"f",2,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",60,1,"f","moderate",150,"t","f","f",27,5
+8119,30815319,"f",1,"within an hour",1,"f",3,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",39,1,"f","flexible",72,"f","f","f",14,0
+3936,18057759,"t",1,"within a day",1,"f",5,"House","Entire home/apt",4,1,2,2,"Real Bed",50,2,"t","moderate",165,"f","f","f",18,0
+6965,26471553,"t",1,"within a few hours",4,"f",4,"House","Entire home/apt",2,1,1,2,"Real Bed",30,2,"f","strict_14_with_grace_period",99,"f","f","f",35,1
+6656,25330340,"t",1,"within an hour",5,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",30,3,"t","moderate",79,"f","f","f",36,0
+7356,27923815,"f",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",0,2,"t","moderate",150,"f","f","f",15,3
+3677,17046004,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,2,"t","strict",280,"t","f","f",25,6
+884,4539948,"t",1,"within an hour",1,"t",2,"Other","Entire home/apt",1,1,0,1,"Real Bed",0,3,"t","moderate",150,"f","f","f",34,0
+6929,26303627,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",1,1,2,0,"Real Bed",115,2,"t","moderate",199,"f","f","f",32,0
+1627,8053990,"t",1,"within an hour",2,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",65,2,"t","moderate",45,"f","f","f",23,0
+1131,6105021,"t",1,"within an hour",2,"t",2,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",45,2,"t","strict_14_with_grace_period",95,"f","f","f",27,0
+3882,17867877,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,3,"f","moderate",219,"f","f","f",32,3
+1249,6637899,"t",1,"within an hour",1,"t",2,"House","Private room",1,1,1,1,"Real Bed",75,1,"f","moderate",65,"f","f","f",35,0
+7332,27820717,"f",1,"within an hour",9,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",10,1,"t","flexible",40,"f","t","f",35,0
+7815,29542486,"f",1,"within an hour",1,"f",2,"Condominium","Private room",1,1,1,1,"Real Bed",25,2,"t","flexible",70,"f","f","f",28,0
+2969,14060306,"t",1,"within an hour",3,"f",2,"House","Private room",1,2,1,1,"Futon",25,1,"t","moderate",52,"f","f","t",20,0
+5025,21080282,"t",1,"within an hour",1,"f",2,"Guesthouse","Entire home/apt",1,1,0,1,"Real Bed",39,1,"t","flexible",80,"f","f","f",31,0
+5613,22213279,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",250,"t","f","f",25,3
+7510,28438429,"f",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",35,1,"t","moderate",100,"f","t","f",16,0
+5612,22213270,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",250,"t","f","f",25,3
+7052,26817379,"f",1,"within an hour",3,"f",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",40,1,"t","moderate",150,"f","f","f",18,0
+6211,23981287,"f",0.88,"within a few hours",1,"t",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,2,"f","strict_14_with_grace_period",89,"f","f","f",26,0
+2003,9945250,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",60,2,"t","moderate",135,"f","f","f",44,0
+5638,22265881,"f",1,"within an hour",1292,"f",4,"Apartment","Entire home/apt",4,1,1,2,"Real Bed",99,1,"t","strict_14_with_grace_period",1002,"t","f","f",20,5
+6724,25573872,"t",1,"within an hour",5,"t",2,"House","Private room",2,1,1,1,"Real Bed",45,2,"f","moderate",65,"f","t","f",20,0
+288,1136984,"f",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,3,"t","strict_14_with_grace_period",150,"t","f","f",24,3
+429,1827586,"f",1,"within a few hours",1,"t",8,"House","Entire home/apt",8,2,3,3,"Real Bed",125,2,"f","strict_14_with_grace_period",375,"f","f","f",56,0
+8111,30761790,"f",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",0,4,"f","moderate",100,"f","f","f",13,0
+6938,26355646,"f",1,"within an hour",5,"t",1,"House","Private room",1,1,1,1,"Real Bed",20,1,"t","moderate",450,"f","f","f",29,0
+2040,10231701,"f",1,"within an hour",1,"t",2,"Townhouse","Private room",1,1.5,1,1,"Real Bed",25,1,"f","moderate",65,"f","f","f",23,0
+4826,20625897,"t",1,"within an hour",10,"f",3,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",50,1,"t","moderate",200,"f","f","f",29,2
+3121,14711469,"f",0.6,"within a day",1,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,2,"f","moderate",183,"f","f","f",19,2
+509,2481189,"t",1,"within a few hours",2,"t",6,"Apartment","Entire home/apt",1,2,3,4,"Real Bed",150,2,"f","strict_14_with_grace_period",250,"f","f","f",36,1
+1202,6421243,"t",1,"within an hour",7,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",85,3,"t","strict_14_with_grace_period",65,"f","f","f",21,0
+6994,26599527,"t",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",35,4,"t","flexible",100,"f","f","f",20,0
+4510,19786042,"f",0.99,"within an hour",81,"f",6,"Condominium","Entire home/apt",6,2,2,3,"Real Bed",180,1,"t","super_strict_30",251,"t","f","f",23,5
+5675,22342223,"f",1,"within an hour",1292,"f",4,"Apartment","Entire home/apt",4,1,1,2,"Real Bed",100,1,"t","strict_14_with_grace_period",1002,"t","f","f",19,5
+5706,22435492,"t",0.92,"within an hour",2,"f",4,"Apartment","Private room",2,1,1,1,"Real Bed",20,2,"t","strict_14_with_grace_period",80,"t","f","f",16,5
+1577,7884782,"t",1,"within an hour",12,"t",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,1,"t","moderate",149,"f","f","f",23,1
+2490,12779947,"f",1,"within a few hours",1,"t",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",20,21,"t","flexible",124,"f","f","f",22,0
+5651,22289741,"f",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",50,2,"f","strict_14_with_grace_period",70,"f","f","f",21,2
+4100,18502882,"t",1,"within an hour",1,"t",2,"Guest suite","Private room",1,1,1,1,"Real Bed",50,1,"f","strict_14_with_grace_period",150,"f","f","f",34,0
+929,4739190,"f",1,"within an hour",1,"t",3,"Guest suite","Entire home/apt",2,1,0,1,"Real Bed",45,3,"f","moderate",85,"f","f","t",34,0
+4819,20618832,"f",0.67,"within a day",1,"t",4,"Apartment","Entire home/apt",1,1,2,3,"Real Bed",75,60,"f","moderate",89,"f","f","f",34,0
+1367,7091397,"t",1,"within an hour",1,"f",3,"Other","Entire home/apt",2,1,1,2,"Real Bed",50,3,"f","moderate",150,"f","f","f",34,1
+5825,22775950,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",100,"f","f","f",41,2
+5091,21245181,"t",1,"within an hour",1,"f",6,"House","Entire home/apt",6,1.5,3,3,"Real Bed",100,3,"t","moderate",200,"f","f","f",39,0
+4187,18794925,"t",1,"within an hour",7,"t",12,"House","Entire home/apt",13,2,4,8,"Real Bed",225,2,"t","strict_14_with_grace_period",690,"f","f","f",42,0
+5078,21213854,"t",1,"within an hour",1,"f",6,"Guest suite","Entire home/apt",4,1,2,4,"Real Bed",125,2,"t","moderate",150,"f","f","f",47,0
+81,224763,"t",0.97,"within a few hours",4,"t",4,"Condominium","Entire home/apt",1,1,1,1,"Real Bed",95,1,"f","strict_14_with_grace_period",139,"t","f","f",31,5
+1752,8616488,"f",0.93,"within an hour",1,"f",2,"Condominium","Entire home/apt",1,1,0,1,"Real Bed",0,2,"f","strict_14_with_grace_period",99,"f","f","f",25,0
+977,5056580,"t",1,"within an hour",1,"t",2,"House","Entire home/apt",2,1,1,1,"Real Bed",55,3,"f","moderate",110,"f","f","f",53,0
+4605,20031868,"t",1,"within an hour",131,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","flexible",99,"t","f","f",36,2
+6942,26364868,"t",1,"within an hour",2,"t",2,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",25,1,"t","strict_14_with_grace_period",195,"t","f","f",18,5
+6108,23702901,"t",1,"within an hour",32,"f",12,"House","Entire home/apt",6,2,3,6,"Real Bed",150,1,"t","strict_14_with_grace_period",250,"f","f","f",27,0
+7900,29924832,"f",1,"within an hour",35,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,2,"t","strict_14_with_grace_period",200,"f","f","f",22,0
+8115,30775742,"f",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",2,1,0,2,"Real Bed",40,1,"f","flexible",90,"f","f","f",32,0
+256,973859,"f",1,"within an hour",4,"f",6,"House","Entire home/apt",3,1,2,3,"Real Bed",100,2,"f","strict_14_with_grace_period",100,"f","f","f",44,0
+5309,21713138,"f",1,"within an hour",100,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,2,"t","strict_14_with_grace_period",195,"t","f","f",32,1
+1252,6647442,"f",1,"within an hour",6,"t",2,"House","Private room",1,2,1,1,"Real Bed",10,1,"t","moderate",55,"f","f","f",7,0
+5721,22452023,"t",1,"within an hour",4,"t",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",68,2,"t","strict_14_with_grace_period",167,"t","f","f",19,5
+7181,27303441,"t",1,"within an hour",9,"t",4,"House","Private room",1,1,1,1,"Real Bed",0,1,"t","strict_14_with_grace_period",99,"f","f","f",40,0
+7123,27167995,"f",1,"within an hour",123,"f",1,"House","Shared room",1,1,1,1,"Real Bed",15,1,"t","strict_14_with_grace_period",30,"f","f","f",8,0
+7138,27212607,"t",1,"within an hour",10,"t",3,"House","Private room",1,2.5,1,2,"Real Bed",30,1,"f","moderate",58,"f","f","f",35,0
+753,3868844,"t",1,"within a few hours",2,"t",5,"House","Entire home/apt",2,2,3,3,"Real Bed",175,5,"f","strict_14_with_grace_period",345,"f","f","f",39,0
+6763,25781184,"t",1,"within an hour",1,"f",5,"Guest suite","Entire home/apt",2,1,2,2,"Real Bed",50,1,"t","moderate",150,"f","f","f",34,1
+62,162563,"f",0.67,"within a day",3,"t",1,"Townhouse","Private room",1,1,1,1,"Real Bed",35,2,"f","strict_14_with_grace_period",90,"f","f","f",9,0
+4762,20469505,"f",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",35,2,"t","strict_14_with_grace_period",110,"t","f","f",19,5
+2589,13082625,"f",1,"within an hour",3,"t",9,"House","Entire home/apt",1,3,3,6,"Real Bed",140,3,"f","strict_14_with_grace_period",295,"f","f","f",27,0
+8062,30539417,"f",0.99,"within an hour",1596,"t",6,"Condominium","Entire home/apt",1,2,2,4,"Real Bed",49,1,"f","strict_14_with_grace_period",274,"t","f","f",42,4
+690,3570691,"t",1,"within an hour",1,"t",8,"Townhouse","Entire home/apt",2,2.5,2,3,"Real Bed",100,3,"f","strict_14_with_grace_period",249,"f","f","f",41,0
+6503,24809263,"t",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",25,1,"t","flexible",100,"f","f","f",34,0
+5245,21576538,"t",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",15,1,"f","moderate",45,"f","f","f",51,0
+6421,24675839,"t",1,"within an hour",4,"f",4,"Condominium","Entire home/apt",1,1,1,2,"Real Bed",100,180,"f","strict_14_with_grace_period",110,"t","f","f",34,5
+3399,15832893,"t",1,"within an hour",1,"t",8,"Other","Entire home/apt",6,2,3,4,"Real Bed",150,2,"f","strict_14_with_grace_period",290,"f","f","f",56,0
+4369,19414289,"t",1,"within an hour",3,"f",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",60,3,"t","strict_14_with_grace_period",95,"f","f","f",14,0
+1626,8053554,"t",1,"within an hour",2,"t",2,"House","Private room",1,1,1,1,"Real Bed",10,3,"f","strict_14_with_grace_period",75,"f","f","f",28,0
+2135,10905835,"f",1,"within a few hours",57,"t",1,"House","Shared room",1,1,1,1,"Real Bed",75,4,"f","strict_14_with_grace_period",38,"f","f","f",21,0
+1988,9886971,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",229,"f","f","f",25,5
+1884,9318524,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",79,28,"f","strict_14_with_grace_period",189,"t","f","f",24,3
+7975,30176806,"f",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",40,1,"f","flexible",59,"f","f","f",16,0
+6390,24561560,"f",0.99,"within an hour",7,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",0,1,"t","strict_14_with_grace_period",118,"f","f","f",18,0
+6367,24454685,"t",1,"within an hour",1,"f",7,"Townhouse","Entire home/apt",2,2,3,3,"Real Bed",170,2,"f","moderate",298,"f","f","f",35,0
+1077,5705161,"t",0.9,"within an hour",1,"t",3,"Condominium","Private room",2,1,1,2,"Real Bed",20,2,"t","moderate",84,"f","f","f",38,0
+2292,11745234,"f",1,"within an hour",5,"t",3,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",60,39,"f","strict_14_with_grace_period",150,"t","f","f",24,5
+5767,22589590,"f",0.99,"within an hour",14,"f",2,"Serviced apartment","Entire home/apt",1,1,0,1,"Real Bed",85,2,"f","strict_14_with_grace_period",79,"t","f","f",55,5
+607,3143227,"t",1,"within an hour",4,"t",1,"House","Private room",1,2,1,1,"Real Bed",30,1,"f","moderate",52,"f","f","f",20,0
+5875,22869695,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",100,"f","f","f",38,2
+7929,30016395,"f",1,"within an hour",78,"t",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",75,5,"t","strict_14_with_grace_period",1000,"f","f","f",35,0
+5012,21040330,"t",1,"within an hour",1,"t",3,"House","Entire home/apt",2,1,1,1,"Real Bed",65,2,"f","moderate",37,"f","f","f",35,0
+7658,29031460,"f",1,"within an hour",2,"t",3,"Other","Entire home/apt",1,1,1,1,"Real Bed",50,1,"f","strict_14_with_grace_period",110,"t","f","f",27,3
+965,4973204,"t",1,"within an hour",1,"t",5,"Townhouse","Entire home/apt",4,1,2,1,"Real Bed",90,3,"t","moderate",165,"f","f","f",35,3
+3827,17685193,"f",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1,0,1,"Real Bed",40,2,"f","moderate",100,"f","f","f",21,0
+3220,15111676,"t",1,"within an hour",1,"t",6,"House","Entire home/apt",2,2,2,2,"Real Bed",85,2,"t","strict_14_with_grace_period",100,"f","f","f",27,0
+4356,19366629,"t",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",50,2,"f","moderate",70,"f","f","f",27,0
+4736,20390355,"f",1,"within an hour",156,"f",6,"House","Entire home/apt",6,2.5,3,4,"Real Bed",313,2,"t","super_strict_30",152,"f","f","f",19,3
+3521,16338772,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",60,2,"t","moderate",85,"f","f","f",24,0
+6513,24873464,"f",1,"within an hour",2,"t",5,"House","Private room",2,1.5,1,3,"Real Bed",15,1,"f","flexible",56,"f","f","t",22,0
+5628,22233158,"t",1,"within an hour",2,"f",6,"House","Entire home/apt",4,1,2,2,"Real Bed",90,1,"t","moderate",150,"f","f","f",38,0
+7595,28779692,"f",1,"within an hour",1,"f",4,"Guest suite","Entire home/apt",1,1,2,2,"Real Bed",70,1,"t","moderate",70,"f","f","f",20,0
+2107,10733212,"t",1,"within a day",1,"t",2,"Apartment","Entire home/apt",1,1,0,1,"Real Bed",70,1,"f","strict_14_with_grace_period",106,"f","f","f",22,3
+0,2318,"t",1,"within an hour",1,"t",8,"House","Entire home/apt",8,2.5,4,4,"Real Bed",250,7,"f","strict_14_with_grace_period",296,"f","f","f",29,0
+7666,29062729,"f",0.67,"within a day",1,"t",3,"Apartment","Entire home/apt",3,1,1,1,"Real Bed",75,2,"f","strict_14_with_grace_period",85,"f","f","f",25,0
+239,877203,"t",1,"within an hour",2,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",30,2,"f","flexible",60,"f","f","f",14,0
+1270,6714501,"f",0.5,"within a day",1,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",45,2,"f","moderate",98,"f","f","f",15,0
+6200,23948222,"t",1,"within a few hours",1,"f",2,"Guesthouse","Entire home/apt",2,1,0,1,"Real Bed",30,1,"f","flexible",83,"f","f","f",37,1
+7970,30155968,"f",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",40,1,"f","moderate",65,"f","f","f",13,0
+7709,29210731,"f",1,"within an hour",3,"t",10,"House","Entire home/apt",1,3,7,7,"Real Bed",75,1,"t","flexible",250,"f","f","f",10,0
+6706,25492380,"f",1,"within a few hours",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",25,1,"f","strict_14_with_grace_period",70,"f","f","f",21,0
+3576,16602857,"t",1,"within an hour",1,"t",10,"House","Entire home/apt",8,2.5,4,7,"Real Bed",195,3,"t","strict_14_with_grace_period",300,"f","f","t",52,0
+2082,10529088,"t",1,"within an hour",2,"t",6,"Guest suite","Entire home/apt",4,1,2,3,"Real Bed",80,2,"f","moderate",142,"f","f","f",70,0
+2196,11238611,"t",1,"within an hour",1,"t",3,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",40,2,"f","moderate",95,"f","f","f",33,0
+3065,14425157,"f",0.99,"within an hour",1276,"f",6,"Apartment","Entire home/apt",1,2,2,2,"Real Bed",109,1,"t","strict_14_with_grace_period",999,"t","f","f",38,3
+1544,7773668,"f",0.7,"within a day",1,"t",2,"Apartment","Private room",1,1,1,1,"Real Bed",40,1,"f","strict_14_with_grace_period",79,"f","f","f",16,3
+4407,19556703,"f",1,"within an hour",1,"f",7,"House","Entire home/apt",6,2,3,4,"Real Bed",170,2,"t","moderate",195,"f","f","f",38,0
+7564,28610416,"f",1,"within an hour",1,"f",6,"Guest suite","Entire home/apt",4,1,2,3,"Real Bed",75,1,"t","moderate",200,"f","f","f",31,0
+4688,20266823,"f",1,"within an hour",2,"t",4,"Apartment","Entire home/apt",3,1,2,1,"Real Bed",0,2,"f","moderate",170,"t","f","f",33,3
+115,340738,"t",1,"within an hour",2,"t",2,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",300,30,"f","strict_14_with_grace_period",195,"f","f","f",15,0
+7359,27929606,"t",1,"within an hour",1,"f",3,"Guest suite","Entire home/apt",2,0.5,1,2,"Real Bed",40,1,"t","flexible",80,"f","f","f",24,0
+8438,32115094,"f",1,"within an hour",3,"t",6,"House","Entire home/apt",1,1,3,3,"Real Bed",80,1,"t","moderate",130,"f","f","f",16,0
+1215,6475289,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",2,1,1,3,"Real Bed",50,3,"f","moderate",149,"f","f","f",24,0
+2362,12157424,"f",0.99,"within an hour",14,"f",2,"Serviced apartment","Entire home/apt",1,1,0,1,"Real Bed",85,1,"f","strict_14_with_grace_period",60,"f","f","f",31,0
+7452,28293156,"f",1,"within an hour",60,"f",4,"Apartment","Entire home/apt",2,1,1,3,"Real Bed",160,1,"t","super_strict_30",302,"f","f","f",16,3
+7483,28373622,"t",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",15,1,"t","moderate",35,"f","f","f",21,0
+7720,29226384,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",75,30,"f","strict_14_with_grace_period",125,"t","f","f",21,5
+55,134091,"f",1,"within an hour",18,"f",4,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",150,3,"t","strict_14_with_grace_period",170,"f","f","f",27,0
+2567,13033049,"t",1,"within an hour",1,"t",2,"Townhouse","Private room",2,1,1,1,"Real Bed",35,2,"f","moderate",85,"f","f","f",41,0
+1397,7235573,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",50,2,"f","strict_14_with_grace_period",120,"f","f","f",23,0
+910,4652918,"f",1,"within a few hours",57,"t",1,"House","Shared room",2,1,1,1,"Real Bed",150,4,"f","strict_14_with_grace_period",90,"f","f","f",23,0
+3897,17908207,"t",1,"within an hour",1,"f",3,"Townhouse","Entire home/apt",2,1,1,2,"Real Bed",65,2,"f","moderate",95,"f","f","f",26,0
+4055,18408837,"f",1,"within an hour",1,"t",3,"House","Entire home/apt",1,1,1,2,"Real Bed",40,2,"t","moderate",95,"f","f","f",23,0
+7940,30065946,"t",1,"within an hour",44,"t",8,"House","Entire home/apt",6,3,3,3,"Real Bed",125,5,"t","strict_14_with_grace_period",1000,"f","f","f",41,0
+4040,18348358,"t",1,"within an hour",1,"t",2,"House","Private room",1,1,1,1,"Real Bed",10,3,"f","flexible",49,"f","f","f",44,0
+8401,32048998,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",119,"t","f","f",21,5
+4587,19998942,"f",1,"within an hour",3,"t",1,"House","Private room",1,1,1,1,"Real Bed",0,1,"t","flexible",50,"f","f","f",12,0
+6666,25356410,"t",1,"within an hour",2,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",35,1,"t","flexible",110,"f","f","f",34,0
+3303,15483955,"t",1,"within an hour",42,"t",6,"Other","Entire home/apt",1,1,2,2,"Real Bed",130,2,"f","strict_14_with_grace_period",220,"t","f","f",62,3
+2892,13814062,"t",1,"within an hour",1,"t",5,"Apartment","Entire home/apt",4,1,2,2,"Real Bed",25,1,"t","flexible",89,"f","f","f",37,0
+7915,29968553,"f",1,"within an hour",1,"f",6,"House","Entire home/apt",4,1,2,10,"Real Bed",75,2,"t","moderate",120,"f","f","f",40,0
+7450,28293112,"f",1,"within an hour",60,"f",4,"Apartment","Entire home/apt",2,1,1,3,"Real Bed",160,1,"t","super_strict_30",302,"f","f","f",16,3
+5881,22870053,"f",1,"within an hour",100,"f",5,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",60,2,"t","strict_14_with_grace_period",250,"t","f","f",29,5
+5283,21680533,"t",1,"within a few hours",1,"f",7,"House","Entire home/apt",2,1,2,2,"Real Bed",60,2,"f","moderate",66,"f","f","f",40,0
+36,48848,"t",1,"within a day",2,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",125,2,"f","strict_14_with_grace_period",110,"f","f","f",15,0
+3484,16220121,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",229,"t","f","f",27,3
+2016,10019082,"t",1,"within an hour",1,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",60,2,"t","moderate",125,"f","f","f",34,0
+5605,22213001,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",200,"t","f","f",24,5
+4703,20285652,"t",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",20,1,"t","flexible",80,"f","f","f",28,3
+448,1956274,"t",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",2,1.5,1,1,"Real Bed",75,3,"f","moderate",125,"f","f","f",50,0
+6046,23533370,"f",0.99,"within an hour",647,"f",6,"Condominium","Entire home/apt",1,1,2,3,"Real Bed",90,1,"t","strict_14_with_grace_period",70,"f","f","f",38,0
+2750,13514630,"f",1,"within a few hours",4,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",20,1,"f","moderate",150,"f","f","f",14,0
+7764,29359904,"f",1,"within an hour",123,"f",5,"Apartment","Entire home/apt",1,1,0,3,"Real Bed",40,1,"t","strict_14_with_grace_period",100,"t","f","f",11,3
+6632,25254395,"t",1,"within an hour",2,"f",6,"Guest suite","Entire home/apt",4,1,2,4,"Real Bed",100,2,"t","moderate",250,"f","f","f",23,0
+7850,29732114,"t",1,"within an hour",10,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",25,1,"f","moderate",75,"f","f","f",27,2
+4760,20460194,"t",1,"within an hour",1,"t",6,"Guesthouse","Entire home/apt",6,1,1,2,"Real Bed",85,2,"t","moderate",145,"f","f","f",40,0
+8268,31540415,"t",1,"within an hour",786,"t",4,"Apartment","Entire home/apt",1,2,2,2,"Real Bed",230,30,"f","strict",170,"f","f","f",17,2
+1413,7278583,"t",1,"within an hour",1,"t",7,"House","Entire home/apt",5,2.5,3,4,"Real Bed",200,2,"f","strict_14_with_grace_period",225,"f","f","f",25,0
+1479,7547290,"t",1,"within an hour",1,"f",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",50,2,"f","moderate",90,"f","f","f",28,0
+7379,28021357,"t",1,"within an hour",5,"f",5,"Townhouse","Private room",2,1,2,2,"Real Bed",60,2,"f","moderate",85,"f","f","f",23,0
+6141,23781996,"t",1,"within an hour",2,"f",2,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",55,2,"t","flexible",100,"f","f","f",32,0
+7634,28915023,"t",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",0,1,"t","flexible",42,"f","f","f",31,0
+4183,18778749,"f",0.8,"within a day",3,"t",9,"Townhouse","Entire home/apt",4,2.5,2,3,"Real Bed",65,2,"f","moderate",290,"f","f","f",24,0
+6245,24065252,"f",1,"within an hour",2,"t",8,"House","Entire home/apt",6,2,3,3,"Real Bed",100,3,"t","strict_14_with_grace_period",350,"f","f","f",24,0
+986,5096363,"f",1,"within an hour",1,"t",2,"Townhouse","Private room",2,1,1,1,"Real Bed",20,1,"f","flexible",45,"f","t","f",16,0
+2718,13437692,"t",1,"within an hour",2,"t",2,"House","Private room",1,1,1,1,"Real Bed",25,2,"t","moderate",84,"f","f","f",34,2
+8377,31936746,"f",1,"within an hour",2,"t",4,"House","Private room",1,1.5,1,3,"Real Bed",25,1,"f","strict_14_with_grace_period",61,"f","t","f",15,0
+5223,21536210,"t",1,"within an hour",4,"f",10,"House","Entire home/apt",6,1,3,3,"Real Bed",30,2,"t","moderate",200,"f","t","f",28,0
+1735,8524349,"t",1,"within an hour",6,"t",3,"Apartment","Entire home/apt",2,1,1,3,"Real Bed",80,2,"f","strict_14_with_grace_period",80,"f","f","f",32,0
+2530,12929985,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",25,1,"t","moderate",68,"f","f","f",33,0
+836,4279876,"t",1,"within an hour",2,"t",4,"Apartment","Entire home/apt",2,1,2,2,"Real Bed",50,2,"f","strict_14_with_grace_period",130,"f","f","f",43,0
+4814,20604731,"t",1,"within an hour",1,"t",3,"Guest suite","Entire home/apt",4,1,2,2,"Real Bed",75,2,"t","moderate",175,"f","f","f",27,0
+1543,7772661,"t",1,"within an hour",1,"t",2,"House","Entire home/apt",2,1,1,1,"Real Bed",75,1,"t","moderate",110,"f","f","f",37,1
+3122,14711760,"t",0.9,"within an hour",1,"t",6,"Apartment","Entire home/apt",3,1,2,3,"Real Bed",80,5,"t","moderate",118,"f","f","f",23,0
+7524,28471944,"f",1,"within an hour",1,"f",2,"Condominium","Entire home/apt",1,1,0,1,"Real Bed",90,4,"t","moderate",99,"t","f","f",39,5
+294,1150519,"f",1,"within a few hours",1,"t",7,"House","Entire home/apt",4,1.5,3,5,"Real Bed",150,2,"f","strict_14_with_grace_period",300,"f","f","f",34,0
+1959,9698472,"t",1,"within an hour",1,"t",4,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",80,2,"t","moderate",79,"f","f","f",38,0
+846,4340838,"t",1,"within an hour",1,"t",2,"House","Entire home/apt",1,1,0,1,"Real Bed",20,1,"f","moderate",75,"f","f","f",17,0
+8386,31982232,"f",1,"within a few hours",1,"t",10,"House","Entire home/apt",1,3,3,5,"Real Bed",150,2,"t","strict_14_with_grace_period",575,"f","f","f",32,0
+7793,29440895,"t",0.9,"within an hour",1,"t",3,"Guest suite","Private room",1,1,1,2,"Real Bed",0,2,"f","flexible",65,"f","f","f",18,0
+7972,30159056,"f",1,"within an hour",1,"f",5,"Condominium","Entire home/apt",1,1,2,2,"Real Bed",50,1,"t","moderate",99,"f","f","f",25,0
+3170,14898269,"f",1,"within an hour",1,"f",2,"Townhouse","Private room",1,1,1,1,"Real Bed",15,1,"t","moderate",60,"f","f","f",27,0
+263,1009838,"t",1,"within an hour",2,"f",2,"House","Private room",2,1,1,1,"Real Bed",40,2,"f","moderate",70,"f","f","f",50,0
+4217,18879484,"t",1,"within a few hours",1,"t",4,"Guest suite","Entire home/apt",2,1,1,1,"Real Bed",50,1,"f","flexible",109,"f","f","f",20,0
+1350,7013085,"f",1,"within a day",4,"t",4,"House","Entire home/apt",4,1,2,2,"Real Bed",35,2,"f","strict_14_with_grace_period",99,"f","f","f",19,0
+5356,21812619,"t",1,"within an hour",5,"t",2,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",75,1,"t","strict_14_with_grace_period",77,"t","f","f",13,5
+1023,5364244,"f",1,"within a few hours",1,"t",4,"House","Entire home/apt",1,1,1,2,"Real Bed",80,2,"f","strict_14_with_grace_period",129,"f","f","f",16,0
+1724,8446689,"t",0.9,"within a day",3,"t",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",70,5,"f","strict_14_with_grace_period",350,"t","f","f",22,3
+7116,27114760,"f",1,"within an hour",1,"t",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",39,4,"t","moderate",349,"t","f","f",49,5
+3614,16725292,"t",1,"within an hour",3,"f",4,"Other","Entire home/apt",1,2,1,2,"Real Bed",80,2,"f","moderate",160,"f","f","f",56,0
+2084,10552175,"f",0,"a few days or more",4,"t",4,"House","Entire home/apt",4,1,2,3,"Real Bed",100,2,"f","moderate",225,"f","f","f",29,0
+6412,24639357,"f",0.99,"within an hour",9,"t",4,"Apartment","Entire home/apt",1,1,0,2,"Real Bed",0,1,"t","moderate",113,"f","f","f",23,0
+5107,21298775,"t",1,"within an hour",1,"t",6,"Guesthouse","Entire home/apt",4,1.5,2,4,"Real Bed",50,2,"t","moderate",180,"f","f","f",43,0
+1415,7285916,"t",1,"within an hour",1,"t",2,"House","Entire home/apt",1,1,1,1,"Real Bed",35,2,"t","moderate",145,"f","f","f",44,0
+8077,30586782,"t",1,"within an hour",1,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",0,1,"t","strict_14_with_grace_period",150,"f","f","f",17,0
+4156,18673880,"t",1,"within an hour",7,"t",16,"House","Entire home/apt",15,3,6,12,"Real Bed",300,2,"t","strict_14_with_grace_period",950,"f","f","f",39,0
+528,2612399,"t",1,"within an hour",2,"t",2,"Other","Entire home/apt",1,1,0,1,"Real Bed",0,3,"f","flexible",76,"f","f","f",22,0
+6553,24990505,"f",1,"within an hour",3,"f",2,"Apartment","Entire home/apt",4,1,1,1,"Real Bed",40,2,"t","moderate",110,"t","f","f",33,3
+4038,18345094,"t",0.75,"within a day",2,"t",6,"House","Entire home/apt",4,1,2,3,"Real Bed",90,1,"f","strict_14_with_grace_period",82,"f","f","f",25,0
+574,2948548,"f",0.92,"within an hour",51,"t",2,"Apartment","Entire home/apt",1,1,0,2,"Real Bed",60,1,"f","moderate",87,"f","f","f",35,0
+6401,24595820,"f",1,"within an hour",1,"f",5,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",70,2,"t","strict_14_with_grace_period",75,"t","f","f",27,3
+7111,27107417,"t",1,"within an hour",3,"t",12,"House","Entire home/apt",8,4,6,7,"Real Bed",300,3,"t","strict_14_with_grace_period",499,"f","f","f",30,0
+6595,25136102,"t",1,"within an hour",2,"t",4,"House","Entire home/apt",1,1,2,2,"Real Bed",0,3,"f","moderate",109,"f","f","f",19,0
+7421,28207358,"f",0.96,"within an hour",13,"f",16,"House","Entire home/apt",1,3,5,8,"Real Bed",400,3,"f","flexible",725,"f","f","f",22,3
+1754,8627921,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",0,2,"t","flexible",70,"f","f","f",31,0
+123,370361,"t",1,"within an hour",2,"t",2,"House","Private room",2,1,1,1,"Real Bed",50,3,"f","moderate",85,"f","f","f",28,0
+8027,30405281,"t",1,"within an hour",13,"f",2,"Other","Entire home/apt",2,1,1,1,"Real Bed",100,2,"t","flexible",120,"f","f","f",32,1
+3636,16822666,"f",0.99,"within an hour",152,"f",4,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",120,3,"t","strict_14_with_grace_period",179,"t","f","f",18,1
+3791,17569817,"f",1,"within an hour",18,"f",10,"House","Entire home/apt",1,3.5,4,6,"Real Bed",275,3,"t","strict_14_with_grace_period",220,"f","f","f",31,0
+6521,24893567,"t",1,"within an hour",1,"t",2,"Townhouse","Entire home/apt",2,1,0,1,"Real Bed",35,1,"t","moderate",100,"f","f","f",29,0
+142,451012,"f",1,"within a day",1,"t",6,"House","Entire home/apt",6,2,3,4,"Real Bed",200,7,"f","moderate",195,"f","f","f",12,0
+8085,30594027,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"t","strict",119,"t","f","f",21,5
+1040,5463856,"f",1,"within a few hours",2,"t",6,"House","Entire home/apt",1,2.5,3,4,"Real Bed",150,7,"f","strict_14_with_grace_period",300,"f","f","f",19,0
+1691,8310177,"f",1,"within a day",1,"t",6,"House","Private room",6,1,3,3,"Real Bed",170,3,"f","strict_14_with_grace_period",369,"f","f","f",55,0
+1015,5328449,"t",1,"within a few hours",1,"f",4,"Other","Entire home/apt",2,1,1,2,"Real Bed",0,2,"f","moderate",110,"f","f","f",29,0
+3375,15753740,"t",1,"within an hour",1,"f",4,"House","Entire home/apt",4,2.5,3,2,"Real Bed",150,3,"f","moderate",345,"f","f","f",30,0
+4165,18733199,"t",1,"within an hour",1,"t",4,"Condominium","Entire home/apt",2,1,1,2,"Real Bed",50,2,"t","moderate",149,"f","f","f",40,0
+5186,21448489,"t",1,"within an hour",2,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",50,2,"f","moderate",95,"f","f","f",52,0
+3213,15079327,"f",1,"within an hour",40,"f",2,"Other","Private room",1,1,0,1,"Real Bed",0,1,"t","moderate",59,"f","f","f",23,0
+3925,18010807,"f",1,"within an hour",3,"t",2,"Condominium","Entire home/apt",1,1,1,1,"Real Bed",59,1,"t","strict_14_with_grace_period",129,"f","f","f",31,1
+8297,31629829,"f",1,"within an hour",6,"f",2,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",50,1,"t","moderate",150,"t","f","f",18,3
+376,1589681,"f",1,"within an hour",1,"t",2,"Guesthouse","Entire home/apt",2,1,0,1,"Pull-out Sofa",20,1,"f","flexible",69,"f","f","f",28,0
+3504,16285318,"t",1,"within an hour",1,"f",4,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","moderate",125,"f","f","f",41,0
+2582,13067177,"f",1,"within a few hours",2,"t",4,"House","Entire home/apt",1,1,2,2,"Real Bed",90,2,"f","flexible",250,"f","f","f",38,0
+2358,12147772,"f",1,"within an hour",1,"f",1,"Townhouse","Private room",1,1,1,1,"Real Bed",0,1,"f","flexible",250,"f","f","f",21,0
+570,2923529,"t",1,"within an hour",1,"t",4,"Condominium","Entire home/apt",2,1,1,1,"Real Bed",65,1,"f","moderate",85,"f","f","f",55,0
+1737,8533375,"f",0.9,"within an hour",1,"f",2,"House","Entire home/apt",1,1,1,1,"Real Bed",25,2,"t","moderate",105,"f","f","f",25,0
+6296,24171901,"f",0.99,"within an hour",647,"f",6,"Condominium","Entire home/apt",1,1,2,3,"Real Bed",100,1,"t","strict_14_with_grace_period",70,"f","f","f",35,0
+2742,13495812,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",65,3,"f","moderate",110,"f","f","f",31,0
+2629,13173803,"t",1,"within an hour",1,"t",4,"Guest suite","Entire home/apt",2,1,1,3,"Real Bed",50,1,"t","strict_14_with_grace_period",75,"f","f","t",34,0
+7621,28844832,"f",0.92,"within an hour",3,"t",2,"House","Private room",2,1,1,1,"Real Bed",15,1,"t","flexible",62,"f","f","f",28,0
+6635,25261732,"t",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",25,1,"t","moderate",70,"f","f","t",28,0
+5216,21506343,"f",1,"within an hour",123,"f",2,"House","Private room",1,1.5,1,1,"Real Bed",25,1,"t","strict_14_with_grace_period",50,"f","f","f",14,0
+1492,7604654,"f",0.92,"within an hour",51,"t",6,"Apartment","Entire home/apt",2,1,2,3,"Real Bed",90,28,"f","strict_14_with_grace_period",160,"f","f","f",24,0
+203,706385,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",60,2,"f","strict_14_with_grace_period",155,"f","f","f",48,0
+6544,24958893,"f",1,"within an hour",9,"f",2,"House","Private room",1,1,1,1,"Real Bed",10,2,"t","flexible",48,"f","t","f",39,0
+8394,31994648,"f",0.92,"within an hour",1,"f",3,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",10,1,"t","flexible",110,"f","f","t",24,0
+7604,28790029,"t",1,"within an hour",13,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",100,2,"t","flexible",115,"f","f","f",52,0
+6998,26608363,"t",1,"within an hour",1,"f",6,"Apartment","Entire home/apt",2,1,1,3,"Real Bed",55,3,"t","strict_14_with_grace_period",173,"t","f","f",50,3
+6161,23857378,"t",1,"within an hour",7,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",50,1,"t","strict_14_with_grace_period",100,"f","t","f",35,0
+7642,28962644,"t",1,"within an hour",2,"f",3,"Apartment","Entire home/apt",2,1,1,3,"Real Bed",50,2,"t","moderate",149,"f","f","f",27,0
+6355,24405946,"t",1,"within a day",1,"f",2,"Other","Private room",1,1,1,1,"Real Bed",0,3,"t","moderate",75,"f","f","f",22,0
+6160,23854083,"t",0,"a few days or more",4,"t",2,"Other","Private room",1,1.5,1,1,"Real Bed",0,2,"f","flexible",120,"f","f","f",21,0
+5527,22206356,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",89,2,"f","strict",229,"t","f","f",17,6
+3783,17515217,"t",1,"within an hour",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",25,2,"f","moderate",50,"f","f","f",20,0
+4662,20189433,"t",1,"within an hour",2,"f",4,"Guest suite","Entire home/apt",2,1,1,2,"Real Bed",90,2,"f","moderate",106,"f","f","f",48,0
+5493,22153588,"f",0.99,"within an hour",521,"f",3,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",89,2,"t","strict",169,"t","f","f",17,3
+4683,20254531,"f",1,"within a day",2,"f",6,"Apartment","Entire home/apt",4,1,2,1,"Real Bed",50,1,"t","flexible",275,"f","f","f",24,0
+7818,29568968,"t",1,"within an hour",1,"f",2,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",50,1,"t","moderate",45,"f","t","f",9,0
+804,4111137,"f",1,"within a few hours",1,"t",4,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",60,2,"f","moderate",78,"f","f","f",17,0
+7832,29653739,"t",0.92,"within an hour",2,"f",8,"Condominium","Entire home/apt",1,2,2,2,"Real Bed",0,2,"f","strict_14_with_grace_period",241,"t","f","f",18,5
+3436,16000287,"f",1,"within an hour",5,"f",6,"Apartment","Entire home/apt",4,1,2,3,"Real Bed",85,2,"t","moderate",199,"f","f","f",36,0
+116,341454,"t",1,"within an hour",3,"t",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",65,3,"t","strict_14_with_grace_period",175,"f","f","f",26,0
+7160,27263037,"f",1,"within an hour",15,"t",1,"House","Shared room",1,3.5,1,1,"Real Bed",0,1,"t","strict_14_with_grace_period",25,"f","f","f",18,0
+3195,14993049,"f",0.96,"within an hour",13,"f",8,"Apartment","Entire home/apt",1,1,2,5,"Real Bed",175,3,"f","strict_14_with_grace_period",195,"f","f","f",25,0
+44,86185,"f",1,"within a day",2,"t",2,"House","Private room",2,1,1,1,"Real Bed",0,2,"f","moderate",75,"f","f","f",14,0
+7961,30124134,"f",0.9,"within an hour",1,"f",6,"Apartment","Entire home/apt",2,1,2,3,"Real Bed",85,2,"f","strict_14_with_grace_period",112,"f","f","f",17,0
+4552,19893618,"t",1,"within an hour",1,"f",4,"House","Entire home/apt",2,1,2,2,"Real Bed",35,1,"t","flexible",73,"f","f","f",51,0
+3610,16710032,"t",1,"within an hour",1,"t",6,"House","Entire home/apt",2,1.5,3,3,"Real Bed",90,2,"t","moderate",145,"t","f","f",24,1
+2463,12625278,"f",1,"within a day",1,"f",1,"House","Private room",1,2,1,1,"Real Bed",15,2,"f","flexible",50,"f","f","f",14,0
+7416,28181400,"t",1,"within an hour",2,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",40,1,"t","moderate",100,"f","f","f",9,0
+6840,26013391,"f",1,"within a day",2,"f",8,"House","Entire home/apt",1,3,3,5,"Real Bed",125,4,"f","strict_14_with_grace_period",450,"f","f","f",44,0
+5756,22543854,"f",0.99,"within an hour",9,"t",4,"Condominium","Entire home/apt",1,1,1,1,"Real Bed",0,1,"t","moderate",50,"f","f","f",32,2
+8,9596,"t",0.88,"within a few hours",5,"t",4,"Apartment","Entire home/apt",2,1,1,6,"Real Bed",85,2,"f","strict_14_with_grace_period",120,"f","f","f",31,0
+7904,29929168,"f",1,"within an hour",9,"f",1,"Townhouse","Private room",1,1,1,1,"Real Bed",0,30,"t","strict_14_with_grace_period",32,"f","f","f",28,0
+4841,20651313,"f",0.7,"within a day",2,"f",5,"Apartment","Entire home/apt",1,1,1,3,"Real Bed",0,2,"f","flexible",195,"f","f","f",19,2
+1611,7987854,"f",1,"within a few hours",1,"t",3,"Condominium","Entire home/apt",1,2,2,2,"Real Bed",200,3,"f","moderate",129,"t","f","f",33,5
+6639,25269354,"t",0.94,"within an hour",4,"f",2,"House","Private room",2,1,1,1,"Real Bed",45,1,"t","moderate",99,"f","f","f",32,0
+7638,28956135,"f",1,"within an hour",1,"t",2,"House","Entire home/apt",1,1,1,1,"Real Bed",79,1,"f","flexible",120,"f","f","f",17,0
+264,1012003,"f",1,"within a few hours",1,"f",4,"Apartment","Private room",2,1,1,2,"Real Bed",0,2,"f","flexible",145,"f","f","f",16,0
+971,5029665,"t",1,"within a day",2,"t",5,"House","Entire home/apt",1,2,2,3,"Real Bed",90,2,"f","moderate",86,"f","f","f",23,0
+557,2762241,"f",1,"within a day",1,"t",2,"House","Entire home/apt",2,1,1,1,"Real Bed",50,3,"f","strict_14_with_grace_period",115,"f","f","f",36,0
+6628,25239084,"f",1,"within an hour",123,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",40,1,"t","strict_14_with_grace_period",120,"f","f","f",25,4
+7440,28283802,"f",1,"within an hour",2,"f",2,"Guesthouse","Entire home/apt",1,1,0,1,"Real Bed",0,2,"t","flexible",85,"f","f","f",12,0
+7655,29017573,"f",0.94,"within an hour",5,"f",4,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",80,1,"t","strict_14_with_grace_period",119,"t","f","f",20,3
+3334,15582249,"f",1,"within an hour",3,"f",2,"House","Private room",1,1,1,1,"Real Bed",10,2,"t","moderate",105,"f","f","f",27,0
+7973,30161231,"t",1,"within an hour",2,"t",8,"Other","Entire home/apt",2,1,2,4,"Real Bed",32,1,"t","moderate",105,"f","f","f",41,0
+27,26116,"f",1,"within an hour",5,"f",4,"Apartment","Entire home/apt",2,1,2,2,"Real Bed",100,2,"t","strict_14_with_grace_period",259,"f","f","f",27,2
+7692,29157564,"f",1,"within a few hours",1,"f",4,"House","Entire home/apt",1,1,2,2,"Real Bed",45,2,"f","flexible",90,"f","f","t",25,0
+7016,26713965,"f",1,"within a few hours",2,"f",5,"House","Entire home/apt",1,2,4,5,"Real Bed",150,1,"f","flexible",198,"f","f","f",15,0
+4603,20031528,"t",1,"within an hour",131,"f",3,"Serviced apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"t","moderate",99,"t","f","f",35,2
+7548,28566204,"f",1,"within a few hours",2,"t",1,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",0,30,"f","flexible",33,"f","f","f",15,0
+638,3333971,"f",0.99,"within an hour",8,"f",2,"Apartment","Entire home/apt",1,1,1,1,"Real Bed",10,1,"t","strict_14_with_grace_period",160,"t","f","f",13,3
+1342,6991188,"t",1,"within an hour",3,"t",4,"Apartment","Entire home/apt",3,1,1,3,"Real Bed",40,2,"f","flexible",95,"f","f","f",35,0
+2364,12158086,"f",1,"within an hour",5,"t",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",150,2,"f","strict_14_with_grace_period",108,"f","f","f",28,0
+7786,29396738,"t",1,"within an hour",1,"f",3,"Other","Private room",2,1,1,2,"Real Bed",20,1,"f","moderate",60,"f","f","f",33,0
+3668,16998097,"t",1,"within an hour",1,"t",2,"Apartment","Entire home/apt",2,1,0,1,"Real Bed",25,2,"f","flexible",125,"f","f","f",23,0
+606,3139847,"f",1,"within an hour",5,"f",2,"Serviced apartment","Entire home/apt",2,1,1,2,"Real Bed",95,29,"f","strict_14_with_grace_period",99,"t","f","f",35,5
+6291,24164169,"f",1,"within a few hours",3,"f",2,"House","Private room",1,1,1,1,"Real Bed",0,2,"f","strict_14_with_grace_period",32,"f","f","f",14,0
+1726,8486896,"f",1,"within a few hours",3,"t",2,"House","Private room",1,1,1,1,"Real Bed",45,5,"f","strict_14_with_grace_period",57,"f","f","f",29,0
+1116,6032726,"t",1,"within an hour",1,"t",8,"House","Entire home/apt",8,3.5,5,5,"Real Bed",225,3,"f","strict_14_with_grace_period",700,"f","f","f",16,0
+3661,16964624,"t",1,"within an hour",2,"f",3,"House","Entire home/apt",2,1.5,2,2,"Real Bed",125,2,"f","moderate",99,"f","f","t",25,0
+7446,28292113,"f",1,"within an hour",60,"f",3,"Apartment","Entire home/apt",2,1,1,2,"Real Bed",80,1,"t","super_strict_30",275,"t","f","f",11,5
+1105,5969069,"t",1,"within a few hours",3,"t",5,"House","Entire home/apt",2,1,2,2,"Real Bed",260,4,"f","strict_14_with_grace_period",125,"f","f","f",27,0
+7703,29196984,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",160,"t","f","f",17,1
+4554,19893857,"t",1,"within an hour",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",15,1,"f","moderate",65,"f","t","f",26,0
+7713,29221597,"t",1,"within an hour",10,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,2,"f","strict_14_with_grace_period",79,"f","f","f",15,0
+6397,24580635,"t",1,"within an hour",2,"t",6,"Apartment","Entire home/apt",2,1,2,3,"Real Bed",60,1,"f","moderate",125,"f","f","f",40,0
+3930,18041643,"t",1,"within an hour",1,"f",6,"Townhouse","Entire home/apt",4,2,2,3,"Real Bed",80,2,"f","strict_14_with_grace_period",400,"f","f","f",29,0
+7254,27553179,"f",1,"within an hour",123,"f",2,"House","Private room",1,1,1,1,"Real Bed",20,1,"t","strict_14_with_grace_period",80,"f","f","f",11,0
+7960,30114679,"f",1,"within an hour",1,"f",3,"House","Entire home/apt",1,1,1,2,"Real Bed",30,2,"f","strict_14_with_grace_period",175,"f","f","f",24,0
+776,3946674,"t",0.9,"within a few hours",1,"t",2,"House","Private room",1,1,1,1,"Real Bed",0,2,"f","flexible",70,"f","f","f",17,0
+1111,6002165,"f",1,"within a few hours",1,"t",8,"House","Entire home/apt",1,3,5,5,"Real Bed",125,2,"f","strict_14_with_grace_period",490,"f","f","f",44,0
+7685,29132538,"f",1,"within an hour",1,"t",6,"Guest suite","Entire home/apt",1,1,2,3,"Real Bed",25,1,"t","moderate",110,"f","f","f",21,0
+1176,6315435,"t",1,"within an hour",42,"t",6,"Condominium","Entire home/apt",1,2,2,3,"Real Bed",130,1,"f","strict_14_with_grace_period",185,"t","f","f",29,5
+1156,6214517,"t",0.85,"within an hour",2,"t",3,"Apartment","Entire home/apt",1,1,1,2,"Real Bed",80,2,"t","moderate",160,"f","f","f",37,0
+7609,28811090,"f",1,"within an hour",8,"f",4,"Apartment","Entire home/apt",1,1,0,2,"Real Bed",40,1,"t","flexible",140,"f","f","f",19,0
+7377,28006590,"t",1,"within a few hours",1,"t",2,"Townhouse","Private room",1,1,1,1,"Real Bed",20,1,"f","flexible",10,"f","t","f",28,0
+6548,24964275,"t",1,"within an hour",1,"f",8,"House","Entire home/apt",6,2,4,4,"Real Bed",120,2,"f","moderate",150,"f","f","f",44,0
+8328,31715913,"f",1,"within an hour",1,"f",4,"House","Entire home/apt",1,1,2,2,"Real Bed",165,2,"f","moderate",75,"f","f","f",19,0
+6940,26362891,"t",1,"within an hour",1,"f",6,"House","Entire home/apt",6,2,2,4,"Real Bed",150,2,"t","moderate",199,"f","f","f",25,0
+1233,6561379,"f",1,"within a few hours",1,"f",5,"House","Entire home/apt",2,1,2,2,"Real Bed",85,2,"f","moderate",144,"f","f","f",14,0
+6021,23422265,"f",0.99,"within an hour",81,"f",6,"Apartment","Entire home/apt",6,2,2,3,"Real Bed",145,1,"t","super_strict_30",166,"t","f","f",32,5
+6059,23585601,"f",1,"within an hour",1,"t",2,"Guest suite","Entire home/apt",1,1,0,1,"Real Bed",0,1,"t","moderate",100,"f","f","f",46,0
+5972,23201936,"t",1,"within an hour",6,"f",5,"Condominium","Entire home/apt",2,1,1,1,"Real Bed",60,1,"f","strict_14_with_grace_period",199,"t","f","f",36,5
+29,30712,"f",0.83,"within a day",1,"f",3,"Guest suite","Entire home/apt",1,1,1,1,"Real Bed",0,4,"f","moderate",75,"f","f","f",23,0
+1446,7417852,"t",1,"within an hour",3,"t",2,"House","Private room",1,1,1,1,"Real Bed",50,1,"t","moderate",65,"f","f","f",22,0
+8103,30735720,"f",0.98,"within an hour",61,"f",4,"Other","Entire home/apt",2,1,2,2,"Real Bed",150,1,"f","strict_14_with_grace_period",125,"f","f","f",37,0
+2776,13573729,"t",1,"within a few hours",2,"t",2,"House","Private room",1,2,1,1,"Futon",20,7,"f","flexible",39,"f","f","f",26,0
+3887,17889365,"t",1,"within an hour",4,"t",2,"Other","Private room",1,1.5,1,1,"Real Bed",25,2,"f","moderate",90,"f","f","f",29,0
+1294,6793490,"f",1,"within an hour",3,"t",2,"House","Entire home/apt",1,1,1,1,"Real Bed",75,2,"f","moderate",75,"f","f","f",31,0
+4255,19051090,"f",1,"within an hour",1,"t",4,"House","Entire home/apt",2,1,1,1,"Real Bed",30,1,"t","flexible",120,"f","f","f",36,0
+8338,31761616,"f",0.86,"within an hour",1,"f",4,"House","Entire home/apt",1,1,2,2,"Real Bed",25,1,"f","flexible",55,"f","t","f",15,0
+917,4681687,"f",0.8,"within a day",1,"t",2,"Guesthouse","Entire home/apt",1,1,1,1,"Real Bed",30,2,"f","moderate",59,"f","f","f",14,0
+5588,22210651,"f",0.99,"within an hour",521,"f",5,"Apartment","Entire home/apt",4,2,2,2,"Real Bed",129,2,"t","strict",350,"t","f","f",27,3
+5876,22869696,"t",1,"within an hour",131,"f",2,"Serviced apartment","Entire home/apt",1,1,1,1,"Real Bed",75,2,"t","flexible",100,"f","f","f",42,2
+7701,29196773,"f",0.99,"within an hour",152,"f",2,"Apartment","Entire home/apt",2,1,1,1,"Real Bed",75,30,"f","strict_14_with_grace_period",160,"t","f","f",17,1
+6821,25953013,"t",1,"within an hour",1,"t",5,"Condominium","Entire home/apt",1,2,2,4,"Real Bed",79,3,"t","moderate",250,"f","f","f",42,0
+7848,29717479,"f",1,"within an hour",1,"f",2,"House","Private room",1,1,1,1,"Real Bed",15,1,"f","flexible",40,"f","f","f",18,0
+782,3970736,"t",1,"within an hour",1,"t",5,"Apartment","Entire home/apt",2,1,2,3,"Real Bed",75,3,"f","strict_14_with_grace_period",140,"f","f","f",65,0
+3390,15817305,"t",1,"within an hour",1,"t",5,"Other","Entire home/apt",4,1,3,3,"Real Bed",100,2,"f","moderate",125,"f","f","f",49,0
+2025,10060388,"f",1,"within a few hours",1,"t",6,"House","Entire home/apt",6,1.5,3,3,"Real Bed",90,2,"f","strict_14_with_grace_period",66,"f","f","f",19,0
+7913,29963361,"f",1,"within a few hours",1,"t",4,"House","Entire home/apt",1,1,2,2,"Real Bed",50,3,"t","moderate",80,"f","f","f",16,0
+1580,7886656,"t",1,"within an hour",2,"t",4,"Apartment","Entire home/apt",1,1,2,2,"Real Bed",50,2,"t","moderate",150,"f","f","f",21,0
+2092,10605440,"f",1,"within an hour",40,"f",2,"Other","Private room",1,1,0,1,"Real Bed",0,1,"t","moderate",59,"f","f","f",23,0
+679,3535171,"t",1,"within an hour",2,"t",2,"House","Private room",1,1,1,1,"Real Bed",25,1,"f","strict_14_with_grace_period",45,"f","f","f",33,0
+7395,28073851,"f",1,"within an hour",13,"t",2,"House","Private room",1,1,1,1,"Real Bed",20,1,"t","flexible",70,"f","t","f",20,0

@@ -1,0 +1,436 @@
+---
+title: "tester"
+author: "Minyue Fan"
+date: "4/23/2019"
+output: pdf_document
+---
+
+
+```{r}
+library(dplyr)
+price <- read.csv("price.csv")
+price
+```
+
+# Preprocess data for numerical values 
+```{r}
+# price 
+price$price <-  as.numeric(gsub("\\$", "", price$price))
+
+# cleaning fee
+price$cleaning_fee <-  as.numeric(gsub("\\$", "", price$cleaning_fee))
+
+# host response rate 
+price$host_response_rate <- as.numeric(sub("%","",price$host_response_rate))/100
+
+# categorical variables 
+price <- mutate(price, 
+            host_is_superhost = ifelse(`host_is_superhost` == "f", 0, 1),
+            host_identity_verified = ifelse(`host_identity_verified` == "f",0, 1),
+            In_Downtown = ifelse(`neighbourhood_group_cleansed` =="Downtown", 1, 0),
+            In_Delridge = ifelse(`neighbourhood_group_cleansed`=="Delridge", 1, 0),
+            In_Lake_City = ifelse(`neighbourhood_group_cleansed`=="Lake City", 1,0),
+            instant_bookable = ifelse(`instant_bookable` == "f",0,1))
+
+# amenities 
+num_amenities <- numeric(0)
+i=1
+for (i in 1:range(nrow(price))){
+   num_amenities[i]<-length(strsplit(as.character(price$amenities[i]), ",")[[1]])
+}
+price$amenities <- num_amenities
+
+#remove four rows(outliers) 
+price <- price[complete.cases(price),]
+max(price$price)
+price <- price[price$price!=0,]
+price <- price[price$price!=999.0,]
+price <- price[price$id != 935671,]
+
+#change property type
+price$property_type
+prop_type <- c("Apartment", "Condominium", "Guesthouse", "House", "Townhouse", "Serviced apartment", "Guest suite")
+levels(price$property_type)[!(levels(price$property_type) %in% prop_type)] <- rep("Other", times=20)
+```
+
+
+
+# Add Popular_Landmarks
+
+```{r}
+library(geosphere)
+add_pop <- function(yourData){
+  Museum_of_Pop_Culture <- c(-122.3481, 47.6215) #long, lati
+  Pike_Place_Market <- c(-122.3422, 47.6097)
+  Olympic_Sculpture_Park <- c(-122.3553, 47.6166)
+  Seattle_Great_Wheel <- c(-122.3425, 47.6062)
+  Seattle_Art_Museum <- c(-122.3381, 47.6073)
+  Kerry_Park <-c(-122.3599, 47.6295)
+  meter_to_mile = 0.000621371
+  total_nearby_landmarks <- (ifelse(distm(Museum_of_Pop_Culture, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0) + ifelse(distm(Pike_Place_Market, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Olympic_Sculpture_Park, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Seattle_Great_Wheel, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Seattle_Art_Museum, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0)
+  + ifelse(distm(Kerry_Park, yourData, fun = distHaversine)*meter_to_mile <1, 1, 0))
+  return(total_nearby_landmarks)
+}
+yourData <-cbind(price$longitude, price$latitude)
+total_nearby_landmarks_review <- add_pop(yourData)
+price$total_nearby_landmarks <- total_nearby_landmarks_review[1,]
+price
+```
+
+# read in train and val sets 
+```{r}
+# divide into training and validation set 
+train.idx <- sample(1:nrow(price),floor(nrow(price)*0.8))
+price_train <- price[train.idx,]
+price_val <- price[-train.idx,]
+xtrain <- price_train[,-which((names(price_train)) == 'price')]
+ytrain <- price_train[,which((names(price_train)) == 'price')]
+xval <- price_val[,-which((names(price_val)) == 'price')]
+yval <- price_val[,which((names(price_val)) == 'price')]
+```
+
+
+# Attempt 1: lm
+```{r}
+# base line lm
+
+base_model <- lm(price ~ . , data= price_train[, -c(1,2)])
+# train error 
+print("train error")
+mean((base_model$fit - price_train$price)^2)
+# test error
+print("test error")
+mean((predict(base_model,price_val[, -c(1,2)]) - price_val$price)^2)
+```
+
+# Attempt 3: Random Forrest
+```{r}
+library(randomForest)
+library(dplyr)
+
+rf1 <- randomForest(formula = price~., data = price_train)
+xval <- price_val[,-which((names(price_val)) == 'price')]
+yval <- price_val[,which((names(price_val)) == 'price')]
+plot(rf1)
+
+price_train %>% arrange(desc(price))
+# baseline: fit on all variables 
+rf_oob_comp_0 <- randomForest(formula = price~., data = price_train, xtest = xval, ytest = yval)
+train.error_0 <-(rf_oob_comp_0$mse)
+val.error_0 <- mean(sqrt(rf_oob_comp_0$test$mse))
+val.error_0
+
+
+
+# Attempt 1 # 5256 4932
+price_train_1 <- price_train %>% select(accommodates,bedrooms,beds,amenities,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_1<- xval %>% select(accommodates,bedrooms,beds,amenities,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+dim(price_train_1)
+dim(xval_1)
+rf_oob_comp <- randomForest(formula = price~., 
+                            data = price_train_1, xtest = xval_1, ytest = yval)
+
+train.error.1 <-mean((rf_oob_comp$mse))
+df <- data.frame(cbind(rf_oob_comp$predicted,price_train_1$price))
+df$diff <- df$X1-df$X2
+df
+val.error.1 <- mean(rf_oob_comp$test$mse)
+
+# Attempt 2 # 5340 4981
+price_train_2 <- price_train %>% select(accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_2<- xval %>% select(accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+dim(price_train_2)
+dim(xval_2)
+rf_oob_comp_2 <- randomForest(formula = price~., 
+                            data = price_train_2, xtest = xval_2, ytest = yval)
+
+train.error_2 <-mean((rf_oob_comp_2$mse))
+df <- data.frame(cbind(rf_oob_comp_2$predicted,price_train_2$price))
+df$diff <- df$X1-df$X2
+df
+val.error.2 <- mean((rf_oob_comp_2$test$mse))
+
+# Attempt 3 # 5266 4964
+price_train_3 <- price_train %>% select(host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_3<- xval %>% select(host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+dim(price_train_3)
+dim(xval_3)
+rf_oob_comp_3 <- randomForest(formula = price~., 
+                            data = price_train_3, xtest = xval_3, ytest = yval)
+
+train.error_3 <-mean((rf_oob_comp_3$mse))
+df <- data.frame(cbind(rf_oob_comp_3$predicted,price_train_3$price))
+df$diff <- df$X1-df$X2
+df
+val.error_3 <- mean((rf_oob_comp_3$test$mse))
+
+# Attempt 4 #5077 4881
+price_train_4 <- price_train %>% select(property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_4<- xval %>% select(property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+rf_oob_comp_4 <- randomForest(formula = price~., 
+                            data = price_train_4, xtest = xval_4, ytest = yval)
+
+train.error_4 <-mean((rf_oob_comp_4$mse))
+df <- data.frame(cbind(rf_oob_comp_4$predicted,price_train_4$price))
+df$diff <- df$X1-df$X2
+df
+val.error_4 <- mean((rf_oob_comp_4$test$mse))
+
+# Attempt 5 #4937 4791
+price_train_5 <- price_train %>% select(room_type, property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_5<- xval %>% select(room_type, property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+rf_oob_comp_5 <- randomForest(formula = price~., 
+                            data = price_train_5, xtest = xval_5, ytest = yval)
+
+train.error_5 <-mean((rf_oob_comp_5$mse))
+df <- data.frame(cbind(rf_oob_comp_5$predicted,price_train_5$price))
+df$diff <- df$X1-df$X2
+df
+val.error_5 <- mean(sqrt(rf_oob_comp_5$test$mse))
+print(val.error_5)
+
+# Attempt 6 # 4886 4651
+price_train_6 <- price_train %>% select(instant_bookable,room_type, property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_6<- xval %>% select(instant_bookable,room_type, property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+rf_oob_comp_6 <- randomForest(formula = price~., 
+                            data = price_train_6, xtest = xval_6, ytest = yval)
+
+train.error_6 <-mean((rf_oob_comp_6$mse))
+df <- data.frame(cbind(rf_oob_comp_6$predicted,price_train_6$price))
+df$diff <- df$X1-df$X2
+df
+val.error_6 <- mean(sqrt(rf_oob_comp_6$test$mse))
+print(val.error_6)
+mean(sqrt(rf_oob_comp_6$mse))
+mean(sqrt(rf_oob_comp_6$test$mse))
+
+# Attempt 7 #4676 4639
+price_train_7 <- price_train %>% select(cancellation_policy,instant_bookable,room_type, property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_7<- xval %>% select(cancellation_policy,instant_bookable,room_type, property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+rf_oob_comp_7 <- randomForest(formula = price~., 
+                            data = price_train_7, xtest = xval_7, ytest = yval)
+
+train.error_7 <-mean((rf_oob_comp_7$mse))
+df <- data.frame(cbind(rf_oob_comp_7$predicted,price_train_7$price))
+df$diff <- df$X1-df$X2
+df
+val.error_7 <- mean(sqrt(rf_oob_comp_7$test$mse))
+print(val.error_7)
+
+# Attempt 8 #4528 4380
+price_train_8 <- price_train %>% select(neighbourhood_group_cleansed,cancellation_policy,instant_bookable,room_type, property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_8<- xval %>% select(neighbourhood_group_cleansed,cancellation_policy,instant_bookable,room_type, property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+rf_oob_comp_8 <- randomForest(formula = price~., 
+                            data = price_train_8, xtest = xval_8, ytest = yval)
+
+train.error_8 <-mean((rf_oob_comp_8$mse))
+df <- data.frame(cbind(rf_oob_comp_8$predicted,price_train_8$price))
+df$diff <- df$X1-df$X2
+df
+
+val.error_8 <- mean(sqrt(rf_oob_comp_8$test$mse))
+print(val.error_8)
+
+# Attempt 9 # 4608 4362
+price_train_9 <- price_train %>% select(neighbourhood_group_cleansed,cancellation_policy,room_type, property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City,price)
+xval_9<- xval %>% select(neighbourhood_group_cleansed,cancellation_policy,room_type, property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,In_Delridge, In_Lake_City)
+rf_oob_comp_9 <- randomForest(formula = price~., 
+                            data = price_train_9, xtest = xval_9, ytest = yval,ntree=490)
+
+train.error_9 <-mean((rf_oob_comp_9$mse))
+df <- data.frame(cbind(rf_oob_comp_9$predicted,price_train_9$price))
+df$diff <- df$X1-df$X2
+df
+
+val.error_9 <- mean(sqrt(rf_oob_comp_9$test$mse))
+mean(rf_oob_comp_9$test$mse)
+print(val.error_9)
+
+# Attempt 10 # 4593 4341
+price_train_10 <- price_train %>% select(neighbourhood_group_cleansed,cancellation_policy,room_type, property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,price)
+xval_10<- xval %>% select(neighbourhood_group_cleansed,cancellation_policy,room_type, property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,)
+rf_oob_comp_10 <- randomForest(formula = price~., 
+                            data = price_train_10, xtest = xval_10, ytest = yval)
+
+train.error_10 <-mean((rf_oob_comp_10$mse))
+df <- data.frame(cbind(rf_oob_comp_10$predicted,price_train_10$price))
+df$diff <- df$X1-df$X2
+df
+
+val.error_10 <- mean(sqrt(rf_oob_comp_10$test$mse))
+print(val.error_10)
+plot(select(price,"price","host_response_rate")
+
+```
+
+
+```{r plot price vs. predictor variables}
+for (i in 1:ncol(price)){
+  plot(x=price[,i],y=price$price,main = paste("Price vs.",colnames(price)[i]),xlab = colnames(price[i]))
+}
+```
+```{r tune models}
+library(caret)
+control <- trainControl(method="repeatedcv", number=10, repeats=3, search="grid")
+tunegrid <- expand.grid(.mtry=c(1:15))
+rf_gridsearch <- train(price~., data=price_train_9, method="rf", metric="RMSE", tuneGrid=tunegrid, trControl=control)
+print(rf_gridsearch)
+plot(rf_gridsearch)
+library(randomForest)
+nrow(price_train_9)
+bestmtry <- tuneRF(x = price_train_9[,-ncol(price_train_9)],y=price_train_9[,ncol(price_train_9)] , stepFactor=1.5, improve=1e-5, ntree=500)
+rf_oob_comp_9_tune <- randomForest(formula = price~., 
+                            mtry = 4, nodesize = 1, data = price_train_9, xtest = xval_9, ytest = yval,ntree=490)
+val.error_9 <- mean(sqrt(rf_oob_comp_9$test$mse))
+print(val.error_9)
+
+```
+```{r}
+nodesizes <- seq(1000,4000,by=200)
+MSEs <- vector()
+var.train <- vector()
+var.val <- vector()
+for (i in 1:length(nodesizes)){
+  rf_oob_comp_8_tune <- randomForest(formula = price~., mtry = 3, 
+                                     nodesize = 1200,
+                              data = price_train_8, xtest = xval_8, ytest = yval)
+  MSEs[i] <- rf_oob_comp_8_tune$test$mse 
+  var.train[i] <- mean(rf_oob_comp_8_tune$rsq)
+  var.val[i] <- mean(rf_oob_comp_8_tune$test$rsq)
+}
+
+plot(MSEs)
+lines(1:length(MSEs), MSEs, xlim=range(15), ylim=range(MSEs), pch=16)
+plot(1:length(MSEs), var.train, xlim=range(15), ylim=range(var.train), pch=16,col="red")
+lines(1:length(MSEs), var.val, xlim=range(15), ylim=range(var.val), pch=16,col="green")
+nodesizes[which.min(MSEs)]
+
+
+train.error_8 <-mean(sqrt(rf_oob_comp_8_tune$mse))
+df <- data.frame(cbind(rf_oob_comp_8_tune$predicted,price_train_8$price))
+df$diff <- df$X1-df$X2
+
+```
+
+```{r tune the best model }
+nfold <- 5 
+n <- nrow(price)
+cases <-  sample(rep(1:nfold,ceiling(n/nfold))[1:n])
+train.MSEs <- matrix(nrow = 4, ncol = 20)
+val.MSEs <- matrix(nrow = 4, ncol = 20)
+for (mtry in c(3:4)){
+  for (nodesize in c(10:20)){
+      val.mse <- 0 
+      train.mse <- 0 
+      for (fold in 1:nfold){
+          train <- price[cases!=fold,]
+          test <-  price[cases==fold,]
+          rf_oob_comp_9_tune <- randomForest(formula = price~., 
+                                          data=train,
+                                          mtry=mtry,nodesize=nodesize)
+          train.mse <- train.mse + mean(sqrt(rf_oob_comp_9_tune$mse))
+          y.hat_9 <- predict(object = rf_oob_comp_9_tune, newdata = test)
+          val.error_9<- mean(sqrt((y.hat_9-yval)^2))
+          val.mse <- val.mse + val.error_9 
+      }
+  val.MSEs[mtry,nodesize] <- val.mse/nfold
+  train.MSEs[mtry,nodesize] <- train.mse/nfold
+    }
+}
+
+rf_oob_comp_10_tune <- randomForest(formula = price~., data = price_train_10)
+y.hat_10<- predict(object = rf_oob_comp_10_tune, newdata = xval_10)
+val.error_10<- mean(sqrt((y.hat_10-yval)^2))
+print(val.error_10)
+
+plot(val.MSEs[3:4,10:20])
+train.MSEs[3:4,10:20]
+
+
+```
+
+```{r}
+classifier <- randomForest(as.factor(price)~., data=price_train[,-1], ntree=400, importance=T)
+
+train_error <- mean(predict(classifier) - train$price)
+imp <- importance(classifier, type=1, scale = F)
+imp <- imp %>% as.data.frame 
+colnames(imp) <- c("var","accu")
+imp %>% arrange(MeanDecreaseAccuracy)
+var_importance <- data_frame(variable=row.names(imp),
+                             importance=as.vector(imp))
+var_importance <- arrange(var_importance, importance)
+var_importance$variable <- factor(var_importance$variable, levels=var_importance$variable)
+
+p <- ggplot(var_importance, aes(x=variable, weight=importance))
+p <- p + geom_bar() + coord_flip() + ylab("Variable Importance")
+p <- p + scale_fill_discrete(name="Variable Name") + ggtitle("Variable Importance from Random Forest Fit")
+p + theme_bw() + 
+  theme(axis.text = element_text(color = "darkslategrey"),
+        text = element_text(color = "black", size = 10), legend.key.size = unit(5, "lines"))
+   
+
+```
+
+total_nearby_landmarks
+host_listing_count 3.79 
+accommodates 1.79 
+neighborhood_group_cleansed 1.86 
+property 1.83 
+room type 1.96
+guests included 
+bedrooms 1.28
+amenities 1.39
+cleaning_fee 3.05
+cancellation policy 2.1 
+total_nearby_landmarks 1.47
+```{r}
+colnames(price)
+length(rf_oob_comp_11$mse)
+length(price_train_11$price)
+length(y.hat)
+plot(rf_oob_comp_11$mse,price_train_11$price)
+price_train_11 <- price_train %>% select(total_nearby_landmarks,host_listings_count, accommodates, neighbourhood_group_cleansed, property_type, room_type, guests_included, bedrooms, amenities, cleaning_fee, cancellation_policy,price)
+xval_11<- xval %>% select(total_nearby_landmarks,host_listings_count, accommodates, neighbourhood_group_cleansed, property_type, room_type, guests_included, bedrooms, amenities, cleaning_fee, cancellation_policy)
+rf_oob_comp_11 <- randomForest(formula = price~., 
+                            data = price_train_11)
+y.hat.train <- predict(rf_oob_comp_11, price_train_11)
+plot(y.hat.train)
+y.hat <- predict(rf_oob_comp_11, xval_11)
+print(mean((y.hat-yval)^2))
+print((mean(rf_oob_comp_11$mse)))
+
+length(rf_oob_comp_11$predicted)
+train.error_11 <-mean((rf_oob_comp_11$mse))
+df <- data.frame(cbind(rf_oob_comp_11$predicted,price_train_11$price))
+df$diff <- df$X1-df$X2
+df
+
+val.error_11 <- mean(sqrt(rf_oob_comp_11$test$mse))
+mean(rf_oob_comp_11$test$mse)
+print(val.error_11)
+```
+
+```{r}
+# Attempt 9 # 4608 4362
+select(total_nearby_landmarks,host_listings_count, accommodates, neighbourhood_group_cleansed, property_type, room_type, guests_included, bedrooms, amenities, cleaning_fee, cancellation_policy,price)
+
+
+price_train_12 <- price_train %>% select(cancellation_policy,host_listings_count,cleaning_fee, neighbourhood_group_cleansed,cancellation_policy,room_type, property_type, host_response_rate, accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown,price)
+xval_12<- xval %>% select(cancellation_policy,host_listings_count,cleaning_fee,neighbourhood_group_cleansed,cancellation_policy,room_type, property_type,host_response_rate,accommodates,bedrooms,beds,total_nearby_landmarks,In_Downtown)
+rf_oob_comp_12 <- randomForest(formula = price~., 
+                            data = price_train_12, xtest = xval_12, ytest = yval,ntree=490)
+
+train.error_12 <-mean((rf_oob_comp_12$mse))
+df <- data.frame(cbind(rf_oob_comp_12$predicted,price_train_12$price))
+df$diff <- df$X1-df$X2
+df
+
+val.error_12 <- mean(sqrt(rf_oob_comp_12$test$mse))
+mean(rf_oob_comp_12$test$mse)
+print(val.error_12)
+```
+
